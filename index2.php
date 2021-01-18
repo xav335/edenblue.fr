@@ -5,6 +5,6 @@
 <title>Edenblue</title>
 </head>
 <body style="text-align: center">
-<a href="index_spa.php" target="blank"><img alt="" src="maquette_2.png"></a>
+<a href="index_spa.php" target="blank"><img alt="" src="maquette_v3.png"></a>
 </body>
 </html>
