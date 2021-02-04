@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
   </head>
-<body>
+<body class="spa">
   <div class="top">
     <div class="grid-container">
       <div class="grid-x grid-padding-x">
         <div class="large-6 medium-6 small-12 cell">
-          <img src="assets/img/logo-eden-blue.png" alt="logo Eden Blue" title="Eden Blue" data-animation="right">
+          <a href="index.php"><img src="assets/img/logo-eden-blue-white.png" alt="logo Eden Blue" title="Eden Blue" data-animation="right"></a>
         </div>
         <div class="large-6 medium-6 small-12 cell">
           <div data-animation="left"><a href="tel:+33533880011">05 33 88 00 11</a> <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
@@ -27,7 +27,7 @@
     <nav>
       <ul>
         <li><a href="">Nos réalisations</a></li>
-        <li><a href="spa.php">Spas</a></li>
+        <li><a href="spa.php" class="active">Spas</a></li>
         <li><a href="">Aménagements extérieurs</a></li>
         <li><a href="">Équipements Techniques de construction</a></li>
         <li><a href="">Actualité</a></li>
@@ -37,19 +37,14 @@
     <div class="slider swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div style="background-image:url('assets/img/slider-1.jpg');" class="masked-element"></div>
-          <img src="assets/img/slider-1.jpg" alt="">
-          <p>La piscine sans limite</p>
+          <div style="background-image:url('assets/img/spa-1.jpg');" class="masked-element"></div>
+          <img src="assets/img/spa-1.jpg" alt="">
+          <p>Le Spa sans limite</p>
         </div>
         <div class="swiper-slide">
-          <div style="background-image:url('assets/img/slider-2.jpg');" class="masked-element"></div>
-          <img src="assets/img/slider-2.jpg" alt="">
-          <p>La piscine sans limite</p>
-        </div>
-        <div class="swiper-slide">
-          <div style="background-image:url('assets/img/slider-3.jpg');" class="masked-element"></div>
-          <img src="assets/img/slider-3.jpg" alt="">
-          <p>La piscine sans limite</p>
+          <div style="background-image:url('assets/img/spa-2.jpg');" class="masked-element"></div>
+          <img src="assets/img/spa-2.jpg" alt="">
+          <p>Le Spa sans limite</p>
         </div>
       </div>
       <div class="swiper-pagination"></div>
@@ -60,22 +55,50 @@
 
     <section class="grid-x grid-padding-x" data-role="introduction">
       <div class="large-12 cell">
-        <h1 data-animation="top">Constructeur de piscine</h1>
+        <h1 data-animation="top">Spa, prenez soin de vous</h1>
         <p data-animation="top">
-          <strong>Eden Blue</strong>, constructeur de piscine en béton armé monobloc, en Aquitaine.<br/>
-          Nous intervenons dans toute la Gironde (Bassin d’Arcachon, Bordeaux, Libourne,  Blaye, Médoc…) et dans les départements limitrophes (Dordogne, Charente, Landes et Lot et Garonne)
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan urna vitae malesuada fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt justo vitae luctus laoreet. Mauris quis ipsum sit amet leo tincidunt volutpat sed convallis mauris.
+        </p>
+      </div>
+      <div class="large-12 cell">
+        <div class="grid-x grid-padding-x">
+          <div class="large-4 cell"></div>
+          <div class="large-4 cell"><img src="assets/img/photo-spa-1.png" alt="" class="img-spa-top" /></div>
+          <div class="large-4 cell"></div>
+          <div class="large-4 cell text-right">
+            <div class="legende">coloris multiples</div>
+            <img src="assets/img/photo-spa-2.png" alt="" class="img-spa" data-animation="right" />
+          </div>
+          <div class="large-4 cell"></div>
+          <div class="large-4 cell">
+            <img src="assets/img/photo-spa-4.png" alt="" class="img-spa" data-animation="left" />
+            <div class="legende">
+              large choix de<br/>
+              combinaisons possibles
+            </div>
+          </div>
+          <div class="large-4 cell"></div>
+          <div class="large-4 cell"><img src="assets/img/photo-spa-3.png" alt="" class="img-spa-bottom" /></div>
+          <div class="large-4 cell"></div>
+        </div>
+      </div>
+      <div class="large-12 cell">
+        <h2 data-animation="top">Des finitions parfaites</h2>
+        <p data-animation="top">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan urna vitae malesuada fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt justo vitae luctus laoreet. Mauris quis ipsum sit amet leo tincidunt volutpat sed convallis mauris.
         </p>
       </div>
     </section>
 
     <section class="grid-x grid-padding-x" data-role="votre-projet">
       <div class="large-5 medium-5 small-12 cell">
-        <img src="assets/img/enfant-brassards.svg" alt="enfant brassards">
-        <img src="assets/img/nageuse.svg" alt="nageuse">
-        <img src="assets/img/bubbles.svg" alt="bulles">
+        <img src="assets/img/mousse-1st-plan.svg" alt="mousse premier-plan">
+        <img src="assets/img/mousse-1st-plan.svg" alt="mousse premier-plan 2">
+        <img src="assets/img/femme-spa.svg" alt="femme spa">
+        <img src="assets/img/homme-spa.svg" alt="homme spa">
+        <img src="assets/img/mousse-last-plan.svg" alt="mousse arriere-plan">
       </div>
       <div class="large-7 medium-7 small-12 cell">
-        <img src="assets/img/bubbles.svg" alt="bulles">
         <form class="grid-x grid-padding-x" data-animation="top">
           <div class="large-12 medium-12 small-12 cell">
             <h2>Parlons de votre projet</h2>
@@ -100,47 +123,6 @@
       </div>
     </section>
 
-    <section class="grid-x grid-padding-x" data-role="partenaire-reconnu">
-      <div class="large-12 cell">
-        <h2 data-animation="top">Un partenaire reconnu</h2>
-        <p data-animation="top">
-          La société <strong>Eden Blue</strong> est un partenaire privilégié du groupe Leader Pool professionnel de la piscine en béton armé depuis plus de 15 ans et avec plus de 7000 réalisations au niveau national et Européen.<br/>
-          <strong>Eden Blue</strong> est une marque déposée depuis 2004 et utilise le procédé Leader Pool unique, breveté et agréé SOCOTEC pour la construction des piscines haut de gamme s’intégrant parfaitement à leur environnement.
-        </p>
-      </div>
-    </section>
-
-    <section class="grid-x grid-padding-x" data-role="actualites">
-      <div class="large-12 cell">
-        <h2 data-animation="top">Nouvelles fraiches</h2>
-        <div>
-          <figure data-animation="right">
-            <img src="assets/img/piscine-interieure.jpg" alt="piscine intérieure">
-            <input type="checkbox" name="actu" id="actu-1">
-            <figcaption>
-              <label for="actu-1">+</label>
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis volutpat dolor, finibus imperdiet dolor consequat rhoncus. Integer eget odio nunc. Suspendisse quis est ante...<br/>
-                <a href="#">Lire la suite</a>
-              </div>
-            </figcaption>
-          </figure>
-          <figure data-animation="left">
-            <img src="assets/img/piscine-interieure.jpg" alt="piscine intérieure">
-            <input type="checkbox" name="actu" id="actu-2">
-            <figcaption>
-              <label for="actu-2">+</label>
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis volutpat dolor, finibus imperdiet dolor consequat rhoncus. Integer eget odio nunc. Suspendisse quis est ante...<br/>
-                <a href="#">Lire la suite</a>
-              </div>
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-      <div class="large-12 cell"><a href="" class="button">+ d’actualités</a></div>
-    </section>
-
   </main>
 
   <footer>
@@ -156,7 +138,7 @@
           <img src="assets/img/logo-fpp.png" class="logo-partenaires" alt="logo partenaires" data-animation="left">
         </div>
         <div class="large-12 cell">
-          <img src="assets/img/logo-eden-blue.png" alt="logo Eden Blue" title="Eden Blue">
+          <img src="assets/img/logo-eden-blue-white.png" alt="logo Eden Blue" title="Eden Blue">
         </div>
         <div itemscope itemtype="https://schema.org/LocalBusiness" class="large-12 cell">
           <meta itemprop="name" content="Eden blue" />
