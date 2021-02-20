@@ -10,12 +10,33 @@
                 	</div>
                 	<div class="col-md-6 collapse navbar-collapse">
 	           			<ul class="nav navbar-nav">
-	           				
+	           				<li class="dropdown">
+					          	<a href="/admin/produit-list.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Réalisations<span class="caret"></span></a>
+					          	<ul class="dropdown-menu" role="menu">
+					            	<li><a href="/admin/catproduct-list.php">Catégories</a></li>
+					          		<li class="divider"></li>
+					            	<li><a href="/admin/product-edit.php">Ajout Produits</a></li>
+					            	<li><a href="/admin/product-list.php">Modif / Suppr</a></li>
+					            	<li class="divider"></li>
+					            	<li><a href="/admin/product-color-edit.php">Couleurs</a></li>
+					            	<li><a href="/admin/product-size-edit.php">Tailles</a></li>
+					            	<li class="divider"></li>
+					            	<li><a href="/admin/product-list-stock.php">Sous références en rupture de Stock</a></li>
+					            	<li><a href="/admin/product-list.php?actif=OFF">Produits supprimés</a></li>
+					          	</ul>
+					        </li>
 	           				<li class="dropdown">
 					          	<a href="news-list.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Actualités <span class="caret"></span></a>
 					          	<ul class="dropdown-menu" role="menu">
 					            	<li><a href="news-edit.php">Ajout</a></li>
 					            	<li><a href="news-list.php">Modif / Suppr</a></li>
+					          	</ul>
+					        </li>
+					         <li class="dropdown">
+					          	<a href="/admin/goldbook-list.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Livre d'or <span class="caret"></span></a>
+					          	<ul class="dropdown-menu" role="menu">
+					            	<li><a href="/admin/goldbook-edit.php">Ajout</a></li>
+					            	<li><a href="/admin/goldbook-list.php">Modif / Suppr</a></li>
 					          	</ul>
 					        </li>
 					         <li class="dropdown">

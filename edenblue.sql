@@ -37,7 +37,7 @@ CREATE TABLE `admin` (
 
 LOCK TABLES `admin` WRITE;
 /*!40000 ALTER TABLE `admin` DISABLE KEYS */;
-INSERT INTO `admin` VALUES (1,'admin','admin33335',NULL),(2,'Qf4921-ovh','edenblue3355335',NULL);
+INSERT INTO `admin` VALUES (1,'admin','admin33335',NULL),(2,'edenblue','edenblue3355335',NULL);
 /*!40000 ALTER TABLE `admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -74,6 +74,34 @@ INSERT INTO `contact` VALUES (1120,'Jav','gonz','jav_gonz@yahoo.com','Tn2kj',NUL
 UNLOCK TABLES;
 
 --
+-- Table structure for table `goldbook`
+--
+
+DROP TABLE IF EXISTS `goldbook`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `goldbook` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` datetime NOT NULL,
+  `nom` varchar(250) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `message` text DEFAULT NULL,
+  `online` tinyint(4) NOT NULL DEFAULT 0,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `goldbook`
+--
+
+LOCK TABLES `goldbook` WRITE;
+/*!40000 ALTER TABLE `goldbook` DISABLE KEYS */;
+INSERT INTO `goldbook` VALUES (13,'2021-02-20 00:00:00','XAVIER GONZALEZ','zalez@gmail.com','Très sérieux très compétant je recommande !',1);
+/*!40000 ALTER TABLE `goldbook` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `news`
 --
 
@@ -89,7 +117,7 @@ CREATE TABLE `news` (
   `image1` varchar(250) DEFAULT NULL,
   `online` varchar(30) NOT NULL DEFAULT 'bleu',
   PRIMARY KEY (`id_news`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -98,7 +126,7 @@ CREATE TABLE `news` (
 
 LOCK TABLES `news` WRITE;
 /*!40000 ALTER TABLE `news` DISABLE KEYS */;
-INSERT INTO `news` VALUES (2,'2015-10-02 00:00:00','Dordogne (24)','http://edenblue.fr/piscine-naturelle-bordeaux-gironde-dordogne-cezac-eden-blue-piscine-a-debordement-2/index.html','Piscine Miroir\r\nL’eau d’une piscine miroir déborde sur les côtés du bassin pour un effet visuel surprenant :\r\nla surface de l’eau et la plage de piscine sont au même niveau.','/21-2.jpg','1'),(3,'2015-10-02 00:00:00',' Dordogne (24)','','Voici l\'une de nos dernières réalisations (DORDOGNE)\r\n-Piscine miroir de 11.50 m  x 5.00 m avec un escalier Roman et plage Californienne.','/22-3.jpg','1'),(5,'2015-10-15 00:00:00','Saint Marie de Ré','http://edenblue.fr/piscine-naturelle-bordeaux-gironde-dordogne-cezac-eden-blue-piscine-a-debordement-2/index.html','Réalisation d\'un revêtement intérieur en enduit.','/Gautier-.jpg','1'),(6,'2015-10-15 00:00:00','Saint Marie de Ré','','Réalisation d\'un revêtement intérieur en enduit.','/gautier_1-.jpg','1'),(7,'2015-09-08 00:00:00','Blaye (33)','','Réalisation d\'une Piscine forme libre avec un revêtement intérieur en enduit.','/piscine_naturelle2-.jpg','1'),(8,'2015-12-01 00:00:00','Piscine couloir de nage ','http://edenblue.fr/piscine-beton-bordeaux-gironde-dordogne-cezac-eden-blue-couloir-de-nage-5/index.html','Labenne Océan (40)\r\n-Réalisation d\'une  couloir de nage de 20m x 3m.\r\n-Revêtement intérieur de la piscine en enduit. \r\n ','/couloir_de_nage_3-.jpg','1'),(9,'2015-12-01 00:00:00','Labenne Océan (40)','','-Réalisation d\'une  couloir de nage de 20m x 3m.\r\n-Revêtement intérieur de la piscine en enduit. ','/couloir_de_nage_4-.jpg','1'),(10,'2015-06-02 00:00:00','Medoc ( 33)','http://edenblue.fr/piscine-naturelle-bordeaux-gironde-dordogne-cezac-eden-blue-piscine-a-debordement-2/index.html','-Piscine de forme libre avec revêtement interieur en mosaïque et nettoyage intégré.','/piscine_en_forme_libre0-.jpg','0'),(12,'2015-03-02 00:00:00','Blaye (33)','','','/lolo_photos_031-.jpg','0'),(14,'2016-05-24 00:00:00','Magasin de produits Piscine et Spa  sur la commune de PEUJARD (33240)','https://www.facebook.com/edenbluepiscine/?ref=aymt_homepage_panel','Notre équipe est à votre disposition pour tous vos projets de construction de piscine \r\nainsi que le conseil et la vente de produits de traitements des eaux et d\'entretien de votre piscine.\r\n\r\n','/adresse_eden_blue2_copie-14.jpg','0'),(15,'2016-12-12 00:00:00','Dernière réalisation Piscine à débordement ( Latresne)','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.html','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360\r\nRéalisation d\'un revêtement intérieur en mosaïque.','/20160926_164757-.jpg','0'),(16,'2016-12-12 00:00:00','Dernière réalisation Piscine à débordement ( Latresne)','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.htm','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360\r\nRéalisation d\'un revêtement intérieur en mosaïque.','/Constructeur_de_piscine_d_bo-.jpg','1'),(17,'2016-12-12 00:00:00','Construction d\'une piscine à débordement ( Latresne ) 33000','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.htm','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360 Réalisation d\'un revêtement intérieur en mosaïque.','/construction_piscine_luxe_rev_t-.jpg','1'),(18,'2016-12-12 00:00:00','Construction d\'une piscine à débordement ( Latresne ) 33000','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.htm','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360 Réalisation d\'un revêtement intérieur en mosaïque.','/Construction_piscine_de_luxe_-.jpg','1'),(19,'2017-09-04 00:00:00','Dernière réalisation Piscine à débordement ( Latresne)','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.html','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360\r\nRéalisation d\'un revêtement intérieur en mosaïque.','/20170601_154216-.jpg','1'),(20,'2017-09-04 00:00:00','Dernière réalisation Piscine en béton armé monobloc ( Bordeaux)','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.html','','/Resized_20170811_141549_1_-.jpg','1'),(21,'2017-11-28 00:00:00','Piscine en béton armée monobloc','','','/piscine beton gironde-.jpg','1'),(22,'2019-02-01 00:00:00','Piscine interieur','','','/piscine interieur -.jpg','1'),(23,'2019-05-22 00:00:00','Venez decouvrir notre nouvelle gamme de SPAS ','','SHOWROOM DE 200M²\r\nNotre équipe est à votre disposition pour tous vos projets de construction de piscine & spa ainsi que le conseil et la vente de produits de traitements des eaux et d\'entretien.\r\n','/carte_vsite_copie - Copy 1-23.jpg','1');
+INSERT INTO `news` VALUES (2,'2015-10-02 00:00:00','Dordogne (24)','http://edenblue.fr/piscine-naturelle-bordeaux-gironde-dordogne-cezac-eden-blue-piscine-a-debordement-2/index.html','Piscine Miroir\r\nL’eau d’une piscine miroir déborde sur les côtés du bassin pour un effet visuel surprenant :\r\nla surface de l’eau et la plage de piscine sont au même niveau.','/21-2.jpg','1'),(3,'2015-10-02 00:00:00',' Dordogne (24)','','Voici l\'une de nos dernières réalisations (DORDOGNE)\r\n-Piscine miroir de 11.50 m  x 5.00 m avec un escalier Roman et plage Californienne.','/22-3.jpg','1'),(5,'2015-10-15 00:00:00','Saint Marie de Ré','http://edenblue.fr/piscine-naturelle-bordeaux-gironde-dordogne-cezac-eden-blue-piscine-a-debordement-2/index.html','Réalisation d\'un revêtement intérieur en enduit.','/Gautier-.jpg','1'),(6,'2015-10-15 00:00:00','Saint Marie de Ré','','Réalisation d\'un revêtement intérieur en enduit.','/gautier_1-.jpg','1'),(7,'2015-09-08 00:00:00','Blaye (33)','','Réalisation d\'une Piscine forme libre avec un revêtement intérieur en enduit.','/piscine_naturelle2-.jpg','1'),(8,'2015-12-01 00:00:00','Piscine couloir de nage ','http://edenblue.fr/piscine-beton-bordeaux-gironde-dordogne-cezac-eden-blue-couloir-de-nage-5/index.html','Labenne Océan (40)\r\n-Réalisation d\'une  couloir de nage de 20m x 3m.\r\n-Revêtement intérieur de la piscine en enduit. \r\n ','/couloir_de_nage_3-.jpg','1'),(9,'2015-12-01 00:00:00','Labenne Océan (40)','','-Réalisation d\'une  couloir de nage de 20m x 3m.\r\n-Revêtement intérieur de la piscine en enduit. ','/couloir_de_nage_4-.jpg','1'),(10,'2015-06-02 00:00:00','Medoc ( 33)','http://edenblue.fr/piscine-naturelle-bordeaux-gironde-dordogne-cezac-eden-blue-piscine-a-debordement-2/index.html','-Piscine de forme libre avec revêtement interieur en mosaïque et nettoyage intégré.','/piscine_en_forme_libre0-.jpg','0'),(12,'2015-03-02 00:00:00','Blaye (33)','','','/lolo_photos_031-.jpg','0'),(14,'2016-05-24 00:00:00','Magasin de produits Piscine et Spa  sur la commune de PEUJARD (33240)','https://www.facebook.com/edenbluepiscine/?ref=aymt_homepage_panel','Notre équipe est à votre disposition pour tous vos projets de construction de piscine \r\nainsi que le conseil et la vente de produits de traitements des eaux et d\'entretien de votre piscine.\r\n\r\n','/adresse_eden_blue2_copie-14.jpg','0'),(15,'2016-12-12 00:00:00','Dernière réalisation Piscine à débordement ( Latresne)','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.html','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360\r\nRéalisation d\'un revêtement intérieur en mosaïque.','/20160926_164757-.jpg','0'),(16,'2016-12-12 00:00:00','Dernière réalisation Piscine à débordement ( Latresne)','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.htm','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360\r\nRéalisation d\'un revêtement intérieur en mosaïque.','/Constructeur_de_piscine_d_bo-.jpg','1'),(17,'2016-12-12 00:00:00','Construction d\'une piscine à débordement ( Latresne ) 33000','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.htm','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360 Réalisation d\'un revêtement intérieur en mosaïque.','/construction_piscine_luxe_rev_t-.jpg','1'),(18,'2016-12-12 00:00:00','Construction d\'une piscine à débordement ( Latresne ) 33000','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.htm','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360 Réalisation d\'un revêtement intérieur en mosaïque.','/Construction_piscine_de_luxe_-.jpg','1'),(19,'2017-09-04 00:00:00','Dernière réalisation Piscine à débordement ( Latresne)','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.html','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360\r\nRéalisation d\'un revêtement intérieur en mosaïque.','/20170601_154216-.jpg','1'),(20,'2017-09-04 00:00:00','Dernière réalisation Piscine en béton armé monobloc ( Bordeaux)','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.html','','/Resized_20170811_141549_1_-.jpg','1'),(21,'2017-11-28 00:00:00','Piscine en béton armée monobloc','','','/piscine beton gironde-.jpg','1'),(22,'2019-02-01 00:00:00','Piscine interieur','','','/piscine interieur -.jpg','1'),(23,'2019-05-22 00:00:00','Venez decouvrir notre nouvelle gamme de SPAS ','','SHOWROOM DE 200M²\r\nNotre équipe est à votre disposition pour tous vos projets de construction de piscine & spa ainsi que le conseil et la vente de produits de traitements des eaux et d\'entretien.\r\n','/carte_vsite_copie - Copy 1-23.jpg','1'),(24,'2021-02-18 00:00:00','qsqsdqsd','sqdqsdq','qsdqsdq','/couloir_de_nage_4-.jpg','1');
 /*!40000 ALTER TABLE `news` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -238,4 +266,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-02-19  9:54:13
+-- Dump completed on 2021-02-20 11:40:11
