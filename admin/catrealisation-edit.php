@@ -2,11 +2,11 @@
 <?php include_once 'inc-auth-granted.php';?>
 <?php include_once 'classes/utils.php';?>
 <?php 
-require 'classes/Catboutique.php';
+require 'classes/Catrealisation.php';
 
 if (!empty($_GET)){ //Modif 
 	$action = 'modif';
-	$catproduct = new Catboutique();
+	$catproduct = new Catrealisation();
 	$result = $catproduct->catproductGet($_GET['id']);
 	//print_r($result);exit();
 	if (empty($result)) {
@@ -21,7 +21,7 @@ if (!empty($_GET)){ //Modif
 			$img = 'img/favicon.png';
 			$imgval = '';
 		} else {
-			$img ='/photos/catboutique/thumbs'. $image;
+			$img ='/photos/catrealisation/thumbs'. $image;
 			$imgval = $image;
 		}
 	}
@@ -40,7 +40,7 @@ if (!empty($_GET)){ //Modif
 		<div class="row">
 			<h3><?php echo $labelTitle ?></h3>
 			<div class="col-xs-12 col-sm-12 col-md-12">
-				<form name="formulaire" class="form-horizontal" method="POST"  action="catboutique-fp.php">
+				<form name="formulaire" class="form-horizontal" method="POST"  action="catrealisation-fp.php">
 					<input type="hidden" name="reference" value="categorie">
 					<input type="hidden" name="action" value="<?php echo $action ?>">
 					<input type="hidden" name="id" id="id" value="<?php echo $id_produit ?>">

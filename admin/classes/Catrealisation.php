@@ -1,7 +1,7 @@
 <?php
 require_once("StorageManager.php");
 
-class Catboutique extends StorageManager {
+class Catrealisation extends StorageManager {
 
   var $tabView = null;
 	var $i = 0;
@@ -12,7 +12,7 @@ class Catboutique extends StorageManager {
 	
 	public function catproductByParentGet($id){
 		$this->dbConnect();
-		$requete = "SELECT * FROM `catboutique` WHERE parent=". $id ." ORDER BY ordre" ;
+		$requete = "SELECT * FROM `catrealisation` WHERE parent=". $id ." ORDER BY ordre" ;
 		//print_r($requete);
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
@@ -27,10 +27,10 @@ class Catboutique extends StorageManager {
 		$this->dbConnect();
 		$requete = "SELECT product.id,product.reference,product.prix,product.libprix,product.label,product.accroche,
 					product.titreaccroche,product.description,product.image1,product.image2,product.image3,
-					catboutique.label as catlabel
+					catrealisation.label as catlabel
 					FROM product 
 					INNER JOIN product_categorie ON product.id = product_categorie.id_product
-					INNER JOIN catboutique ON catboutique.id = product_categorie.id_categorie
+					INNER JOIN catrealisation ON catrealisation.id = product_categorie.id_categorie
 					WHERE product_categorie.id_categorie=". $id ;
 		//print_r($requete);exit();
 		$new_array = null;
@@ -43,10 +43,10 @@ class Catboutique extends StorageManager {
 	}
 	
 	public function getCategorieByProduct($id){
-		$requete = "SELECT catboutique.label as catlabel,catboutique.id as catid,catboutique.image as descat
+		$requete = "SELECT catrealisation.label as catlabel,catrealisation.id as catid,catrealisation.image as descat
 					FROM product 
 					INNER JOIN product_categorie ON product.id=product_categorie.id_product 
-					INNER JOIN catboutique ON catboutique.id = product_categorie.id_categorie 
+					INNER JOIN catrealisation ON catrealisation.id = product_categorie.id_categorie 
 					WHERE product.id=". $id ;
 		//print_r($requete);exit();
 		$new_array = null;
@@ -346,7 +346,7 @@ class Catboutique extends StorageManager {
 	
 	public function catproductGet($id){
 		$this->dbConnect();
-		$requete = "SELECT * FROM `catboutique` WHERE id=". $id ;
+		$requete = "SELECT * FROM `catrealisation` WHERE id=". $id ;
 		//print_r($requete);
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
@@ -369,7 +369,7 @@ class Catboutique extends StorageManager {
 		$this->dbConnect();
 		$this->begin();
 		
-		$sql = "INSERT INTO .`catboutique`
+		$sql = "INSERT INTO .`catrealisation`
 					(`label`, `parent`, `level`)
 					VALUES (
 					'". addslashes($value['label']) ."',
@@ -394,7 +394,7 @@ class Catboutique extends StorageManager {
 		$this->dbConnect();
 		$this->begin();
 		try {
-			$sql = "UPDATE .`catboutique` SET
+			$sql = "UPDATE .`catrealisation` SET
 					`label`='". addslashes($value['label']) ."', 
 					`description`='". addslashes($value['description']) ."', 
 					`image`='". addslashes($value['url1']) ."' 
@@ -436,7 +436,7 @@ class Catboutique extends StorageManager {
 		$this->dbConnect();
 		$this->begin();
 		
-		$sql = "DELETE FROM .`catboutique` 
+		$sql = "DELETE FROM .`catrealisation` 
 				WHERE `id`=". $value .";";
 		$result = mysqli_query($this->mysqli,$sql);
 			
@@ -1028,7 +1028,7 @@ class Catboutique extends StorageManager {
 		$this->dbConnect();
 		$this->begin();
 		
-		$requete = "UPDATE `catboutique` SET";
+		$requete = "UPDATE `catrealisation` SET";
 		$requete .= " " . $champ . " = '" . $this->traiter_champ( $valeur ) . "'";
 		$requete .= " WHERE id = " . $id;
 		if ( $debug ) echo $requete . "<br>";
@@ -1068,7 +1068,7 @@ class Catboutique extends StorageManager {
 				
 			if ( !$result ) {
 				$this->rollback();
-				throw new Exception('Erreur Mysql catboutique.setStock sql = : '.$sql);
+				throw new Exception('Erreur Mysql catrealisation.setStock sql = : '.$sql);
 			}
 			
 			$this->commit();
@@ -1080,7 +1080,7 @@ class Catboutique extends StorageManager {
 		//echo "--- level : " . $level . "<br>";
 		$this->dbConnect();
 		
-		$sql = "SELECT COUNT(id) AS nb FROM `catboutique`
+		$sql = "SELECT COUNT(id) AS nb FROM `catrealisation`
 			WHERE `level`=" . $level . ";";
 		
 		if ( $debug ) echo $sql . "<br>";

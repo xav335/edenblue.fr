@@ -1,6 +1,6 @@
             <?
 	include_once '../inc/inc.config.php';
-	require 'classes/Catboutique.php';
+	require 'classes/Catrealisation.php';
 	require 'classes/ImageManager.php';
 	session_start();
 	
@@ -25,7 +25,7 @@
 		if ( $_POST['reference'] == 'categorie' ){
 			//print_r($_POST);exit();
 			$imageManager = New ImageManager();
-			$catproduct = new Catboutique();
+			$catproduct = new Catrealisation();
 			if ($_POST['action'] == 'modif') { //Modifier
 				try {
 					//Gestion des images
@@ -35,11 +35,11 @@
 						$source = $_SERVER['DOCUMENT_ROOT'].$_POST['url1'];
 						$filenameDest = $imageManager->fileDestManagement($source,$_POST['id']);
 						//Image
-						$destination=$_SERVER['DOCUMENT_ROOT'].'/photos/catboutique'.$filenameDest;
+						$destination=$_SERVER['DOCUMENT_ROOT'].'/photos/catrealisation'.$filenameDest;
 						//copy($source, $destination); // si c'est un PDF par exemple
 						$imageManager->imageResize($source, $destination, null, 650, false);
 						//Vignette  
-						$destination=$_SERVER['DOCUMENT_ROOT'].'/photos/catboutique/thumbs'.$filenameDest;
+						$destination=$_SERVER['DOCUMENT_ROOT'].'/photos/catrealisation/thumbs'.$filenameDest;
 						$imageManager->imageResize($source, $destination, null, 350, false);
 						$_POST['url1']=$filenameDest;
 					}
@@ -47,7 +47,7 @@
 					
 					$result = $catproduct->catproductModify($_POST);
 					$catproduct = null;
-					header('Location: /admin/catboutique-list.php');
+					header('Location: /admin/catrealisation-list.php');
 				} catch (Exception $e) {
 					echo 'Erreur contactez votre administrateur <br> :',  $e->getMessage(), "\n";
 					$catproduct = null;
@@ -59,7 +59,7 @@
 					//print_r($_POST);exit();
 					$result = $catproduct->catproductAdd($_POST);
 					$catproduct = null;
-					header('Location: /admin/catboutique-list.php');
+					header('Location: /admin/catrealisation-list.php');
 				} catch (Exception $e) {
 					echo 'Erreur contactez votre administrateur <br> :',  $e->getMessage(), "\n";
 					$catproduct = null;
@@ -71,7 +71,7 @@
 		
 		// ---- Changement de l'ordre d'affichage des cat�gories ------------- //
 		else if ( $_POST[ "action" ] == "changer-ordre-categorie" ) {
-			$categorie = new Catboutique();
+			$categorie = new Catrealisation();
 			try {
 				$categorie->setChamp( 
 					$_POST[ "id_categorie" ], 
@@ -80,7 +80,7 @@
 					$debug 
 				);
 				
-				if ( !$debug ) header( "Location: /admin/catboutique-list.php" );
+				if ( !$debug ) header( "Location: /admin/catrealisation-list.php" );
 			} 
 			catch ( Exception $e ) {
 				echo 'Erreur contactez votre administrateur <br> :',  $e->getMessage(), "\n";
@@ -98,17 +98,17 @@
 	else if (!empty($_GET)) {
 		
 		if ($_GET['reference'] == 'categorie'){ //supprimer
-			$catproduct = new Catboutique();
+			$catproduct = new Catrealisation();
 			if ($_GET['action'] == 'delete'){
 				try {
 					$result = $catproduct->catproductDelete($_GET['id']);
 					$catproduct = null;
-					header('Location: /admin/catboutique-list.php');
+					header('Location: /admin/catrealisation-list.php');
 				} catch (Exception $e) {
 						echo 'Erreur contactez votre administrateur <br> :',  $e->getMessage() , '\n';
 						$catproduct = null;
 						if($e->getCode() == 1234){
-							header('Location: /admin/catboutique-list.php?message='.$e->getCode());
+							header('Location: /admin/catrealisation-list.php?message='.$e->getCode());
 						}
 						exit();
 				}

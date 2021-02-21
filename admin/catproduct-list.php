@@ -54,8 +54,6 @@
 								
 								<div class="row">
 									<div class="row">
-									<input type="hidden" name="parent" id="num_parent" value="0">
-                                    <!--  
                                     <label class="col-md-3" >Catégorie Parent :</label>
 										
 										<select name="parent" id="num_parent" class="col-md-5">
@@ -74,7 +72,6 @@
 											}
 											?>
 										</select>	
-										-->
 									</div>	
 									<div class="row">
 										<label class="col-md-3">&nbsp;Nom catégorie :</label>

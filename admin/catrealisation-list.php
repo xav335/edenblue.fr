@@ -2,9 +2,9 @@
 	include_once '../inc/inc.config.php';
 	include_once 'inc-auth-granted.php';
 	include_once 'classes/utils.php';
-	require 'classes/Catboutique.php';
+	require 'classes/Catrealisation.php';
 	
-	$catproduct = new Catboutique();
+	$catproduct = new Catrealisation();
 	$catproduct->catproduitViewIterative( null );
 	$result = $catproduct->tabView;
 	
@@ -45,34 +45,34 @@
 			<div class="col-md-8">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">Gestion des catégories de la boutique</h3>
+						<h3 class="panel-title">Gestion des catégories des réalisations</h3>
 					</div>
 					<div class="panel-body">
 						<form name="formulaire" class="form-horizontal" method="POST"
-							action="catboutique-fp.php">
-							<input type="hidden" name="reference" value="categorie"> <input
-								type="hidden" name="action" id="action" value="add">
+							action="catrealisation-fp.php">
+							<input type="hidden" name="reference" value="categorie"> 
+							<input type="hidden" name="action" id="action" value="add">
 
 							<div class="row">
 								<div class="row">
-									<label class="col-md-3">Catégorie Parent :</label> <select
-										name="parent" id="num_parent" class="col-md-5">
-										<option value="0" selected>-- racine --</option>
-											<?
-											foreach ($result as $value) { 
-												$decalage = "";
-												for ($i=0; $i<($value[ "level" ] * 5); $i++) {
-													$decalage .= "&nbsp;";
-												}
-												?>
-												<option value="<?php echo $value[ "id" ] ?>"
-											<? if ( $parent ==  $value[ "id" ] ) { ?> selected <? } ?>>
-													<?=$decalage?><?php echo $value[ "label" ] ?>
+								    <input type="hidden" name="parent" id="num_parent" value="0">
+									 <!-- 
+									<label class="col-md-3">Catégorie Parent :</label> 
+									<select name="parent" id="num_parent" class="col-md-5">
+										      <option value="0" selected>-- racine --</option>
+    											<? foreach ($result as $value) : 
+    												$decalage = "";
+    												for ($i=0; $i<($value[ "level" ] * 5); $i++) {
+    													$decalage .= "&nbsp;";
+    												} ?>
+    												
+    												<option value="<?php echo $value[ "id" ] ?>"
+    											<? if ( $parent ==  $value[ "id" ] ) { ?> selected <? } ?>>
+    													<?=$decalage?><?php echo $value[ "label" ] ?>
 												</option>
-												<?
-											}
-											?>
-										</select>
+											    <? endforeach;?>
+										</select> 
+										 -->  
 								</div>
 								<div class="row">
 									<label class="col-md-3">&nbsp;Nom catégorie :</label> <input
@@ -100,7 +100,7 @@
 				</div>
 
 			<form name="form_liste" id="form_liste" class="form-horizontal"
-				method="POST" action="catboutique-fp.php">
+				method="POST" action="catrealisation-fp.php">
 				<input type="hidden" name="action" id="action" value=""> <input
 					type="hidden" name="id_categorie" id="id_categorie" value=""> <input
 					type="hidden" name="ordre" id="ordre" value="">
@@ -156,13 +156,13 @@
 						<td>
 							
 						<?php	if( !empty( $value[ "image" ] ) ) : ?>
-								    <a href='/photos/catboutique<?php echo $value[ "image" ] ?>'
+								    <a href='/photos/catrealisation<?php echo $value[ "image" ] ?>'
 							target='_blank'><img alt="" width='110'
-								src="/photos/catboutique/thumbs/<?php echo $value[ "image" ] ?>"></a>
+								src="/photos/catrealisation/thumbs/<?php echo $value[ "image" ] ?>"></a>
 						<?php endif; ?>
 
 							</td>
-						<td><a href="catboutique-edit.php?id=<?php echo $value[ "id" ] ?>"><img
+						<td><a href="catrealisation-edit.php?id=<?php echo $value[ "id" ] ?>"><img
 								src='img/modif.png' width='30' alt='Modifier'></a></td>
 
 						<td>
@@ -175,7 +175,7 @@
 								</button>
 								<strong>Voulez vous vraiment supprimer ?</strong>
 								<button type='button' class='btn btn-danger'
-									onclick="location.href='catboutique-fp.php?reference=categorie&action=delete&id=<?php echo $value[ "id" ] ?>'">Oui
+									onclick="location.href='catrealisation-fp.php?reference=categorie&action=delete&id=<?php echo $value[ "id" ] ?>'">Oui
 									!</button>
 							</div> <img src='img/del.png' width='20' alt='Supprimer'
 							onclick="$('.supp<?php echo $value[ "id" ] ?>').css('display', 'block');">
