@@ -15,14 +15,8 @@
 					          	<ul class="dropdown-menu" role="menu">
 					            	<li><a href="/admin/catproduct-list.php">Catégories</a></li>
 					          		<li class="divider"></li>
-					            	<li><a href="/admin/product-edit.php">Ajout Produits</a></li>
+					            	<li><a href="/admin/product-edit.php">Ajout Réalisation</a></li>
 					            	<li><a href="/admin/product-list.php">Modif / Suppr</a></li>
-					            	<li class="divider"></li>
-					            	<li><a href="/admin/product-color-edit.php">Couleurs</a></li>
-					            	<li><a href="/admin/product-size-edit.php">Tailles</a></li>
-					            	<li class="divider"></li>
-					            	<li><a href="/admin/product-list-stock.php">Sous références en rupture de Stock</a></li>
-					            	<li><a href="/admin/product-list.php?actif=OFF">Produits supprimés</a></li>
 					          	</ul>
 					        </li>
 	           				<li class="dropdown">
@@ -49,14 +43,23 @@
 					          	</ul>
 					        </li>
 					        <li class="dropdown">
-					          	<a href="newsletter-list.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Newsletter<span class="caret"></span></a>
+					          	<a href="/admin/article-list.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Boutique<span class="caret"></span></a>
 					          	<ul class="dropdown-menu" role="menu">
-					            	<li><a href="newsletter-edit.php">Ajout Newsletter</a></li>
-					            	<li><a href="newsletter-list.php">Modif / Suppr / Envoi</a></li>
-					            	<li class="divider"></li>
-					            	<li><a href="newsletterjournal-list.php">Journal des envoi</a></li>
+					            	<li><a href="/admin/catboutique-list.php">Catégories Boutique</a></li>
+					          		<li class="divider"></li>
+					            	<li><a href="/admin/article-edit.php">Ajout produit</a></li>
+					            	<li><a href="/admin/article-list.php">Modif / Suppr</a></li>
 					          	</ul>
 					        </li>
+<!-- 					        <li class="dropdown"> -->
+<!-- 					          	<a href="newsletter-list.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Newsletter<span class="caret"></span></a> -->
+<!-- 					          	<ul class="dropdown-menu" role="menu"> -->
+<!-- 					            	<li><a href="newsletter-edit.php">Ajout Newsletter</a></li> -->
+<!-- 					            	<li><a href="newsletter-list.php">Modif / Suppr / Envoi</a></li> -->
+<!-- 					            	<li class="divider"></li> -->
+<!-- 					            	<li><a href="newsletterjournal-list.php">Journal des envoi</a></li> -->
+<!-- 					          	</ul> -->
+<!-- 					        </li> -->
 	                    </ul>
                     </div> 
                     <div class="col-md-2 collapse navbar-collapse">

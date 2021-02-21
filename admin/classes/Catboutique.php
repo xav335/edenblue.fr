@@ -1,7 +1,7 @@
 <?php
 require_once("StorageManager.php");
 
-class Catproduct extends StorageManager {
+class Catboutique extends StorageManager {
 
   var $tabView = null;
 	var $i = 0;
@@ -10,9 +10,9 @@ class Catproduct extends StorageManager {
 		
 	}
 	
-	public function catproductByParentGet($id){
+	public function catproduitByParentGet($id){
 		$this->dbConnect();
-		$requete = "SELECT * FROM `catproduct` WHERE parent=". $id ." ORDER BY ordre" ;
+		$requete = "SELECT * FROM `catboutique` WHERE parent=". $id ." ORDER BY ordre" ;
 		//print_r($requete);
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
@@ -27,10 +27,10 @@ class Catproduct extends StorageManager {
 		$this->dbConnect();
 		$requete = "SELECT product.id,product.reference,product.prix,product.libprix,product.label,product.accroche,
 					product.titreaccroche,product.description,product.image1,product.image2,product.image3,
-					catproduct.label as catlabel
+					catboutique.label as catlabel
 					FROM product 
 					INNER JOIN product_categorie ON product.id = product_categorie.id_product
-					INNER JOIN catproduct ON catproduct.id = product_categorie.id_categorie
+					INNER JOIN catboutique ON catboutique.id = product_categorie.id_categorie
 					WHERE product_categorie.id_categorie=". $id ;
 		//print_r($requete);exit();
 		$new_array = null;
@@ -43,10 +43,10 @@ class Catproduct extends StorageManager {
 	}
 	
 	public function getCategorieByProduct($id){
-		$requete = "SELECT catproduct.label as catlabel,catproduct.id as catid,catproduct.image as descat
+		$requete = "SELECT catboutique.label as catlabel,catboutique.id as catid,catboutique.image as descat
 					FROM product 
 					INNER JOIN product_categorie ON product.id=product_categorie.id_product 
-					INNER JOIN catproduct ON catproduct.id = product_categorie.id_categorie 
+					INNER JOIN catboutique ON catboutique.id = product_categorie.id_categorie 
 					WHERE product.id=". $id ;
 		//print_r($requete);exit();
 		$new_array = null;
@@ -320,7 +320,7 @@ class Catproduct extends StorageManager {
 	
 	public function catproduitViewIterative($result){
 		if ($this->i==0){
-			$result = $this->catproductByParentGet(0);
+			$result = $this->catcategorieByParentGet(0);
 			//print_r($result);
 		}
 		if (!empty($result)) {
@@ -335,7 +335,7 @@ class Catproduct extends StorageManager {
 				$this->tabView[$this->i]['description'] = $value['description'];
 				$this->tabView[$this->i]['image'] = $value['image'];
 				$this->tabView[$this->i]['ordre'] = $value['ordre'];
-				$result = $this->catproductByParentGet($value['id']);
+				$result = $this->catcategorieByParentGet($value['id']);
 				//print_r($result);
 				$this->i++;
 				$this->catproduitViewIterative($result);
@@ -344,9 +344,9 @@ class Catproduct extends StorageManager {
 		}
 	}
 	
-	public function catproductGet($id){
+	public function catcategorieGet($id){
 		$this->dbConnect();
-		$requete = "SELECT * FROM `catproduct` WHERE id=". $id ;
+		$requete = "SELECT * FROM `catboutique` WHERE id=". $id ;
 		//print_r($requete);
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
@@ -357,9 +357,9 @@ class Catproduct extends StorageManager {
 		return $new_array;
 	}
 	
-	public function catproductAdd($value){
+	public function catcategorieAdd($value){
 		if ($value['parent'] != 0){
-			$parent = $this->catproductGet($value['parent']);
+			$parent = $this->catcategorie($value['parent']);
 			$level = $parent[0]['level']+1;
 		} else {
 			$level = 0;
@@ -369,7 +369,7 @@ class Catproduct extends StorageManager {
 		$this->dbConnect();
 		$this->begin();
 		
-		$sql = "INSERT INTO .`catproduct`
+		$sql = "INSERT INTO .`catboutique`
 					(`label`, `parent`, `level`)
 					VALUES (
 					'". addslashes($value['label']) ."',
@@ -380,7 +380,7 @@ class Catproduct extends StorageManager {
 		
 		if (!$result) {
 			$this->rollback();
-			throw new Exception('Erreur Mysql catproductAdd sql = : '.$sql);
+			throw new Exception('Erreur Mysql catcategorieAdd sql = : '.$sql);
 		}
 		$id_record = mysqli_insert_id($this->mysqli);
 		$this->commit();
@@ -389,12 +389,12 @@ class Catproduct extends StorageManager {
 		return $id_record;
 	}
 	
-	public function catproductModify($value){
+	public function catcategorieModify($value){
 		//print_r($value);exit();
 		$this->dbConnect();
 		$this->begin();
 		try {
-			$sql = "UPDATE .`catproduct` SET
+			$sql = "UPDATE .`catboutique` SET
 					`label`='". addslashes($value['label']) ."', 
 					`description`='". addslashes($value['description']) ."', 
 					`image`='". addslashes($value['url1']) ."' 
@@ -417,10 +417,10 @@ class Catproduct extends StorageManager {
 		$this->dbDisConnect();
 	}
 	
-	public function catproductDelete($value){
+	public function catcategorieDelete($value){
 		
 	  //Check si la categorie ne contient pas de catégorie
-	  $categlst = $this->catproductByParentGet($value);
+	  $categlst = $this->catboutiqueByParentGet($value);
 	  if (!empty($categlst)){
 	    throw new Exception("La categorie n'est pas vide ! ",1234);
 	  }
@@ -436,13 +436,13 @@ class Catproduct extends StorageManager {
 		$this->dbConnect();
 		$this->begin();
 		
-		$sql = "DELETE FROM .`catproduct` 
+		$sql = "DELETE FROM .`catboutique` 
 				WHERE `id`=". $value .";";
 		$result = mysqli_query($this->mysqli,$sql);
 			
 		if (!$result) {
 			$this->rollback();
-			throw new Exception('Erreur Mysql catproductDelete sql = : '.$sql);
+			throw new Exception('Erreur Mysql catcategorieDelete sql = : '.$sql);
 		}
 
 		$this->commit();
@@ -1028,7 +1028,7 @@ class Catproduct extends StorageManager {
 		$this->dbConnect();
 		$this->begin();
 		
-		$requete = "UPDATE `catproduct` SET";
+		$requete = "UPDATE `catboutique` SET";
 		$requete .= " " . $champ . " = '" . $this->traiter_champ( $valeur ) . "'";
 		$requete .= " WHERE id = " . $id;
 		if ( $debug ) echo $requete . "<br>";
@@ -1068,7 +1068,7 @@ class Catproduct extends StorageManager {
 				
 			if ( !$result ) {
 				$this->rollback();
-				throw new Exception('Erreur Mysql Catproduct.setStock sql = : '.$sql);
+				throw new Exception('Erreur Mysql catboutique.setStock sql = : '.$sql);
 			}
 			
 			$this->commit();
@@ -1080,7 +1080,7 @@ class Catproduct extends StorageManager {
 		//echo "--- level : " . $level . "<br>";
 		$this->dbConnect();
 		
-		$sql = "SELECT COUNT(id) AS nb FROM `catproduct`
+		$sql = "SELECT COUNT(id) AS nb FROM `catboutique`
 			WHERE `level`=" . $level . ";";
 		
 		if ( $debug ) echo $sql . "<br>";
