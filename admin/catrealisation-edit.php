@@ -3,11 +3,14 @@
 <?php include_once 'classes/utils.php';?>
 <?php 
 require 'classes/Catrealisation.php';
+require 'classes/Catrealisation_image.php';
 
 if (!empty($_GET)){ //Modif 
 	$action = 'modif';
-	$catproduct = new Catrealisation();
-	$result = $catproduct->catproductGet($_GET['id']);
+	$catrealisation =          new Catrealisation();
+	$catrealisation_image =    new Catrealisation_image();
+	
+	$result = $catrealisation->catproductGet($_GET['id']);
 	//print_r($result);exit();
 	if (empty($result)) {
 		$message = 'Aucun enregistrements';
@@ -26,6 +29,54 @@ if (!empty($_GET)){ //Modif
 		}
 	}
 }
+
+
+// ---- Modification ---------------------------- //
+if ( !empty( $_GET ) ) {
+    $action = 'modif';
+    $result = $catrealisation->catproductGet($_GET['id']);
+
+    if ( !empty( $result ) ) {
+        $titre_page = 	'Catégorie "'. $result[ 0 ][ "label" ] . '"';
+        $id =			$_GET[ "id" ];
+        $id_categorie = $result[ 0 ][ "id" ];
+        $nom = 			$result[ 0 ][ "nom" ];
+        $description = 	$result[ 0 ][ "description" ];
+        	
+        	
+        // ---- Liste des photos associées  ---- //
+        if ( 1 == 1 ) {
+            unset( $recherche );
+            $recherche[ "num_produit" ] = $_GET[ "id" ];
+            $liste_image = $catrealisation_image->getListe( $recherche);
+            //print_r($liste_image);
+            
+        }
+        // -------------------------------------------------- //
+        	
+    }
+    else $message = 'Aucun enregistrement';
+}
+
+// ---- Ajout d'une rubrique -------------------- //
+else {
+    $action = 'add';
+    $titre_page = 	'Nouveau produit';
+    $id	=			null;
+    $nom = 			null;
+    $description =	null;
+    $img[ 1 ] = 	"/img/favicon.png";
+    $imgval[ 1 ] = 	"/img/favicon.png";
+    $fichier_pdf = 	'';
+    $accueil = 		'0';
+    $online = 		'0';
+
+    $display_pdf = "none";
+    $display_pdf_img = "block";
+
+}
+
+
 ?>
 <!doctype html>
 <html class="no-js" lang="fr">
@@ -41,10 +92,9 @@ if (!empty($_GET)){ //Modif
 			<h3><?php echo $labelTitle ?></h3>
 			<div class="col-xs-12 col-sm-12 col-md-12">
 				<form name="formulaire" class="form-horizontal" method="POST"  action="catrealisation-fp.php">
-					<input type="hidden" name="reference" value="categorie">
-					<input type="hidden" name="action" value="<?php echo $action ?>">
-					<input type="hidden" name="id" id="id" value="<?php echo $id_produit ?>">
-					<input type="hidden"  name="idImage"  id="idImage" value="">
+					<input type="hidden" name="mon_action" id="mon_action" value="gerer">
+					<input type="hidden" name="id" id="id" value="<?=$id_produit?>">
+					<input type="hidden" name="num_image" id="num_image" value="">
 					<div class="form-group" >
 						<label class="col-sm-1" for="titre">Titre :</label>
 					    <input type="text" class="col-sm-11" name="label" required  value="<?php echo $label ?>">
@@ -53,124 +103,168 @@ if (!empty($_GET)){ //Modif
 						<label for="accroche">Description :</label><br>
 		           		<textarea class="col-sm-11" name="description" id="contenu" rows="6"  ><?php echo $description ?></textarea>
 		            </div>
-		            <div class="form-group"><br>
-						<label  for="titre">ajouter une image </label>
-					</div>	
-					<?php for ($i=1;$i<2;$i++) :?>
-						<div class="col-md-4">
-						<input type="hidden"  name="url<?php echo $i ?>"  id="url<?php echo $i ?>" value="<?php echo $imgval?>"><br>
-            			<a href="javascript:openCustomRoxy('<?php echo $i ?>')"><img  src="<?php echo $img?>" id="customRoxyImage<?php echo $i ?>" style="max-width:200px;"></a>
-						<img src="img/del.png" width="20" alt="Supprimer" onclick="clearImage(<?php echo $i ?>)"/>
-						<br><br>
-						</div>	
-					<?php endfor;?>
+		           <div class="col-md-6" style="margin-bottom:20px;">
+							<label for="titre">Choix des photos </label><br>
+							<input type="hidden" name="url0" id="url0" value=""><br>
+							<input type="hidden"  name="idImage"  id="idImage" value="">
+	            			<a href="javascript:openCustomRoxy('0')"><img id="" src="http://www.placehold.it/400x150/EFEFEF/171717&text=Choisir les images ici" id="customRoxyImage0" style="max-width:400px;"></a>
+					</div>
 					
-		            <div id="roxyCustomPanel" style="display: none;">
+				
+				    <div id="roxyCustomPanel" style="display: none;">
   							<iframe src="/admin/fileman2/index.html?integration=custom" style="width:100%;height:100%" frameborder="0"></iframe>
 					</div>
 					
-					<script type="text/javascript">
-						function openCustomRoxy(idImage){
-							$('#idImage').val(idImage);
-						 	$('#roxyCustomPanel').dialog({modal:true, width:875,height:600});
-						}
-						function closeCustomRoxy(){
-						  	$('#roxyCustomPanel').dialog('close');
-						}
-	
-						function clearImage(idImage){
-							$('#customRoxyImage'+idImage).attr('src', 'img/favicon.png');
-							$('#url'+idImage).val('');
-						}
-						
-					</script>
-					
-					
-					
-					
-					<div class="form-group">
-		            	<button class="btn btn-success col-sm-12" type="submit" class="btn btn-default"> Valider </button>
-		            </div>
-					<script type="text/javascript">
-						tinymce.init({
-						selector: "textarea.editme",
-						// ===========================================
-						// INCLUDE THE PLUGIN
-						// ===========================================
-						plugins: [
-						"advlist autolink lists link image charmap print preview anchor",
-						"searchreplace visualblocks code fullscreen textcolor",
-						"insertdatetime media table contextmenu paste jbimages"
-						],
-											
-						// ===========================================
-						// PUT PLUGIN'S BUTTON on the toolbar
-						// ===========================================
-						toolbar: "insertfile undo redo | styleselect | forecolor backcolor | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image jbimages",
-						// ===========================================
-						// SET RELATIVE_URLS to FALSE (This is required for images to display properly)
-						// ===========================================
-						// AJOUTE LES URL EN ENTIER decommenter les 2 lignes suivantes
-						//document_base_url: "http://dev.bsport.fr",
-						//remove_script_host : false,
-						relative_urls: false,
-						file_browser_callback: RoxyFileBrowser
-						
-						});
-	
-	
-						function RoxyFileBrowser(field_name, url, type, win) {
-						  var roxyFileman = '/admin/fileman/index.php';
-						  if (roxyFileman.indexOf("?") < 0) {     
-						    roxyFileman += "?type=" + type;   
-						  }
-						  else {
-						    roxyFileman += "&type=" + type;
-						  }
-						  roxyFileman += '&input=' + field_name + '&value=' + document.getElementById(field_name).value;
-						  if(tinyMCE.activeEditor.settings.language){
-						    roxyFileman += '&langCode=' + tinyMCE.activeEditor.settings.language;
-						  }
-						  tinyMCE.activeEditor.windowManager.open({
-						     file: roxyFileman,
-						     title: 'Gestionnaire de fichiers',
-						     width: 850, 
-						     height: 650,
-						     resizable: "yes",
-						     plugins: "media",
-						     inline: "yes",
-						     close_previous: "no"  
-						  }, {     window: win,     input: field_name    });
-						  return false; 
-						}
-
-						
-						$(document).ready(
-						  /* This is the function that will get executed after the DOM is fully loaded */
-						  function () {
-						    $( "#datepicker" ).datepicker({
-						    	altField: "#datepicker",
-						    	closeText: 'Fermer',
-						    	prevText: 'Précédent',
-						    	nextText: 'Suivant',
-						    	currentText: 'Aujourd\'hui',
-						    	monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
-						    	monthNamesShort: ['Janv.', 'Févr.', 'Mars', 'Avril', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'],
-						    	dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
-						    	dayNamesShort: ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'],
-						    	dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
-						    	weekHeader: 'Sem.',
-						    	dateFormat: 'dd/mm/yy'
-						    });
-						  }
-	
-						);
-			
-					</script>
-		        </form>
+				    <div style="clear:both;"></div>
+				    <div id="div_liste_image">
+							<?
+							// ---- Affichage de la liste des images déjà associées à cette offre ---- //
+							if ( !empty( $liste_image ) ) :
+								$cpt = 0;
+								foreach( $liste_image as $_image ) : ?>
+									
+									<div class="col-md-3" style="text-align:center; margin-bottom:20px; border:0px solid red;">
+				            		  <img src="/photos/catrealisation/accueil<?php echo $_image["fichier"]?>" width="230" style="max-width:230px;"></a><br>
+				            		<?php if ( $_image[ "defaut" ] == 'non' ) : ?>
+				            		
+				            		      <input type='button' id='<?php echo $_image[ "num_image" ]?>' value='Par défaut' class='par_defaut' />
+				            		      <input type='button' id='<?php echo $_image[ "num_image" ]?>' value='Supprimer' class='supprimer_image_precise' />
+									      </div>
+									<?php endif; ?>
+									<?php if ( $cpt % 4 == 4 ) : ?>
+									   <div style='clear:both;'></div>
+									
+									<?php endif;   
+									$cpt++;
+								endforeach;
+							endif;
+							// ----------------------------------------------------------------------- //
+							?>
+						</div>
+				     <div class="col-md-12" style="margin-bottom:20px;">
+						<a href="catrealisation-list.php" class="btn btn-success col-sm-6" class="btn btn-default annuler"> Annuler </a>	
+						<button type="submit" class="btn btn-success col-sm-6" class="btn btn-default"> Valider </button>
+					</div>	
+				  </form>
 			</div>
 		</div>
 	</div>
+	
+	<script type="text/javascript">
+			var cpt = 0;
+			
+			function openCustomRoxy(idImage){
+				$( "#url0" ).val( '' );
+				$( "#url1" ).val( '' );
+				
+				$('#idImage').val(idImage);
+			 	$('#roxyCustomPanel').dialog({modal:true, width:875,height:600});
+			}
+			
+			function closeCustomRoxy(){
+			  	$('#roxyCustomPanel').dialog('close');
+			  	
+			  	// ---- Contenu photo --------------------- //
+			  	if ( $( "#url0" ).val() != '' ) {
+			  		//alert( "Photos..." );
+			  		
+			  		var fichier_image = $( "#url0" ).val();
+			  		var contenu = "<div id='div_image_" + cpt + "' class='col-md-3' style='text-align:center; margin-bottom:20px; border:0px solid red;'>\n";
+					contenu += "	<input type='hidden' name='mes_images[]' value='" + fichier_image + "' />\n";
+            		contenu += "	<img src='" + fichier_image + "' width='230' style='max-width:230px;'></a><br>\n";
+            		//contenu += "	<input type='button' value='Par défaut' />\n";
+            		contenu += "	<input type='button' id='" + cpt + "' value='Supprimer' class='supprimer_image' />\n";
+					contenu += "</div>";
+					
+					if ( ( cpt % 4 ) == 4 ) contenu += "<div style='clear:both;'></div>\n";
+					
+					$( "#div_liste_image" ).append( contenu );
+					cpt++;
+			  	}
+			  	// ---------------------------------------- //
+			  	
+			  	
+			  	// ---- Contenu du PDF -------------------- //
+			  	else if ( $( "#url1" ).val() != '' ) {
+			  		$( "#div_pdf_img" ).hide();
+			  		
+			  		$( "#url1_changement" ).val( "changer pdf" );
+			  		$( "#span_pdf" ).html( $( "#url1" ).val() );
+			  		$( "#div_pdf" ).show();
+			  	}
+			  	// ---------------------------------------- //
+			  	
+			}
+			
+			function clearImage(idImage){
+				$('#customRoxyImage'+idImage).attr('src', '/img/favicon.png');
+				$('#url'+idImage).val('');
+			}
+			
+			function annuler_pdf() {
+				$( "#url1_changement" ).val( "changer pdf" );
+				$( "#url1" ).val( '' );
+				
+				$( "#div_pdf" ).hide();
+				$( "#div_pdf_img" ).show();
+			}
+			
+			$( document ).on( "click", ".supprimer_image", function() {
+				var val = $(this).attr( "id" );
+				//alert( "Suppression de l'image " + val );
+				$( "#div_image_" + val ).remove();
+			});
+			
+			$( ".par_defaut" ).click(function() {
+				var val = $(this).attr( "id" );
+				//alert( "Image #" + val + " par defaut" );
+				
+				$( "#num_image" ).val( val );
+				$( "#mon_action" ).val( "par defaut" );
+				$( "#formulaire" ).submit();
+			});
+			
+			$( ".supprimer_image_precise" ).click(function() {
+				var val = $(this).attr( "id" );
+				//alert( "Suppression de l'image #" + val );
+				
+				$( "#num_image" ).val( val );
+				$( "#mon_action" ).val( "supprimer image" );
+				$( "#formulaire" ).submit();
+			});
+			
+			$( ".annuler" ).click(function() {
+				window.location.href = "./liste.php";
+			});
+			
+			$( ".valider" ).click(function() {
+				//alert( "On poste..." );
+				var is_coche = false;
+				
+				// ---- Il faut a moins un type de bien sélectionné ---- //
+				if ( 1 == 1 ) {
+					$( ".type_bien" ).each( function( index ) {
+						//console.log( index + ": " + $( this ).text() );
+						if (  $(this).is( ":checked" ) ) {
+							//alert( "coché!!!" );
+							is_coche = true;
+							return false;
+						}
+					});
+				}
+				
+				// ---- Tout va bien --> On poste ---------------------- //
+				if ( is_coche ) {
+					$( "#formulaire" ).submit();
+					//alert( "On poste..." );
+				}
+				else alert( "Veuillez cocher au moins un type de bien." );
+				
+				return false;
+			});
+			
+		</script>
+		
 </body>
 </html>
 
