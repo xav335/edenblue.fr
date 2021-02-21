@@ -10,7 +10,7 @@ class Catboutique extends StorageManager {
 		
 	}
 	
-	public function catproduitByParentGet($id){
+	public function catproductByParentGet($id){
 		$this->dbConnect();
 		$requete = "SELECT * FROM `catboutique` WHERE parent=". $id ." ORDER BY ordre" ;
 		//print_r($requete);
@@ -320,7 +320,7 @@ class Catboutique extends StorageManager {
 	
 	public function catproduitViewIterative($result){
 		if ($this->i==0){
-			$result = $this->catcategorieByParentGet(0);
+			$result = $this->catproductByParentGet(0);
 			//print_r($result);
 		}
 		if (!empty($result)) {
@@ -335,7 +335,7 @@ class Catboutique extends StorageManager {
 				$this->tabView[$this->i]['description'] = $value['description'];
 				$this->tabView[$this->i]['image'] = $value['image'];
 				$this->tabView[$this->i]['ordre'] = $value['ordre'];
-				$result = $this->catcategorieByParentGet($value['id']);
+				$result = $this->catproductByParentGet($value['id']);
 				//print_r($result);
 				$this->i++;
 				$this->catproduitViewIterative($result);
@@ -344,7 +344,7 @@ class Catboutique extends StorageManager {
 		}
 	}
 	
-	public function catcategorieGet($id){
+	public function catproductGet($id){
 		$this->dbConnect();
 		$requete = "SELECT * FROM `catboutique` WHERE id=". $id ;
 		//print_r($requete);
@@ -357,9 +357,9 @@ class Catboutique extends StorageManager {
 		return $new_array;
 	}
 	
-	public function catcategorieAdd($value){
+	public function catproductAdd($value){
 		if ($value['parent'] != 0){
-			$parent = $this->catcategorie($value['parent']);
+			$parent = $this->catproductGet($value['parent']);
 			$level = $parent[0]['level']+1;
 		} else {
 			$level = 0;
@@ -380,7 +380,7 @@ class Catboutique extends StorageManager {
 		
 		if (!$result) {
 			$this->rollback();
-			throw new Exception('Erreur Mysql catcategorieAdd sql = : '.$sql);
+			throw new Exception('Erreur Mysql catproductAdd sql = : '.$sql);
 		}
 		$id_record = mysqli_insert_id($this->mysqli);
 		$this->commit();
@@ -389,7 +389,7 @@ class Catboutique extends StorageManager {
 		return $id_record;
 	}
 	
-	public function catcategorieModify($value){
+	public function catproductModify($value){
 		//print_r($value);exit();
 		$this->dbConnect();
 		$this->begin();
@@ -417,10 +417,10 @@ class Catboutique extends StorageManager {
 		$this->dbDisConnect();
 	}
 	
-	public function catcategorieDelete($value){
+	public function catproductDelete($value){
 		
 	  //Check si la categorie ne contient pas de catégorie
-	  $categlst = $this->catboutiqueByParentGet($value);
+	  $categlst = $this->catproductByParentGet($value);
 	  if (!empty($categlst)){
 	    throw new Exception("La categorie n'est pas vide ! ",1234);
 	  }
@@ -442,7 +442,7 @@ class Catboutique extends StorageManager {
 			
 		if (!$result) {
 			$this->rollback();
-			throw new Exception('Erreur Mysql catcategorieDelete sql = : '.$sql);
+			throw new Exception('Erreur Mysql catproductDelete sql = : '.$sql);
 		}
 
 		$this->commit();

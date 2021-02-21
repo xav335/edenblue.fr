@@ -137,7 +137,8 @@
 							else if ( $value[ "level" ] == 1 ) $classe_affichage = 'success';
 							else $classe_affichage = '';
 							
-							$description = ( !empty( $value[ "description" ] ) ) ? "texte OK" : "&nbsp;"; ?>
+							$description = ( !empty( $value[ "description" ] ) ) ? "texte OK" : "&nbsp;"; 
+							//$description = $value["description"]; ?>
 							
 							<tr class="<?php echo $classe_affichage?>">
 							<td>

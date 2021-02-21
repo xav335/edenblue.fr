@@ -103,12 +103,12 @@
 				try {
 					$result = $catproduct->catproductDelete($_GET['id']);
 					$catproduct = null;
-					header('Location: /admin/catproduct-list.php');
+					header('Location: /admin/catboutique-list.php');
 				} catch (Exception $e) {
 						echo 'Erreur contactez votre administrateur <br> :',  $e->getMessage() , '\n';
 						$catproduct = null;
 						if($e->getCode() == 1234){
-							header('Location: /admin/catproduct-list.php?message='.$e->getCode());
+							header('Location: /admin/catboutique-list.php?message='.$e->getCode());
 						}
 						exit();
 				}
