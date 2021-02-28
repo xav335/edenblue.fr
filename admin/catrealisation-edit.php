@@ -10,24 +10,7 @@ if (!empty($_GET)){ //Modif
 	$catrealisation =          new Catrealisation();
 	$catrealisation_image =    new Catrealisation_image();
 	
-	$result = $catrealisation->catproductGet($_GET['id']);
-	//print_r($result);exit();
-	if (empty($result)) {
-		$message = 'Aucun enregistrements';
-	} else {
-		$labelTitle = 'Catégorie N°: '. $_GET['id'];
-		$id_produit= 			$_GET['id'];
-		$label=  		$result[0]['label'];
-		$description= 		$result[0]['description'];
-		$image= 	$result[0]['image'];
-		if(empty($image) || !isset($image)){
-			$img = 'img/favicon.png';
-			$imgval = '';
-		} else {
-			$img ='/photos/catrealisation/thumbs'. $image;
-			$imgval = $image;
-		}
-	}
+	
 }
 
 
@@ -38,10 +21,10 @@ if ( !empty( $_GET ) ) {
 
     if ( !empty( $result ) ) {
         $titre_page = 	'Catégorie "'. $result[ 0 ][ "label" ] . '"';
-        $id =			$_GET[ "id" ];
-        $id_categorie = $result[ 0 ][ "id" ];
-        $nom = 			$result[ 0 ][ "nom" ];
-        $description = 	$result[ 0 ][ "description" ];
+        $labelTitle = 'Catégorie N°: '. $_GET['id'];
+		$id_produit= 			$_GET['id'];
+		$label=  		$result[0]['label'];
+		$description= 		$result[0]['description'];
         	
         	
         // ---- Liste des photos associées  ---- //
@@ -91,8 +74,9 @@ else {
 		<div class="row">
 			<h3><?php echo $labelTitle ?></h3>
 			<div class="col-xs-12 col-sm-12 col-md-12">
-				<form name="formulaire" class="form-horizontal" method="POST"  action="catrealisation-fp.php">
-					<input type="hidden" name="mon_action" id="mon_action" value="gerer">
+				<form name="formulaire" id="formulaire" class="form-horizontal" method="POST"  action="catrealisation-fp.php">
+					<input type="hidden" name="action" id="action" value="modif">
+					<input type="hidden" name="reference" value="catrealisation">
 					<input type="hidden" name="id" id="id" value="<?=$id_produit?>">
 					<input type="hidden" name="num_image" id="num_image" value="">
 					<div class="form-group" >
@@ -107,7 +91,7 @@ else {
 							<label for="titre">Choix des photos </label><br>
 							<input type="hidden" name="url0" id="url0" value=""><br>
 							<input type="hidden"  name="idImage"  id="idImage" value="">
-	            			<a href="javascript:openCustomRoxy('0')"><img id="" src="http://www.placehold.it/400x150/EFEFEF/171717&text=Choisir les images ici" id="customRoxyImage0" style="max-width:400px;"></a>
+	            			<a href="javascript:openCustomRoxy('0')"><img id="" src="img/choisirImageIci.png" id="customRoxyImage0" style="max-width:400px;"></a>
 					</div>
 					
 				
@@ -126,11 +110,11 @@ else {
 									<div class="col-md-3" style="text-align:center; margin-bottom:20px; border:0px solid red;">
 				            		  <img src="/photos/catrealisation/accueil<?php echo $_image["fichier"]?>" width="230" style="max-width:230px;"></a><br>
 				            		<?php if ( $_image[ "defaut" ] == 'non' ) : ?>
-				            		
 				            		      <input type='button' id='<?php echo $_image[ "num_image" ]?>' value='Par défaut' class='par_defaut' />
+				            		<?php endif; ?>      
 				            		      <input type='button' id='<?php echo $_image[ "num_image" ]?>' value='Supprimer' class='supprimer_image_precise' />
-									      </div>
-									<?php endif; ?>
+									</div>
+									
 									<?php if ( $cpt % 4 == 4 ) : ?>
 									   <div style='clear:both;'></div>
 									
@@ -140,13 +124,14 @@ else {
 							endif;
 							// ----------------------------------------------------------------------- //
 							?>
-						</div>
-				     <div class="col-md-12" style="margin-bottom:20px;">
-						<a href="catrealisation-list.php" class="btn btn-success col-sm-6" class="btn btn-default annuler"> Annuler </a>	
+					</div>
+				     
+			</div>
+			<div class="col-md-12" style="margin-bottom:20px;">
+						<a href="catrealisation-list.php" class="btn btn-success col-sm-6" class="btn btn-default annuler"> Retour </a>	
 						<button type="submit" class="btn btn-success col-sm-6" class="btn btn-default"> Valider </button>
 					</div>	
 				  </form>
-			</div>
 		</div>
 	</div>
 	
@@ -220,16 +205,16 @@ else {
 				//alert( "Image #" + val + " par defaut" );
 				
 				$( "#num_image" ).val( val );
-				$( "#mon_action" ).val( "par defaut" );
+				$( "#action" ).val( "par defaut" );
 				$( "#formulaire" ).submit();
 			});
 			
 			$( ".supprimer_image_precise" ).click(function() {
 				var val = $(this).attr( "id" );
 				//alert( "Suppression de l'image #" + val );
-				
+				//console.log(val);
 				$( "#num_image" ).val( val );
-				$( "#mon_action" ).val( "supprimer image" );
+				$( "#action" ).val( "supprimer image" );
 				$( "#formulaire" ).submit();
 			});
 			

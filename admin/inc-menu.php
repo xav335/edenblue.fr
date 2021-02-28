@@ -13,10 +13,7 @@
 	           				<li class="dropdown">
 					          	<a href="/admin/realisation-list.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Réalisations<span class="caret"></span></a>
 					          	<ul class="dropdown-menu" role="menu">
-					            	<li><a href="/admin/catrealisation-list.php">Catégories</a></li>
-					          		<li class="divider"></li>
-					            	<li><a href="/admin/realisation-edit.php">Ajout</a></li>
-					            	<li><a href="/admin/realisation-list.php">Modif / Suppr</a></li>
+					            	<li><a href="/admin/catrealisation-list.php">Gestion des galeries</a></li>
 					          	</ul>
 					        </li>
 					        

@@ -50,7 +50,7 @@
 					<div class="panel-body">
 						<form name="formulaire" class="form-horizontal" method="POST"
 							action="catrealisation-fp.php">
-							<input type="hidden" name="reference" value="categorie"> 
+							<input type="hidden" name="reference" value="catrealisation"> 
 							<input type="hidden" name="action" id="action" value="add">
 
 							<div class="row">
@@ -99,21 +99,21 @@
 					<?php echo $message?>
 				</div>
 
-			<form name="form_liste" id="form_liste" class="form-horizontal"
-				method="POST" action="catrealisation-fp.php">
-				<input type="hidden" name="action" id="action" value=""> <input
-					type="hidden" name="id_categorie" id="id_categorie" value=""> <input
-					type="hidden" name="ordre" id="ordre" value="">
+			<form name="form_liste" id="form_liste" class="form-horizontal" method="POST" action="catrealisation-fp.php">
+				<input type="hidden" name="reference" value="catrealisation">
+				<input type="hidden" name="action" id="action" value="add">
+				<input type="hidden" name="id_categorie" id="id_categorie" value=""> 
+				<input type="hidden" name="ordre" id="ordre" value="">
 			</form>
 
 			<table
 				class="table table-hover table-bordered table-condensed table-striped">
 				<thead>
 					<tr>
-						<th class="col-md-3" style="">Liste des catégories</th>
-						<th class="col-md-2" style="">Description</th>
-						<th class="col-md-1" style="">Image</th>
-						<th class="col-md-1" colspan="2" style="">Actions</th>
+						<th class="col-md-2" style="">Liste des catégories</th>
+						<th class="col-md-4" style="">Description</th>
+						<th class="col-md-1" colspan="2" style="">Photos</th>
+						<th class="col-md-1" colspan="2" style=""></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -131,7 +131,7 @@
 							else if ( $value[ "level" ] == 1 ) $classe_affichage = 'success';
 							else $classe_affichage = '';
 							
-							$description = ( !empty( $value[ "description" ] ) ) ? "texte OK" : "&nbsp;"; ?>
+							$description = ( !empty( $value[ "description" ] ) ) ? substr($value[ "description" ], 0, 90). " ... " : "&nbsp;"; ?>
 							
 							<tr class="<?php echo $classe_affichage?>">
 						<td>
@@ -149,21 +149,14 @@
 								</select>
 						<?php endif; ?>
 							
-									<a href="/admin/product-list.php?categorie="
-							<?php echo $value[ "id" ] ?>> <?php echo $decalage.$value[ "label" ] ?></a>
+									<a href="catrealisation-edit.php?id=<?php echo $value[ "id" ] ?>"> <?php echo $decalage.$value[ "label" ] ?></a>
 						</td>
 						<td> <?php echo $description ?></td>
 						<td>
-							
-						<?php	if( !empty( $value[ "image" ] ) ) : ?>
-								    <a href='/photos/catrealisation<?php echo $value[ "image" ] ?>'
-							target='_blank'><img alt="" width='110'
-								src="/photos/catrealisation/thumbs/<?php echo $value[ "image" ] ?>"></a>
-						<?php endif; ?>
+						
 
 							</td>
-						<td><a href="catrealisation-edit.php?id=<?php echo $value[ "id" ] ?>"><img
-								src='img/modif.png' width='30' alt='Modifier'></a></td>
+						<td><a href="catrealisation-edit.php?id=<?php echo $value[ "id" ] ?>"><img src='img/modif.png' width='30' alt='Modifier'></a></td>
 
 						<td>
 							<div style='display: none;'

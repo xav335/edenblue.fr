@@ -66,7 +66,7 @@ CREATE TABLE `catproduct` (
 
 LOCK TABLES `catproduct` WRITE;
 /*!40000 ALTER TABLE `catproduct` DISABLE KEYS */;
-INSERT INTO `catproduct` VALUES (113,'Accessoires','',0,'/Capture_d_e_cran_2021_02_21_a_1.23-113.png',0,100),(114,'Robots','',0,'/Capture_d_e_cran_2021_02_21_a_1.07-114.png',0,100),(115,'Produits','',0,'/Capture_d_e_cran_2021_02_21_a_1.50-115.png',0,100),(116,'Tuyaux','',113,'',1,100),(117,'Traitement piscine',NULL,115,NULL,1,100);
+INSERT INTO `catproduct` VALUES (113,'Accessoires','',0,'/Capture_d_e_cran_2021_02_21_a_1.23-113.png',0,3),(114,'Robots','',0,'/Capture_d_e_cran_2021_02_21_a_1.07-114.png',0,1),(115,'Produits','',0,'/Capture_d_e_cran_2021_02_21_a_1.50-115.png',0,2),(116,'Tuyaux','',113,'',1,100),(117,'Traitement piscine',NULL,115,NULL,1,100);
 /*!40000 ALTER TABLE `catproduct` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -86,7 +86,7 @@ CREATE TABLE `catrealisation` (
   `level` int(11) NOT NULL DEFAULT 0,
   `ordre` smallint(6) NOT NULL DEFAULT 100,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=115 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=117 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -95,7 +95,7 @@ CREATE TABLE `catrealisation` (
 
 LOCK TABLES `catrealisation` WRITE;
 /*!40000 ALTER TABLE `catrealisation` DISABLE KEYS */;
-INSERT INTO `catrealisation` VALUES (113,'Contemporaine','Eden Blue conçoit des piscines à votre image qui s’intègrent à votre environnement en le valorisant.\r\nLes bassins contemporains permettent d’obtenir des formes actuelles et tendances qui s’adapteront très facilement à une architecture moderne.',0,'/Gautier-113.jpg',0,100),(114,'A débordement','',0,'/couloir_de_nage-114.jpg',0,100);
+INSERT INTO `catrealisation` VALUES (113,'Contemporaines','Eden Blue conçoit des piscines à votre image qui s’intègrent à votre environnement en le valorisant.\r\nLes bassins contemporains permettent d’obtenir des formes actuelles et tendances qui s’adapteront très facilement à une architecture moderne.',0,'',0,3),(115,'Intérieure','klkmk',0,'',0,1);
 /*!40000 ALTER TABLE `catrealisation` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -112,7 +112,7 @@ CREATE TABLE `catrealisation_image` (
   `fichier` varchar(100) NOT NULL,
   `defaut` enum('oui','non') NOT NULL DEFAULT 'non',
   PRIMARY KEY (`num_image`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -121,7 +121,7 @@ CREATE TABLE `catrealisation_image` (
 
 LOCK TABLES `catrealisation_image` WRITE;
 /*!40000 ALTER TABLE `catrealisation_image` DISABLE KEYS */;
-INSERT INTO `catrealisation_image` VALUES (1,113,'/Gautier-113.jpg','non'),(2,113,'/couloir_de_nage-114.jpg','non');
+INSERT INTO `catrealisation_image` VALUES (36,115,'/20160926_164757-115.jpg','oui'),(37,115,'/20170601_154216-115.jpg','non'),(42,114,'/piscine_naturelle3-114.jpg','oui'),(43,114,'/piscine_naturelle1-114.jpg','non');
 /*!40000 ALTER TABLE `catrealisation_image` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -350,4 +350,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-02-21 22:41:38
+-- Dump completed on 2021-02-28 12:06:49
