@@ -1,6 +1,7 @@
 <?php include_once '../inc/inc.config.php'; ?>
 <?php 
 require 'classes/Authentication.php';
+require 'classes/Goldbook.php';
 session_start();
 
 $authentication = new Authentication();
@@ -12,7 +13,13 @@ if (!isset($_SESSION['accessGranted']) || !$_SESSION['accessGranted']) {
 		$_SESSION['accessGranted'] = true;
 	}
 }
-
+$goldbook = new Goldbook();
+$result = $goldbook->goldbookUnvalidateGet();
+if (empty($result)) {
+    $message = 'Tous les messages sont validés';
+} else {
+    $message = 'Vous avez '. $result[0]['nb'] .' message(s) à valider';
+}
 ?>
 <!doctype html>
 <html class="no-js" lang="en">
@@ -21,16 +28,30 @@ if (!isset($_SESSION['accessGranted']) || !$_SESSION['accessGranted']) {
 </head>
 <body>	
 	<?php require_once 'inc-menu.php';?>
-  	
+  	<div class="container">
 	<div class="row">
-		<div class="col-md-12">
-			<iframe id="laframe" src="https://logs.ovh.net/edenblue.fr/urchin6/" style="width:1100px;height:700px;" frameborder="1" ></iframe>
+		<div class="col-md-8">
+			<h3>Statistiques</h3>
+			<iframe id="laframe" src="http://www.iconeo.fr/awstats/awstats.pl?config=www.bsport.fr&framename=mainright" style="width:760px;height:700px;" frameborder="1" ></iframe>
 		</div>
-		
+		<div class="col-md-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Message du livre d'or à valider</h3>
+				</div>
+				<div class="panel-body">
+					<p>
+						<?php echo $message ?>
+					</p>
+					<p>
+						<a class="btn btn-success pull-right" href="/admin/goldbook-list.php">Modifier</a>
+					</p>
+				</div>
+			</div>
+		</div>
 	</div>	
-	
-	
-		
+	</div>	
+			
 </body>
 </html>
 
