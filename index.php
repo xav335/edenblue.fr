@@ -2,59 +2,12 @@
 <!doctype html>
 <html class="no-js" lang="fr">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include 'inc/inc.head.php'; ?>
     <title>Eden Blue</title>
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/foundation.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/app.css">
   </head>
 <body>
-  <div class="top">
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="large-6 medium-6 small-12 cell">
-          <img src="assets/img/logo-eden-blue.png" alt="logo Eden Blue" title="Eden Blue" data-animation="right">
-        </div>
-        <div class="large-6 medium-6 small-12 cell">
-          <div data-animation="left"><a href="tel:+33533880011">05 33 88 00 11</a> <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a></div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="">Nos réalisations</a></li>
-        <li><a href="spa.php">Spas</a></li>
-        <li><a href="">Aménagements extérieurs</a></li>
-        <li><a href="">Équipements Techniques de construction</a></li>
-        <li><a href="">Actualité</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="slider swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div style="background-image:url('assets/img/slider-1.jpg');" class="masked-element"></div>
-          <img src="assets/img/slider-1.jpg" alt="">
-          <p>La piscine sans limite</p>
-        </div>
-        <div class="swiper-slide">
-          <div style="background-image:url('assets/img/slider-2.jpg');" class="masked-element"></div>
-          <img src="assets/img/slider-2.jpg" alt="">
-          <p>La piscine sans limite</p>
-        </div>
-        <div class="swiper-slide">
-          <div style="background-image:url('assets/img/slider-3.jpg');" class="masked-element"></div>
-          <img src="assets/img/slider-3.jpg" alt="">
-          <p>La piscine sans limite</p>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-  </header>
+
+  <?php include 'inc/inc.header.php'; ?>
 
   <main class="grid-container">
 
@@ -143,42 +96,7 @@
 
   </main>
 
-  <footer>
-    <div class="grid-container">
-      <div class="grid-x grid-padding-x">
-        <div class="large-4 medium-4 small-12 cell">
-          <img src="assets/img/logo-label-propiscine.png" class="logo-partenaires" alt="logo partenaires" data-animation="right">
-        </div>
-        <div class="large-4 medium-4 small-12 cell">
-          <img src="assets/img/logo-meilleur-pisciniste.png" class="logo-partenaires" alt="logo partenaires" data-animation="top">
-        </div>
-        <div class="large-4 medium-4 small-12 cell">
-          <img src="assets/img/logo-fpp.png" class="logo-partenaires" alt="logo partenaires" data-animation="left">
-        </div>
-        <div class="large-12 cell">
-          <img src="assets/img/logo-eden-blue.png" alt="logo Eden Blue" title="Eden Blue">
-        </div>
-        <div itemscope itemtype="https://schema.org/LocalBusiness" class="large-12 cell">
-          <meta itemprop="name" content="Eden blue" />
-          <meta itemprop="url" content="https://www.edenblue.fr" />
-          <meta itemprop="openingHours" content="Mo-Sa 9:00-12:00" />
-          <meta itemprop="openingHours" content="Mo-Sa 14:00-19:00" />
-          <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><span itemprop="streetAddress">12 av Georges Brassens</span> <span itemprop="postalCode">33240</span> <span itemprop="addressLocality">Peujard</span> - Tél. <a href="+33533880011" itemprop="telephone">05 33 88 00 11</a> - <a href="mailto:contact@edenblue.fr" itemprop="email">contact@edenblue.fr</a></p>
-          <p>
-            Nos horaires<br/>
-            Du Lundi au Samedi de 9h00 - 12h00 et de 14h00 - 19h00
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="large-12 cell">
-      <p>©2021 - Eden Blue Piscines - <a href="">Mentions légales</a> - <a href="">Politique de protection des données</a> - <a href="">Plan du site</a></p>
-    </div>
-  </footer>
+  <?php include 'inc/inc.footer.php'; ?>
 
-  <script src="assets/js/vendor.js"></script>
-  <script src="assets/js/foundation.js"></script>
-  <script src="assets/js/swiper-bundle.min.js"></script>
-  <script src="assets/js/app.js"></script>
 </body>
 </html>
