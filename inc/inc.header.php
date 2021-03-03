@@ -19,7 +19,7 @@
     <nav>
       <ul>
         <li>
-            <a href="nos-realisations.php" <?php if($pagename[0] == 'nos-realisations') :?>class="active"<?php endif; ?>>Nos réalisations</a>
+            <a href="nos-realisations.php" <?php if(!empty($pagename) && $pagename[0] == 'nos-realisations') :?>class="active"<?php endif; ?>>Nos réalisations</a>
             <ul>
                 <li><a href="nos-realisations-piscine-contemporaine.php">Piscine contemporaine</a></li>
                 <li><a href="#">Piscine natuelle</a></li>
@@ -28,16 +28,16 @@
                 <li><a href="#">Piscine intérieure</a></li>
             </ul>
         </li>
-        <li><a href="spa.php" <?php if($pagename[0] == 'spa') :?>class="active"<?php endif; ?>>Spas</a></li>
-        <li><a href="" <?php if($pagename[0] == 'amenagements-exterieurs') :?>class="active"<?php endif; ?>>Aménagements extérieurs</a></li>
-        <li><a href="" <?php if($pagename[0] == 'equipements-techniques-de-construction') :?>class="active"<?php endif; ?>>Équipements Techniques de construction</a></li>
-        <li><a href="" <?php if($pagename[0] == 'actualite') :?>class="active"<?php endif; ?>>Actualité</a></li>
-        <li><a href="" <?php if($pagename[0] == 'contact') :?>class="active"<?php endif; ?>>Contact</a></li>
+        <li><a href="spa.php" <?php if(!empty($pagename) && $pagename[0] == 'spa') :?>class="active"<?php endif; ?>>Spas</a></li>
+        <li><a href="" <?php if(!empty($pagename) && $pagename[0] == 'amenagements-exterieurs') :?>class="active"<?php endif; ?>>Aménagements extérieurs</a></li>
+        <li><a href="" <?php if(!empty($pagename) && $pagename[0] == 'equipements-techniques-de-construction') :?>class="active"<?php endif; ?>>Équipements Techniques de construction</a></li>
+        <li><a href="" <?php if(!empty($pagename) && $pagename[0] == 'actualite') :?>class="active"<?php endif; ?>>Actualité</a></li>
+        <li><a href="" <?php if(!empty($pagename) && $pagename[0] == 'contact') :?>class="active"<?php endif; ?>>Contact</a></li>
       </ul>
     </nav>
 
     <?php
-        switch ($pagename[0]) {
+        switch (!empty($pagename) && $pagename[0]) {
             case 'spa':
     ?>
         <div class="slider swiper-container">
