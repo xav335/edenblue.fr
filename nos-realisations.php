@@ -35,7 +35,7 @@ $result = $catproduct->catrealisationGetParent();
     <?php if ( !empty( $result ) ) :    ?>
        <?php foreach ( $result as $value ) :  ?>
       <div class="large-4 medium-4 small-12 cell">
-        <a href="nos-realisations-piscine-contemporaine.html">
+        <a href="nos-realisations-detail.php?id=<?php echo $value['id']?>">
           <figure data-animation="top">
             <img src="photos/catrealisation/normale<?php echo $value['fichier']?>" alt="Nos réalisations contemporaines">
             <figcaption><?php echo $value['label']?></figcaption>
