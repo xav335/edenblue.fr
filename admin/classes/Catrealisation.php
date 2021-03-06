@@ -16,11 +16,27 @@ class Catrealisation extends StorageManager {
 		//print_r($requete);
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
-		while( $row = mysqli_fetch_assoc( $result)){
+		while( ($row = mysqli_fetch_assoc( $result)) != false) {
 			$new_array[] = $row;
 		}
 		$this->dbDisConnect();
 		return $new_array;
+	}
+	
+	public function catrealisationGetParent(){
+	    $this->dbConnect();
+	    $requete = "SELECT * FROM `catrealisation` 
+	        INNER JOIN catrealisation_image ON catrealisation.id = catrealisation_image.num_produit
+	        WHERE parent=0  AND catrealisation_image.defaut='oui'
+	            ORDER BY ordre" ;
+	    //print_r($requete);
+	    $new_array = null;
+	    $result = mysqli_query($this->mysqli,$requete);
+	    while( ($row = mysqli_fetch_assoc( $result)) != false) {
+	        $new_array[] = $row;
+	    }
+	    $this->dbDisConnect();
+	    return $new_array;
 	}
 	
 	public function getProductsByCategorie($id){
@@ -35,7 +51,7 @@ class Catrealisation extends StorageManager {
 		//print_r($requete);exit();
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
-		while( $row = mysqli_fetch_assoc( $result)){
+		 while( ($row = mysqli_fetch_assoc( $result)) != false) {
 			$new_array[] = $row;
 		}
 		$this->dbDisConnect();
@@ -51,7 +67,7 @@ class Catrealisation extends StorageManager {
 		//print_r($requete);exit();
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
-		while( $row = mysqli_fetch_assoc( $result)){
+		 while( ($row = mysqli_fetch_assoc( $result)) != false) {
 			$new_array[] = $row;
 		}
 		return $new_array;
@@ -66,7 +82,7 @@ class Catrealisation extends StorageManager {
 		//print_r($requete);exit();
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
-		while( $row = mysqli_fetch_assoc( $result)){
+		 while( ($row = mysqli_fetch_assoc( $result)) != false) {
 			$new_array[] = $row;
 		}
 		return $new_array;
@@ -81,7 +97,7 @@ class Catrealisation extends StorageManager {
 		//print_r($requete);exit();
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
-		while( $row = mysqli_fetch_assoc( $result)){
+		 while( ($row = mysqli_fetch_assoc( $result)) != false) {
 			$new_array[] = $row;
 		}
 		return $new_array;
@@ -136,7 +152,7 @@ class Catrealisation extends StorageManager {
 		if (!$result) {
 			throw new Exception($sql);
 		}
-		while( $row = mysqli_fetch_assoc( $result)){
+		 while( ($row = mysqli_fetch_assoc( $result)) != false) {
 			$new_array[] = $row;
 		}
 		$this->dbDisConnect();
@@ -189,7 +205,7 @@ class Catrealisation extends StorageManager {
 		if (!$result) {
 			throw new Exception($sql);
 		}
-		while( $row = mysqli_fetch_assoc( $result)){
+		 while( ($row = mysqli_fetch_assoc( $result)) != false) {
 			$new_array[] = $row;
 		}
 		$this->dbDisConnect();
@@ -207,7 +223,7 @@ class Catrealisation extends StorageManager {
 		if (!$result) {
 			throw new Exception($sql);
 		}
-		while( $row = mysqli_fetch_assoc( $result)){
+		 while( ($row = mysqli_fetch_assoc( $result)) != false) {
 			$new_array[] = $row;
 		}
 		$this->dbDisConnect();
@@ -311,7 +327,7 @@ class Catrealisation extends StorageManager {
 		if (!$result) {
 			throw new Exception($sql);
 		}
-		while( $row = mysqli_fetch_assoc( $result)){
+		 while( ($row = mysqli_fetch_assoc( $result)) != false) {
 			$new_array[] = $row;
 		}
 		$this->dbDisConnect();
@@ -350,7 +366,7 @@ class Catrealisation extends StorageManager {
 		//print_r($requete);
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
-		while( $row = mysqli_fetch_assoc( $result)){
+		 while( ($row = mysqli_fetch_assoc( $result)) != false) {
 			$new_array[] = $row;
 		}
 		$this->dbDisConnect();
@@ -489,7 +505,7 @@ class Catrealisation extends StorageManager {
 		if (!$result) {
 			throw new Exception('Erreur Mysql productNumberGet sql = : '.$sql);
 		}
-		while( $row = mysqli_fetch_assoc( $result)){
+		 while( ($row = mysqli_fetch_assoc( $result)) != false) {
 			$new_array[] = $row;
 		}
 		$this->dbDisConnect();
@@ -610,7 +626,7 @@ class Catrealisation extends StorageManager {
 			if ( $debug ) echo $sql . "<b>";
 			$new_array = null;
 			$result = mysqli_query($this->mysqli,$sql);
-			while( $row = mysqli_fetch_assoc( $result)){
+			 while( ($row = mysqli_fetch_assoc( $result)) != false) {
 				$resultdetailCat = $this->getCategorieByProduct($row['id']);
 				$resultdetailRubrique = $this->getRubriqueByProduct($row['id']);
 				$resultdetailCouleur = $this->getCouleurByProduct($row['id']);
@@ -895,7 +911,7 @@ class Catrealisation extends StorageManager {
 			//print_r($sql);
 			$new_array = null;
 			$result = mysqli_query($this->mysqli,$sql);
-			while( $row = mysqli_fetch_assoc( $result)){
+			 while( ($row = mysqli_fetch_assoc( $result)) != false) {
 				$new_array[] = $row;
 			}
 				
@@ -923,7 +939,7 @@ class Catrealisation extends StorageManager {
 	    //print_r($sql);
 	    $new_array = null;
 	    $result = mysqli_query($this->mysqli,$sql);
-	    while( $row = mysqli_fetch_assoc( $result)){
+	     while( ($row = mysqli_fetch_assoc( $result)) != false) {
 	      $new_array[] = $row;
 	    }
 	
@@ -1016,7 +1032,7 @@ class Catrealisation extends StorageManager {
 		if ( $debug ) echo $sql . "<br>";
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$sql);
-		while( $row = mysqli_fetch_assoc( $result)){
+		 while( ($row = mysqli_fetch_assoc( $result)) != false) {
 			$new_array[] = $row;
 		}
 		

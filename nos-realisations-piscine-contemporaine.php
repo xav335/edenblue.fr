@@ -14,6 +14,10 @@
     <section class="grid-x grid-padding-x" role="gallery">
       <div class="large-12 medium-12 small-12 cell">
         <h1>Piscine contemporaine</h1>
+         <p data-animation="top">
+            Eden Blue conçoit des piscines à votre image qui s’intègrent à votre environnement  en le valorisant.
+            Les bassins contemporains permettent d’obtenir des formes actuelles et tendances qui s’adapteront très facilement à une architecture moderne.
+         </p>
       </div>
       <div class="large-3 medium-4 small-12 cell">
         <a data-fancybox="<?php echo $pagename[0]; ?>" href="http://edenblue.fr/wp-content/gallery/www-edenblue-fr_piscine-contemporaine/www-edenblue-fr_piscine-contemporaine-1.jpg"><img src="http://edenblue.fr/wp-content/gallery/www-edenblue-fr_piscine-contemporaine/www-edenblue-fr_piscine-contemporaine-1.jpg" alt="Nom de la photo" data-animation="top"></a>

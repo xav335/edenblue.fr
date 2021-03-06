@@ -1,4 +1,12 @@
+<?php 
+include_once 'inc/inc.config.php';
+include_once 'admin/classes/utils.php';
+require 'admin/classes/Catrealisation.php';
 
+$catproduct = new Catrealisation();
+$result = $catproduct->catrealisationGetParent();
+//print_r($result);
+?>
 <!doctype html>
 <html class="no-js" lang="fr">
   <head>
@@ -19,47 +27,24 @@
     <section class="grid-x grid-padding-x" role="gallery">
       <div class="large-12 medium-12 small-12 cell">
         <h1>Nos realisations</h1>
+         <p data-animation="top">
+          <strong>Parce-que vos rêves sont notre préoccupation</strong><br/><br/>
+            Nous vous invitons à visiter notre galerie, qui fera naître en vous l’envie et l’inspiration.
+            Choisissez le style de piscine le plus adapté à vos besoin : couloir de nage, à débordement, miroir et bien d’autre encore…</p>
       </div>
+    <?php if ( !empty( $result ) ) :    ?>
+       <?php foreach ( $result as $value ) :  ?>
       <div class="large-4 medium-4 small-12 cell">
         <a href="nos-realisations-piscine-contemporaine.html">
           <figure data-animation="top">
-            <img src="http://edenblue.fr/wp-content/gallery/www-edenblue-fr_piscine-contemporaine/www-edenblue-fr_piscine-contemporaine-1.jpg" alt="Nos réalisations contemporaines">
-            <figcaption>Contemporaines</figcaption>
+            <img src="photos/catrealisation/normale<?php echo $value['fichier']?>" alt="Nos réalisations contemporaines">
+            <figcaption><?php echo $value['label']?></figcaption>
           </figure>
         </a>
       </div>
-      <div class="large-4 medium-4 small-12 cell">
-        <a href="nos-realisations-piscine-naturelle.html">
-          <figure data-animation="top">
-            <img src="http://edenblue.fr/wp-content/gallery/www-edenblue-fr_piscine-naturelle/www-edenblue-fr_piscinenaturelle2.jpg" alt="Nos réalisations contemporaines">
-            <figcaption>Naturelles</figcaption>
-          </figure>
-        </a>
-      </div>
-      <div class="large-4 medium-4 small-12 cell">
-        <a href="nos-realisations-piscine-a-debordement.html">
-          <figure data-animation="top">
-            <img src="http://edenblue.fr/wp-content/gallery/www-edenblue-fr_piscine-a-debordement/www-edenblue-fr_debordement6.jpg" alt="Nos réalisations à débordement">
-            <figcaption>À débordement</figcaption>
-          </figure>
-        </a>
-      </div>
-      <div class="large-4 medium-4 small-12 cell">
-        <a href="nos-realisations-piscine-miroir.html">
-          <figure data-animation="top">
-            <img src="http://edenblue.fr/wp-content/gallery/www-edenblue-fr_piscine-miroir/thumbs/thumbs_www-edenblue-fr_mpiscinemiroire1.jpg" alt="Nos réalisations miroir">
-            <figcaption>Miroir</figcaption>
-          </figure>
-        </a>
-      </div>
-      <div class="large-4 medium-4 small-12 cell">
-        <a href="nos-realisations-piscine-interieure.html">
-          <figure data-animation="top">
-            <img src="http://edenblue.fr/wp-content/gallery/www-edenblue-fr_piscine-contemporaine/www-edenblue-fr_piscine-contemporaine-1.jpg" alt="Nos réalisations intérieures">
-            <figcaption>Intérieures</figcaption>
-          </figure>
-        </a>
-      </div>
+      <?php endforeach;?>
+      
+    <?php endif;?>  
     </section>
 
   </main>

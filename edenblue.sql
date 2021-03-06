@@ -66,7 +66,7 @@ CREATE TABLE `catproduct` (
 
 LOCK TABLES `catproduct` WRITE;
 /*!40000 ALTER TABLE `catproduct` DISABLE KEYS */;
-INSERT INTO `catproduct` VALUES (113,'Accessoires','',0,'/Capture_d_e_cran_2021_02_21_a_1.23-113.png',0,3),(114,'Robots','',0,'/Capture_d_e_cran_2021_02_21_a_1.07-114.png',0,1),(115,'Produits','',0,'/Capture_d_e_cran_2021_02_21_a_1.50-115.png',0,2),(116,'Tuyaux','',113,'',1,100),(117,'Traitement piscine',NULL,115,NULL,1,100);
+INSERT INTO `catproduct` VALUES (113,'Accessoires','',0,'/Capture_d_e_cran_2021_02_21_a_1.23-113.png',0,2),(114,'Robots','',0,'/Capture_d_e_cran_2021_02_21_a_1.07-114.png',0,1),(115,'Produits','',0,'/Capture_d_e_cran_2021_02_21_a_1.50-115.png',0,3),(116,'Tuyaux','',113,'',1,100),(117,'Traitement piscine',NULL,115,NULL,1,100);
 /*!40000 ALTER TABLE `catproduct` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -86,7 +86,7 @@ CREATE TABLE `catrealisation` (
   `level` int(11) NOT NULL DEFAULT 0,
   `ordre` smallint(6) NOT NULL DEFAULT 100,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=117 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=124 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -95,7 +95,7 @@ CREATE TABLE `catrealisation` (
 
 LOCK TABLES `catrealisation` WRITE;
 /*!40000 ALTER TABLE `catrealisation` DISABLE KEYS */;
-INSERT INTO `catrealisation` VALUES (113,'Contemporaines','Eden Blue conçoit des piscines à votre image qui s’intègrent à votre environnement en le valorisant.\r\nLes bassins contemporains permettent d’obtenir des formes actuelles et tendances qui s’adapteront très facilement à une architecture moderne.',0,'',0,3),(115,'Intérieure','klkmk',0,'',0,1);
+INSERT INTO `catrealisation` VALUES (120,'Piscines miroir','Eden Blue vous offre la possibilité de concrétiser vos rêves les plus fous en s’appuyant sur son expérience\r\ndans la réalisation de piscines sur mesure haut de gamme.\r\nEn créant  une piscine miroir vous aurez l’occasion d’allier esthétique et bien-être tout en réalisant un projet unique.\r\nCes bassins vous permettront d’obtenir les reflets et les jeux de lumière que vous souhaitez mettre en avant dans votre projet\r\ntout en assurant un maximum de confort..',0,'',0,100),(121,'Piscines intérieures','La société Eden Blue est spécialisée dans la conception et la réalisation de piscines intérieures avec des prestations haut de gamme et entièrement sur mesure. Cette configuration de piscine vous permet de profiter des joies de l’eau tout au long de l’année et de créer une ambiance zen au sein de votre foyer.',0,'',0,100);
 /*!40000 ALTER TABLE `catrealisation` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -112,7 +112,7 @@ CREATE TABLE `catrealisation_image` (
   `fichier` varchar(100) NOT NULL,
   `defaut` enum('oui','non') NOT NULL DEFAULT 'non',
   PRIMARY KEY (`num_image`)
-) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=62 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -121,7 +121,7 @@ CREATE TABLE `catrealisation_image` (
 
 LOCK TABLES `catrealisation_image` WRITE;
 /*!40000 ALTER TABLE `catrealisation_image` DISABLE KEYS */;
-INSERT INTO `catrealisation_image` VALUES (36,115,'/20160926_164757-115.jpg','oui'),(37,115,'/20170601_154216-115.jpg','non'),(42,114,'/piscine_naturelle3-114.jpg','oui'),(43,114,'/piscine_naturelle1-114.jpg','non');
+INSERT INTO `catrealisation_image` VALUES (36,115,'/20160926_164757-115.jpg','non'),(37,115,'/20170601_154216-115.jpg','non'),(42,114,'/piscine_naturelle3-114.jpg','oui'),(43,114,'/piscine_naturelle1-114.jpg','non'),(44,115,'/piscine beton gironde-115.jpg','oui'),(45,113,'/21-113.jpg','oui'),(46,115,'/gautier_1-115.jpg','non'),(47,118,'/piscine_naturelle2-118.jpg','non'),(48,118,'/piscine_naturelle1-118.jpg','oui'),(49,119,'/20141105_154704-119.jpg','oui'),(50,119,'/21-119.jpg','non'),(51,119,'/22-119.jpg','non'),(55,121,'/piscine_en_forme_libre0-121.jpg','non'),(58,120,'/20141105_154704-120.jpg','non'),(59,120,'/21-120.jpg','non'),(60,120,'/22-120.jpg','oui'),(61,121,'/20170831_103833-121.jpg','oui');
 /*!40000 ALTER TABLE `catrealisation_image` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -181,7 +181,7 @@ CREATE TABLE `goldbook` (
 
 LOCK TABLES `goldbook` WRITE;
 /*!40000 ALTER TABLE `goldbook` DISABLE KEYS */;
-INSERT INTO `goldbook` VALUES (13,'2021-02-20 00:00:00','XAVIER GONZALEZ','zalez@gmail.com','Très sérieux très compétant je recommande !',1);
+INSERT INTO `goldbook` VALUES (13,'2021-02-20 00:00:00','XAVIER GONZALEZ','zalez@gmail.com','Très sérieux très compétant je recommande !',0);
 /*!40000 ALTER TABLE `goldbook` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -350,4 +350,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-02-28 12:06:49
+-- Dump completed on 2021-03-06 10:03:57

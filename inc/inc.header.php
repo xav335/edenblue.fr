@@ -36,10 +36,8 @@
       </ul>
     </nav>
 
-    <?php
-        switch (!empty($pagename) && $pagename[0]) {
-            case 'spa':
-    ?>
+    <?php if (!empty($pagename) && $pagename[0]=='spa') :?>
+
         <div class="slider swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -55,11 +53,9 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
-    <?php
-            break;
         
-        default:
-    ?>
+    <?php else :  ?>
+    
         <div class="slider swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -80,8 +76,7 @@
             </div>
             <div class="swiper-pagination"></div>
             </div>
-    <?php
-            break;
-    } ?>
+            
+    <?php endif; ?>
     
   </header>
