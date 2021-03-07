@@ -4,7 +4,7 @@
     <?php include 'inc/inc.head.php'; ?>
     <title>Eden Blue</title>
   </head>
-<body class="not-home">
+<body class="spa not-home">
 
 <?php include 'inc/inc.header.php'; ?>
 
@@ -12,9 +12,13 @@
 
     <section class="grid-x grid-padding-x" data-role="introduction">
       <div class="large-12 cell">
-        <h1 data-animation="top">Spa, prenez soin de vous</h1>
+        <h1 data-animation="top">Serie Sensation</h1>
+        <h3>Performances au sommet</h3>
         <p data-animation="top">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan urna vitae malesuada fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt justo vitae luctus laoreet. Mauris quis ipsum sit amet leo tincidunt volutpat sed convallis mauris.
+        Cette gamme de spas équipée de tous les développements issus des bureaux d’ingénierie de DYNASTY saura vous apporter des massages impressionnants, 
+        enrobants, dynamisants ou relaxants. L'équilibre parfait du massage doux et du massage tonique dans un même spa. 
+        L’incarnation parfaite de la balnéothérapie poussée à son paroxysme.
+        
         </p>
       </div>
     

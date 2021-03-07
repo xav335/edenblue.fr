@@ -18,7 +18,10 @@
           <meta itemprop="url" content="https://www.edenblue.fr" />
           <meta itemprop="openingHours" content="Mo-Sa 9:00-12:00" />
           <meta itemprop="openingHours" content="Mo-Sa 14:00-19:00" />
-          <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress"><span itemprop="streetAddress">12 av Georges Brassens</span> <span itemprop="postalCode">33240</span> <span itemprop="addressLocality">Peujard</span> - Tél. <a href="+33533880011" itemprop="telephone">05 33 88 00 11</a> - <a href="mailto:contact@edenblue.fr" itemprop="email">contact@edenblue.fr</a></p>
+          <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+            <span itemprop="streetAddress">12 av Georges Brassens</span> <span itemprop="postalCode">33240</span> 
+            <span itemprop="addressLocality">Peujard</span> - Tél. <a href="+33533880011" itemprop="telephone">05 33 88 00 11</a> - <a href="mailto:contact@edenblue.fr" itemprop="email">contact@edenblue.fr</a>
+          </p>
           <p>
             Nos horaires<br/>
             Du Lundi au Samedi de 9h00 - 12h00 et de 14h00 - 19h00
@@ -27,7 +30,7 @@
       </div>
     </div>
     <div class="large-12 cell">
-      <p>©2021 - Eden Blue Piscines - <a href="">Mentions légales</a> - <a href="">Politique de protection des données</a> - <a href="">Plan du site</a></p>
+      <p itemprop="copyright">©2021 - Eden Blue Piscines - <a href="">Mentions légales</a> - <a href="">Politique de protection des données</a> - <a href="">Plan du site</a></p>
     </div>
   </footer>
 

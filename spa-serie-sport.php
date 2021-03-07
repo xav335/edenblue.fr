@@ -4,15 +4,18 @@
     <?php include 'inc/inc.head.php'; ?>
     <title>Eden Blue</title>
   </head>
-<body class="not-home">
+<body class="spa not-home">
 
 <?php include 'inc/inc.header.php'; ?>
 
   <main class="grid-container">
 
     <section class="grid-x grid-padding-x" data-role="introduction">
-      <div class="large-12 cell">
-        <h1 data-animation="top">Serie sport</h1>
+         <div class="large-12 medium-12 small-12 cell">
+             <h1 data-animation="top">Serie sport</h1>
+         </div>
+       <div class="large-6 medium-6 small-12 cell">
+       
         <h3>Activite physique et detente</h3> 
         
         <p data-animation="top">
@@ -22,7 +25,9 @@
             Cet espace convivial consacré à la relaxation entre amis, en famille ou seul vous permettra de profiter pleinement des nombreuses possibilités de massage.
         </p>
       </div>
-      
+         <div class="large-6 medium-6 small-12 cell">
+            <img src="assets/img/aquex14.jpg" alt="" />
+        </div>
      
     </section>
 

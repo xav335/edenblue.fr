@@ -26,11 +26,12 @@ $result = $catproduct->catrealisationGetParent();
 
     <section class="grid-x grid-padding-x" role="gallery">
       <div class="large-12 medium-12 small-12 cell">
-        <h1>Nos realisations</h1>
-         <p data-animation="top">
-          <strong>Parce-que vos rêves sont notre préoccupation</strong><br/><br/>
-            Nous vous invitons à visiter notre galerie, qui fera naître en vous l’envie et l’inspiration.
-            Choisissez le style de piscine le plus adapté à vos besoin : couloir de nage, à débordement, miroir et bien d’autre encore…</p>
+        <h1>Nos realisations</h1> 
+            <h3>Parce-que vos reves sont notre preoccupation</h3>
+            <p data-animation="top">
+                Nous vous invitons à visiter notre galerie, qui fera naître en vous l’envie et l’inspiration.
+                Choisissez le style de piscine le plus adapté à vos besoin : couloir de nage, à débordement, miroir et bien d’autre encore…
+            </p>
       </div>
     <?php if ( !empty( $result ) ) :    ?>
        <?php foreach ( $result as $value ) :  ?>

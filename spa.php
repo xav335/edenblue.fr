@@ -14,8 +14,9 @@
       <div class="large-12 cell">
         <h1 data-animation="top">Spa, prenez soin de vous</h1>
         <p data-animation="top">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan urna vitae malesuada fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt justo vitae luctus laoreet. Mauris quis ipsum sit amet leo tincidunt volutpat sed convallis mauris.
+            Sortez de votre vie trépidante en plongeant dans les eaux apaisantes, effervescentes et cristallines des Spa Dynatsty! 
         </p>
+       
       </div>
       <div class="large-12 cell">
         <div class="grid-x grid-padding-x">
@@ -23,15 +24,15 @@
           <div class="large-4 cell"><img src="assets/img/photo-spa-1.png" alt="" class="img-spa-top" /></div>
           <div class="large-4 cell"></div>
           <div class="large-4 cell text-right">
-            <div class="legende">coloris multiples</div>
+            <div class="legende">Serie Club<br/>Serie sensation</div>
             <img src="assets/img/photo-spa-2.png" alt="" class="img-spa" data-animation="right" />
           </div>
           <div class="large-4 cell"></div>
           <div class="large-4 cell">
             <img src="assets/img/photo-spa-4.png" alt="" class="img-spa" data-animation="left" />
             <div class="legende">
-              large choix de<br/>
-              combinaisons possibles
+              Serei prestige <br/>
+              Serie sport
             </div>
           </div>
           <div class="large-4 cell"></div>
@@ -39,11 +40,22 @@
           <div class="large-4 cell"></div>
         </div>
       </div>
+     </section>  
+     
+     <section class="grid-x grid-padding-x" data-role="infos">
       <div class="large-12 cell">
-        <h2 data-animation="top">Des finitions parfaites</h2>
+        <h2 data-animation="top">Un large choix d'equipements</h2>
         <p data-animation="top">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan urna vitae malesuada fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt justo vitae luctus laoreet. Mauris quis ipsum sit amet leo tincidunt volutpat sed convallis mauris.
+           
         </p>
+        <ul>
+            <li>Un choix d’équipement et de finitions à la hauteur suivant les séries</li>
+             <li>Système de traitement Ozonateur / UV qui stérilise et désinfecte l’eau</li>
+             <li>Le système Aqukinetic au cœur des soin</li>
+             <li>Système d’isolation Ecologique RMAX</li>
+             <li>La chromothérapie et la réflexologie</li>
+             <li>La gestion de votre spa par clavier tactile couleur</li>
+         </ul>
       </div>
     </section>
 

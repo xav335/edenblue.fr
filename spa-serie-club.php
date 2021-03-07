@@ -4,7 +4,7 @@
     <?php include 'inc/inc.head.php'; ?>
     <title>Eden Blue</title>
   </head>
-<body class="not-home">
+<body class="spa not-home">
 
 <?php include 'inc/inc.header.php'; ?>
 

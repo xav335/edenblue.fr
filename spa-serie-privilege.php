@@ -4,7 +4,7 @@
     <?php include 'inc/inc.head.php'; ?>
     <title>Eden Blue</title>
   </head>
-<body class="not-home">
+<body class="spa not-home">
 
 <?php include 'inc/inc.header.php'; ?>
 
@@ -13,9 +13,10 @@
     <section class="grid-x grid-padding-x" data-role="introduction">
       <div class="large-12 cell">
         <h1 data-animation="top">Serie Privilege</h1>
-        <h3></h3>
+        <h3>Le coeur de gamme</h3>
         <p data-animation="top">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan urna vitae malesuada fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt justo vitae luctus laoreet. Mauris quis ipsum sit amet leo tincidunt volutpat sed convallis mauris.
+            La série Privilège offre des spas équipes de plus de jets, de lumières et d’options. Grâce à  leur jupe en résine, ces spas possèdent une allure très tendance.
+            En intégrant des équipements habituellement réservés aux spas du segment supérieur, il se démarque plus que jamais de ses concurrents de la catégorie généraliste.
         </p>
       </div>
      </section>
