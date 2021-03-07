@@ -24,13 +24,13 @@ $tva = 0.2;
 // Frais de livraison par defaut
 $totalLiv = 10; //frais de livraison TTC
 
-$mailCustomer = "contact@edenblue.fr";
+$mailCustomer = "fjavi.gonzalez@gmail.com";
 $mailNameCustomer = "EdenBlue";
 $urlSiteDefault = "http://www.edenblue.fr/";
 $facebookLink = "https://www.facebook.com/edenbluepiscine";
 
 //mail d'envoi
 //$mailContact = "fjavi.gonzalez@gmail.com";
-$mailContact = "contact@edenblue.fr";
+$mailContact = "fjavi.gonzalez@gmail.com";
 $mailBcc = "fjavi.gonzalez@gmail.com,xav335@hotmail.com,xavier.gonzalez@laposte.net,jav_gonz@yahoo.com";
 //$mailBcc = "edenblue33@gmail.com,fjavi.gonzalez@gmail.com";
