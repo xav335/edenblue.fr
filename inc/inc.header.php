@@ -1,4 +1,14 @@
-<?php preg_match('#(?<=\/)[^\/]*(?=\.\w+$)#i', $_SERVER['REQUEST_URI'], $pagename); ?>
+<?php preg_match('#(?<=\/)[^\/]*(?=\.\w+$)#i', $_SERVER['REQUEST_URI'], $pagename); 
+
+include_once 'inc/inc.config.php';
+include_once 'admin/classes/utils.php';
+require_once 'admin/classes/Catrealisation.php';
+
+$catproduct2 = new Catrealisation();
+$result = $catproduct2->catrealisationGetParent();
+//print_r($result);
+
+?>
 <div class="top">
     <div class="grid-container">
       <div class="grid-x grid-padding-x">
@@ -21,11 +31,11 @@
         <li>
             <a href="nos-realisations.php" <?php if(!empty($pagename) && $pagename[0] == 'nos-realisations') :?>class="active"<?php endif; ?>>Nos réalisations</a>
             <ul>
-                <li><a href="nos-realisations-piscine-contemporaine.php">Piscine contemporaine</a></li>
-                <li><a href="#">Piscine natuelle</a></li>
-                <li><a href="#">Piscine à débordement</a></li>
-                <li><a href="#">Piscine miroir</a></li>
-                <li><a href="#">Piscine intérieure</a></li>
+             <?php if ( !empty( $result ) ) :?>
+                <?php foreach ( $result as $value ) :  ?>
+                <li><a href="nos-realisations-detail.php?id=<?php echo $value['id']?>"><?php echo $value['label']?></a></li>
+                <?php endforeach;?>
+             <?php endif;?> 
             </ul>
         </li>
         <li><a href="spa.php" <?php if(!empty($pagename) && $pagename[0] == 'spa') :?>class="active"<?php endif; ?>>Spas</a></li>

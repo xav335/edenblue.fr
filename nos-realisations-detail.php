@@ -1,8 +1,8 @@
 <?php 
 include_once 'inc/inc.config.php';
 include_once 'admin/classes/utils.php';
-require 'admin/classes/Catrealisation.php';
-require 'admin/classes/Catrealisation_image.php';
+require_once 'admin/classes/Catrealisation.php';
+require_once 'admin/classes/Catrealisation_image.php';
 
 if (!empty($_GET)){
     $catrealisation =          new Catrealisation();
@@ -35,18 +35,18 @@ if (!empty($_GET)){
       <div class="large-12 medium-12 small-12 cell">
         <h1><?php echo $titre ?></h1>
          <p data-animation="top">
-            <?php echo $description ?>
+            <?php echo nl2br($description) ?>
          </p>
       </div>
-    <?php if ( !empty( $liste_image ) ) :
-				foreach( $liste_image as $_image ) : ?>
+    <?php if ( !empty( $liste_image ) ) : ?>
+		<?php foreach( $liste_image as $_image ) : ?>
 				
 	  <div class="large-3 medium-4 small-12 cell">
-        <a data-fancybox="<?php echo $pagename[0]; ?>" href="photos/catrealisation/normale<?php  echo $_image["fichier"]?>"><img src="photos/catrealisation/normale<?php echo  $_image["fichier"]?>" alt="Nom de la photo" data-animation="top"></a>
+        <a data-fancybox="<?php echo $titre ?>" href="photos/catrealisation/normale<?php  echo $_image["fichier"]?>"><img src="photos/catrealisation/normale<?php echo  $_image["fichier"]?>" alt="Nom de la photo" data-animation="top"></a>
       </div>
 	
-	   <?php endforeach;?>		
-	  <?php endif;?>					
+        <?php endforeach;?>		
+	<?php endif;?>					
 								
     </section>
 

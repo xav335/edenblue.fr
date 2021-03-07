@@ -1,7 +1,7 @@
 <?php 
 include_once 'inc/inc.config.php';
 include_once 'admin/classes/utils.php';
-require 'admin/classes/Catrealisation.php';
+require_once 'admin/classes/Catrealisation.php';
 
 $catproduct = new Catrealisation();
 $result = $catproduct->catrealisationGetParent();
@@ -43,7 +43,6 @@ $result = $catproduct->catrealisationGetParent();
         </a>
       </div>
       <?php endforeach;?>
-      
     <?php endif;?>  
     </section>
 
