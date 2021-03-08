@@ -105,7 +105,14 @@ section[data-role="actualites"] .cell div figcaption a:hover {text-decoration:un
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {font-family:'Notera';color:var(--blue);text-align:center;margin-bottom:20px;}
 h1::before, h1::after, h2::before, h2::after {content:'';width:180px;height:15px;border-top:3px solid var(--blue);border-left:3px solid var(--blue);border-right:3px solid var(--blue);display:block;margin:0 auto -10px auto;opacity:.25;}
 h1::after, h2::after {border-top:0;border-bottom:3px solid var(--blue);margin:-10px auto 0 auto;}
-p {font-size:.9rem;line-height:1.2;color:var(--blue); text-align: justify;} /* Xav modif */
+
+h2.sous-titre {font-size:2rem;}
+h2.sous-titre::before, h2.sous-titre::after {content:none;}
+
+p, ul {font-size:.9rem;line-height:1.2;color:var(--blue);text-align:justify;} /* Xav modif */
+main ul {max-width:460px;margin:20px auto 20px 70px;}
+main p a, main ul a {color:var(--blue);text-decoration:underline;}
+main p a:hover, main ul a:hover {color:var(--chocolate);text-decoration:none;}
 
 [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {font-family:'BankGothic';border-radius:5px;border:1px solid #fff;background:none;font-size:.8rem;}
 [type='text']:focus, [type='password']:focus, [type='date']:focus, [type='datetime']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='week']:focus, [type='email']:focus, [type='number']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='url']:focus, [type='color']:focus, textarea:focus {box-shadow:none;}
