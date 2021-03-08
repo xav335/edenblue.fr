@@ -28,7 +28,6 @@
          <div class="large-6 medium-6 small-12 cell">
             <img src="assets/img/aquex14.jpg" alt="" />
         </div>
-     
     </section>
 
    
