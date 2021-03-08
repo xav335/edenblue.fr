@@ -12,10 +12,10 @@
 
     <section class="grid-x grid-padding-x" role="spadetail">
       <div class="large-12 medium-12 small-12 cell">
-        <h1 data-animation="top">Serie Club</h1>
+        <h1 data-animation="top">Série Club</h1>
       </div>
       <div class="large-7 medium-12 small-12 cell">
-        <h3>La detente a prix abordable</h3>
+        <h3>La détente a prix abordable</h3>
         <p data-animation="top">
             les spas de la série Club entrent dans la catégorie des spas familiaux.  </br>
             Equipés de jets plus précis, ils sont tous dotés d’un panneau de contrôle programmable, de vannes de dérivation et d’éclairage perfectionné. </br>

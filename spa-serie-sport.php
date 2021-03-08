@@ -12,11 +12,11 @@
 
     <section class="grid-x grid-padding-x" data-role="introduction">
          <div class="large-12 medium-12 small-12 cell">
-             <h1 data-animation="top">Serie sport</h1>
+             <h1 data-animation="top">Série sport</h1>
          </div>
        <div class="large-6 medium-6 small-12 cell">
        
-        <h3>Activite physique et detente</h3> 
+        <h3>Activité physique et détente</h3> 
         
         <p data-animation="top">
             Une piscine classique est souvent difficile à chauffer et demande un entretien lourd. Votre spa de nage est facile à  maintenir en température et disponible tout au long de l’année. </br>

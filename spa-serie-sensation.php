@@ -12,7 +12,7 @@
 
     <section class="grid-x grid-padding-x" data-role="introduction">
       <div class="large-12 cell">
-        <h1 data-animation="top">Serie Sensation</h1>
+        <h1 data-animation="top">Série Sensation</h1>
         <h3>Performances au sommet</h3>
         <p data-animation="top">
         Cette gamme de spas équipée de tous les développements issus des bureaux d’ingénierie de DYNASTY saura vous apporter des massages impressionnants, 

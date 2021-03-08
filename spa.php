@@ -42,14 +42,11 @@
       </div>
      </section>  
      
-     <section class="grid-x grid-padding-x" data-role="infos">
-      <div class="large-12 cell">
-        <h2 data-animation="top">Un large choix d'equipements</h2>
-        <p data-animation="top">
-           
-        </p>
+     <section class="grid-x grid-padding-x" data-role="gallery">
+      <div class="large-12 medium-12 small-12 cell text-center">
+        <h2 data-animation="top">Un large choix d'équipements</h2>
         <ul>
-            <li>Un choix d’équipement et de finitions à la hauteur suivant les séries</li>
+             <li>Un choix d’équipement et de finitions à la hauteur suivant les séries</li>
              <li>Système de traitement Ozonateur / UV qui stérilise et désinfecte l’eau</li>
              <li>Le système Aqukinetic au cœur des soin</li>
              <li>Système d’isolation Ecologique RMAX</li>

@@ -12,8 +12,8 @@
 
     <section class="grid-x grid-padding-x" data-role="introduction">
       <div class="large-12 cell">
-        <h1 data-animation="top">Serie Privilege</h1>
-        <h3>Le coeur de gamme</h3>
+        <h1 data-animation="top">Série Privilège</h1>
+        <h2 class="sous-titre">Le coeur de gamme</h2>
         <p data-animation="top">
             La série Privilège offre des spas équipes de plus de jets, de lumières et d’options. Grâce à  leur jupe en résine, ces spas possèdent une allure très tendance.
             En intégrant des équipements habituellement réservés aux spas du segment supérieur, il se démarque plus que jamais de ses concurrents de la catégorie généraliste.

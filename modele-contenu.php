@@ -8,7 +8,7 @@ include_once 'admin/classes/utils.php';
     <?php include 'inc/inc.head.php'; ?>
     <title>Eden Blue</title>
   </head>
-<body class="not-home">
+<body class="spa not-home">
 
   <?php include 'inc/inc.header.php'; ?>
 
@@ -31,7 +31,7 @@ include_once 'admin/classes/utils.php';
           Lorem ipsum dolor sit amet consectetur adipisicing elit. <strong>Officia aliquid</strong> accusamus ea harum blanditiis quasi voluptatum, cupiditate non fuga ipsam culpa ducimus nesciunt doloremque qui quibusdam minus iure! Rem, repudiandae?
         </p>
       </div>
-	    <div class="large-6 medium-6 small-12 cell">
+	  <div class="large-6 medium-6 small-12 cell">
         <h2 class="sous-titre">Sous-titre</h2>
         <p data-animation="top">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aliquid accusamus ea harum blanditiis quasi voluptatum, cupiditate non fuga ipsam culpa ducimus nesciunt doloremque qui quibusdam minus iure! Rem, repudiandae?
