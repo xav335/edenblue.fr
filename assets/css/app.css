@@ -7,8 +7,8 @@
 @font-face {font-family:'Titillium';font-style:normal;font-weight:bold;src:url('../fonts/Titillium-Bold.woff') format('woff');}
 @font-face {font-family:'Titillium';font-style:italic;font-weight:bold;src:url('../fonts/Titillium-BoldItalic.woff') format('woff');}
 @font-face {font-family:'Titillium';font-style:normal;font-weight:900;src:url('../fonts/Titillium-Black.woff') format('woff');}
-@font-face {font-family:'Callie Hand';font-style:normal;font-weight:normal;src:url('../fonts/Callie-Hand.woff') format('woff'),url('../fonts/Callie-Hand.woff2') format('woff2');}
 @font-face {font-family:'BankGothic';font-style:normal;font-weight:normal;src:url('../fonts/bankgothic-md-bt-medium.woff') format('woff');}
+@font-face {font-family:'Notera';src:url('../fonts/Notera.woff') format('woff');font-weight:normal;font-style:normal;}
 
 :root {
     --bg-white:#fff;
@@ -52,7 +52,7 @@ nav a:hover, nav a.active {color:var(--txt-white);border-bottom:3px solid var(--
 .slider::after {content:'';background:url('../img/bottom-slider.png') bottom center no-repeat;background-size:cover;height:234px;width:100%;position:absolute;bottom:0;left:0;display:block;z-index:1;pointer-events:none;}
 .slider.swiper-container {width:100%;height:640px;}
 .swiper-container img {position:absolute;top:0;left:0;object-fit:cover;height:100%;width:100%;}
-.swiper-container p {z-index:1;font-family:'Callie Hand';font-size:55px;color:var(--txt-white);}
+.swiper-container p {z-index:1;font-family:'Notera';font-size:55px;color:var(--txt-white);}
 .swiper-slide {display:flex;align-items:center;justify-content:center;}
 
 .swiper-pagination-bullet {background:var(--bg-gray);width:16px;height:16px;opacity:1;border:2px solid var(--bg-white);}
@@ -102,7 +102,7 @@ section[data-role="actualites"] .cell div figcaption label {font-size:2rem;curso
 section[data-role="actualites"] .cell div figcaption a {margin-top:10px;font-family:'Titillium';color:var(--chocolate);}
 section[data-role="actualites"] .cell div figcaption a:hover {text-decoration:underline;}
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {font-family:'Callie Hand';color:var(--blue);text-align:center;margin-bottom:20px;}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {font-family:'Notera';color:var(--blue);text-align:center;margin-bottom:20px;}
 h1::before, h1::after, h2::before, h2::after {content:'';width:180px;height:15px;border-top:3px solid var(--blue);border-left:3px solid var(--blue);border-right:3px solid var(--blue);display:block;margin:0 auto -10px auto;opacity:.25;}
 h1::after, h2::after {border-top:0;border-bottom:3px solid var(--blue);margin:-10px auto 0 auto;}
 p {font-size:.9rem;line-height:1.2;color:var(--blue); text-align: justify;} /* Xav modif */
@@ -145,7 +145,7 @@ body.spa section[data-role="votre-projet"] div:first-of-type img[alt="homme spa"
 body.spa section[data-role="introduction"] {overflow:hidden;}
 body.spa img.img-spa-top {position:relative;bottom:-40%;}
 body.spa img.img-spa-bottom {position:relative;top:-40%;}
-body.spa .legende {font-family:'Callie Hand';font-size:22px;color:var(--bg-white);}
+body.spa .legende {font-family:'Notera';font-size:22px;color:var(--bg-white);}
 
 body.spa section[data-role="infos"] ul {list-style-type:none;display:marker;flex-direction:row;text-align:center;align-items:center;justify-content:center;font-size:1rem;text-transform:none;margin:0;color:var(--bg-white);}
 /* spa-detail*/
