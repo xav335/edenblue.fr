@@ -148,6 +148,13 @@ body.spa img.img-spa-bottom {position:relative;top:-40%;}
 body.spa .legende {font-family:'Callie Hand';font-size:22px;color:var(--bg-white);}
 
 body.spa section[data-role="infos"] ul {list-style-type:none;display:marker;flex-direction:row;text-align:center;align-items:center;justify-content:center;font-size:1rem;text-transform:none;margin:0;color:var(--bg-white);}
+/* spa-detail*/
+[role="spadetail"] {justify-content:center;}
+[role="spadetail"] figure {height:100%;}
+[role="spadetail"] figcaption {font-size:1.2rem;font-family:'Titillium';text-align:center;font-weight: bold;}
+[role="spadetail"] .cell {padding:0.9375rem;}
+[role="spadetail"] a img {object-fit:cover;object-position:center;transition:all .25s ease-in-out;}
+[role="spadetail"] a:hover img {transform:scale(1.1);}
 
 /* NOT HOME */
 body.not-home .slider.swiper-container {height:360px;}
