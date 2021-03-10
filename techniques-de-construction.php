@@ -72,13 +72,13 @@ include_once 'admin/classes/utils.php';
             </p> 
             <h4 class="sous-titre"><strong>Certifications</strong></h4>
             <div class="grid-x grid-padding-x">
-                <div class="large-4 cell" >
+                <div class="large-4 medium-4 small-4 cell" >
                     <img src="assets/img/techniques-de-construction/decenale.png" alt="techniques de construction Edenblue">
                 </div>
-                <div class="large-4 cell" >
+                <div class="large-4 medium-4 small-4 cell" >
                     <img src="assets/img/techniques-de-construction/socotec.png"  alt="techniques de construction Edenblue">
                 </div>
-                <div class="large-4 cell" >
+                <div class="large-4 medium-4 small-4 cell" >
                     <img src="assets/img/techniques-de-construction/madefrance.png"  alt="techniques de construction Edenblue">
                 </div>
             </div>
