@@ -26,8 +26,8 @@ $result = $catproduct->catrealisationGetParent();
 
     <section class="grid-x grid-padding-x" role="gallery">
       <div class="large-12 medium-12 small-12 cell">
-        <h1>Nos realisations</h1> 
-            <h3>Parce-que vos reves sont notre preoccupation</h3>
+        <h1>Nos réalisations</h1> 
+            <h3>Parce-que vos rêves sont notre préoccupation</h3>
             <p data-animation="top">
                 Nous vous invitons à visiter notre galerie, qui fera naître en vous l’envie et l’inspiration.
                 Choisissez le style de piscine le plus adapté à vos besoin : couloir de nage, à débordement, miroir et bien d’autre encore…

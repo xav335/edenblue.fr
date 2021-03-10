@@ -49,9 +49,14 @@ $result = $catproduct2->catrealisationGetParent();
                 <li><a href="spa-serie-sport.php">Série Sport</a></li>
             </ul>
             </li>
-            <li><a href="" <?php if (strpos($pagename,'amenagements-exterieurs')!==false)               :?>class="active"<?php endif; ?>>Aménagements extérieurs</a></li>
-            <li><a href="" <?php if (strpos($pagename,'equipements-techniques-de-construction')!==false):?>class="active"<?php endif; ?>>Équipements Techniques de construction</a></li>
-            <li><a href="" <?php if (strpos($pagename,'actualite')!==false)                             :?>class="active"<?php endif; ?>>Actualité</a></li>
+            <li><a href="amenagements-exterieurs.php" <?php if (strpos($pagename,'amenagements-exterieurs')!==false):?>class="active"<?php endif; ?>>Aménagements extérieurs</a>
+            <ul>
+                <li><a href="amenagements-exterieurs.php#paysage">Aménagements paysagès</a></li>
+                <li><a href="amenagements-exterieurs.php#poolhouse">Pool House</a></li>
+            </ul>
+            </li>
+            <li><a href="equipements-techniques-de-construction.php" <?php if (strpos($pagename,'equipements-techniques-de-construction')!==false):?>class="active"<?php endif; ?>>Équipements Techniques de construction</a></li>
+            <li><a href="" <?php if (strpos($pagename,'actualite')!==false):?>class="active"<?php endif; ?>>Actualité</a></li>
             <li><a href="" <?php if (strpos($pagename,'contact')!==false)                               :?>class="active"<?php endif; ?>>Contact</a></li>
           </ul>
         </nav>
