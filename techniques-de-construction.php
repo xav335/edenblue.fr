@@ -14,7 +14,7 @@ include_once 'admin/classes/utils.php';
 
   <main class="grid-container">
 
-    <section class="grid-x grid-padding-x" role="gallery">
+    <section class="grid-x grid-padding-x" role="">
       <div class="large-12 medium-12 small-12 cell" text-center>
         <h1>Techniques de construction</h1>
       </div>
@@ -32,40 +32,57 @@ include_once 'admin/classes/utils.php';
             A l’intérieur, un grillage à fines mailles galvanisées sert de coffrage. Lors du coulage de la piscine vous aurez ainsi une visibilité parfaite de votre exécution. De plus, ce grillage évite tout risque de microfissures. Ce qui permet une construction de votre bassin en béton en une seule fois.<br><br>
             Nous pouvons de ce fait réalisé vos rêves en construisant votre piscine, quelle soit design ou en forme libre . Nous adaptons les budget en fonction de vos désidératas
         </p>
-        <h4 class="sous-titre"><strong>Notre procédé</strong></h4>
-          <p data-animation="top">
-            Une construction spécifique qui permet d’assurer une solidité du produit, une excellente tenue dans le temps mais aussi de permettre d’offrir une gamme de choix quasi-illimitée pour la conception d’une piscine sur-mesure.<br><br>
-            <strong>Le procédé de construction de votre piscine présente tous les avantages du monobloc en béton armé</strong>
-        </p>
-        <ul data-animation="">
-          <li>Permet tous types de revêtement de piscine  intérieur.</li>
-          <li>Toutes formes libres, linéaires ou paysagées.</li>
-          <li>Un ferraillage continu et parfaitement positionné.</li>
-          <li>L’utilisation de poutrelles triangulées (tous les 20 cm) assure une parfaite rigidité et stabilité des parois et permet ainsi la construction de plages en porte à faux.</li>
-          <li>Le parfait ancrage des parois au pied par un chaînage périphérique assure une insensibilité aux poussées d’eau et de terre.</li>
-          <li>Le grillage galvanisé à l’intérieur du bassin écarte tout risque de microfissure et permet une visibilité parfaite lors du coulage du béton.</li>
-          <li>La présence de tôles galvanisées, côté terre, protège de l’acidité des terres</li>
-         </ul>
+        
          
-          <p data-animation="top">
-         Grâce à cette méthode de construction, nous pouvons réaliser des piscines sur-mesure avec tous types de revêtements.
-
-            Nous favorisons des revêtements qui offrent des possibilités de formes et d’ambiances infinies..
-
-            -notre choix : les enduits minéraux qui assurent beauté et longévité.
-
-            Eden Blue prête une attention particulière à la finition du pourtour de votre piscine.
-
-            -notre choix : une sélection de margelles haut de gamme
+          
          
-         </p> 
       </div>
        <div class="large-6 medium-12 small-12 cell" >
-         <a data-fancybox="spa1" href="assets/img/techniques-de-construction/shema.png">
-            <img src="assets/img/techniques-de-construction/shema1.png" alt="amenagements-exterieurs Edenblue">
+         <a data-fancybox="spa1" href="assets/img/techniques-de-construction/shema.png"><br>
+            <img src="assets/img/techniques-de-construction/shema2.png" alt="amenagements-exterieurs Edenblue">
         </a>   
       </div>
-			
+      <div class="large-6 medium-12 small-12 cell" text-center>
+            <h4 class="sous-titre"><strong>Notre procédé</strong></h4>
+              <p data-animation="top">
+                Une construction spécifique qui permet d’assurer une solidité du produit, une excellente tenue dans le temps mais aussi de permettre d’offrir une gamme de choix quasi-illimitée pour la conception d’une piscine sur-mesure.<br><br>
+                <strong>Le procédé de construction de votre piscine présente tous les avantages du monobloc en béton armé</strong>
+            </p>
+            <ul data-animation="top">
+              <li>Permet <strong>tous types de revêtement de piscine  intérieur.</strong></li>
+              <li>Toutes <strong>formes libres, linéaires ou paysagées.</strong></li>
+              <li>Un <strong>ferraillage continu</strong> et parfaitement positionné.</li>
+              <li>L’utilisation de poutrelles triangulées (tous les 20 cm) assure une parfaite rigidité et stabilité des parois et permet ainsi <strong>la construction de plages en porte à faux.</strong></li>
+               <li>Le parfait ancrage des parois au pied par <strong>un chaînage périphérique</strong> assure une insensibilité aux poussées d’eau et de terre.</li>
+              <li>Le grillage galvanisé à l’intérieur du <strong>bassin</strong> écarte tout risque de microfissure et permet une visibilité parfaite lors du coulage du <strong>béton.</strong></li>
+              <li>La présence de tôles galvanisées, côté terre, protège de l’acidité des terres</li>
+             </ul>
+      </div> 
+      <div class="large-6 medium-12 small-12 cell" text-center>
+        	<p data-animation="top">
+                <strong>Grâce à cette méthode de construction, nous pouvons réaliser des piscines sur-mesure avec tous types de revêtements.</strong><br><br>
+    
+                Nous favorisons des revêtements qui offrent des possibilités de formes et d’ambiances infinies..<br><br>
+    
+                NOTRE CHOIX:  <strong>les enduits minéraux qui assurent beauté et longévité.</strong><br><br>
+    
+                Eden Blue prête une attention particulière à la finition du pourtour de votre piscine.<br><br>
+    
+                NOTRE CHOIX:  <strong>une sélection de margelles haut de gamme<</strong>br>
+            </p> 
+            <h4 class="sous-titre"><strong>Certifications</strong></h4>
+            <div class="grid-x grid-padding-x">
+                <div class="large-4 cell" >
+                    <img src="assets/img/techniques-de-construction/decenale.png" alt="techniques de construction Edenblue">
+                </div>
+                <div class="large-4 cell" >
+                    <img src="assets/img/techniques-de-construction/socotec.png"  alt="techniques de construction Edenblue">
+                </div>
+                <div class="large-4 cell" >
+                    <img src="assets/img/techniques-de-construction/madefrance.png"  alt="techniques de construction Edenblue">
+                </div>
+            </div>
+	  </div>	
 			
 	  <div class="large-12 medium-12 small-12 cell" text-center>
         <hr>
@@ -77,12 +94,22 @@ include_once 'admin/classes/utils.php';
             <img src="assets/img/amenagements-exterieurs/amenagements-paysage.jpg" alt="amenagements-exterieurs Edenblue">
         </a>   
       </div>
-	  <div class="large-6 medium-6 small-12 cell" id="paysage">
-        <h2 class="sous-titre">Aménagements paysagés</h2>
+	  <div class="large-6 medium-6 small-12 cell" id="procedes">
+        <h2 class="sous-titre">Procédés</h2>
         <p data-animation="top">
-            Laissez libre court à votre imagination et offrez-vous un havre de paix en aménageant les abords de votre piscine.</br></br>
-            <strong>Eden Blue</strong> vous propose les services de son bureau d’étude pour vous accompagner dans la conception de votre environnement paysagé (terrasses, végétaux, aménagements divers…).</br>
-            Pour créer les ambiances propres à l’univers dont vous rêvez, nous disposons d’un grand choix de textures et de couleurs. Parmi les matériaux nobles et contemporains que nous mettons en œuvre, le bois, la pierre, le béton et la résine personnaliseront votre espace de loisir et de détente.
+            La longévité d’une piscine dépend de la solidité de sa structure.
+            Le procédé Leader Pool est unique, breveté et agréé Socotec.
+            Il permet la réalisation de tout type de piscine : de la plus simple à la plus élaborée, en alliant les valeurs du traditionnel et de la technologie.
+            Tous les matériaux utilisés pour la conception de votre structure sont issus des plus grandes entreprises européennes et respectent les normes en vigueurs.
+            Les « plus » de ce  système constructif :
+            -Permet tous les revêtements intérieur.
+            -Toutes  les formes : libres, linéaires, paysagées…
+            -Un ferraillage continu et parfaitement positionné.
+            L’utilisation de poutrelles triangulées assure une parfaite rigidité et  stabilité des parois et permet  la construction d’ouvrages complexes : plages en porte à faux,  plages immergées…
+            Le parfait ancrage des parois aux pieds par un chaînage périphérique assure une insensibilité aux poussées d’eau et de terre.
+            -Le grillage galvanisé à l’intérieur du bassin écarte tout risque de microfissure et offre une visibilité parfaite du coulage du béton.
+            La présence de la tôle galvanisée, côté terre, protège de l’acidité des sols, prolongeant ainsi la durée de vie des piscines Eden Blue.
+               
         </p>
       </div>
       
@@ -91,13 +118,27 @@ include_once 'admin/classes/utils.php';
       </div>
       
       
-       <div class="large-6 medium-6 small-12 cell" id="poolhouse">
-        <h2 class="sous-titre">Pool House</h2>
+       <div class="large-6 medium-6 small-12 cell" id="revetements">
+        <h2 class="sous-titre">Revêtements</h2>
         <p data-animation="top">
-        <strong>Eden Blue</strong> vous offre la possibilité d’ajouter un point d’orgue à votre projet d’aménagement en imaginant et en construisant  le <strong>Pool House</strong> le mieux adapté à vos besoins.</br></br>
-        Le <strong>Pool House</strong> représente la construction idéale pour créer un lieu convivial tout en abritant le local technique de votre piscine et ses équipements.</br>
-        En toute saison vous pourrez vous relaxer et partager un repas en famille ou tout simplement passer un bon moment entre amis, au bord de l’eau.</br>
-        
+            Pour créer l’univers que vous désirez, Eden Blue propose deux types de revêtements qui s’adaptent à toutes les formes.
+
+
+            -  «  Les enduits », la qualité en toute simplicité :
+            Pour créer l’univers que vous désirez, Eden Blue vous propose le revêtement EDEN ROC qui s’adapte à toutes les formes de piscines.
+            Le revêtement EDEN ROC donne aux bassins un éclat particulier laissant ainsi libre court à toutes les ambiances d’eau.
+            Ce revêtement, très agréable au toucher, renforce l’aspect naturel de votre piscine grâce à un large choix de couleurs, de textures et aux effets de matières.
+            EDEN ROC résiste aux chocs thermiques, aux attaques acides, aux UV, au gel, aux traitements de l’eau et permet un nettoyage aisé de votre bassin.
+            En choisissant les revêtements à base de quartz EDEN ROC exclusivité EDEN BLUE vous obtiendrez une sensation unique de velours et une variété infinie de couleurs.
+            Ce revêtement noble et naturel est la signature de la société EDEN BLUE
+            
+            - « Le carrelage », le plus noble et luxueux :
+            
+            Emaux et pâte de verre donnent au bassin un éclat particulier laissant ainsi libre court à toutes les ambiances d’eau.
+            Un très large choix de couleurs, de textures et de dimensions vous offrira une mosaïque d’une grande pureté.
+            -Ce matériau résiste aux chocs thermiques, aux attaques acides, aux U.V, au gel, aux traitements de l’eau et permet un nettoyage aisé de votre bassin.
+            -grâce à la réalisation des joints époxy nous obtenons une étanchéité proche de la perfection et surtout une durée de vie inégalée.
+                    
         </p>
       </div>
 	   </div>
@@ -106,6 +147,33 @@ include_once 'admin/classes/utils.php';
             <img src="assets/img/amenagements-exterieurs/pool-house.png" alt="amenagements-exterieurs Edenblue">
         </a>   
       </div>
+      
+      
+      <div class="large-12 medium-12 small-12 cell" text-center>
+        <hr>
+      </div>
+      
+      
+       <div class="large-6 medium-6 small-12 cell" id="abords">
+        <h2 class="sous-titre">Abords
+        </h2>
+        <p data-animation="top">
+               Afin que vos bassins puissent parfaitement s’intégrer dans leur environnement et vous permettre de vivre une expérience unique, Eden Blue vous propose différentes finitions du pourtour de vos abords :      
+
+                -Des  margelles en pierre, bois , grés cérame d’une très grande qualité.
+
+                La réalisation de plages immergées ou californiennes donnent la possibilité à l’ensemble de la famille de profiter des joies de l’eau et de personnaliser votre bassin.
+
+                    
+        </p>
+      </div>
+	   </div>
+       <div class="large-6 medium-12 small-12 cell" text-center>
+         <a data-fancybox="spa1" href="assets/img/amenagements-exterieurs/pool-house.png">
+            <img src="assets/img/amenagements-exterieurs/pool-house.png" alt="amenagements-exterieurs Edenblue">
+        </a>   
+      </div>
+      
 								
     </section>
 

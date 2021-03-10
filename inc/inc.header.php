@@ -55,6 +55,15 @@ $result = $catproduct2->catrealisationGetParent();
                 <li><a href="amenagements-exterieurs.php#poolhouse">Pool House</a></li>
             </ul>
             </li>
+             <li><a href="equipements.php" <?php if (strpos($pagename,'equipements')!==false):?>class="active"<?php endif; ?>>Equipements</a>
+            <ul>
+                <li><a href="equipements.php#">Traitement de l'eau</a></li>
+                <li><a href="equipements.php#">Chauffage</a></li>
+                <li><a href="equipements.php#">Nettoyage automatique</a></li>
+                <li><a href="equipements.php#">Domotique</a></li>
+                <li><a href="equipements.php#">Sécurité</a></li>
+            </ul>
+            </li>
             <li><a href="techniques-de-construction.php" <?php if (strpos($pagename,'techniques-de-construction')!==false):?>class="active"<?php endif; ?>>Techniques de construction</a>
             <ul>
                 <li><a href="techniques-de-construction.php#procedes">Procédés</a></li>
@@ -62,8 +71,13 @@ $result = $catproduct2->catrealisationGetParent();
                 <li><a href="techniques-de-construction.php#abords">Abords</a></li>
             </ul>
             </li>
-            <li><a href="" <?php if (strpos($pagename,'actualite')!==false):?>class="active"<?php endif; ?>>Actualité</a></li>
-            <li><a href="" <?php if (strpos($pagename,'contact')!==false)                               :?>class="active"<?php endif; ?>>Contact</a></li>
+            <li><a href="livre-d-or.php" <?php if (strpos($pagename,'livre-d-or')!==false):?>class="active"<?php endif; ?>>Livre d'or</a></li>
+            <li><a href="actualite.php" <?php if (strpos($pagename,'actualite')!==false):?>class="active"<?php endif; ?>>Actualité</a>
+                <ul>
+                <li><a href="actualite.php#tutos">Tutoriels - SAV</a></li>
+            </ul>
+            </li>
+            <li><a href="contact.php" <?php if (strpos($pagename,'contact')!==false):?>class="active"<?php endif; ?>>Contact</a></li>
           </ul>
         </nav>
        

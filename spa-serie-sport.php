@@ -28,6 +28,23 @@
          <div class="large-6 medium-6 small-12 cell">
             <img src="assets/img/aquex14.jpg" alt="" />
         </div>
+       <div class="large-6 medium-6 small-12 cell">  
+          
+          <div class="swiper-container2">
+            <div class="swiper-wrapper">
+             <div class="swiper-slide" style="background-image:url(./assets/img/gammeclub/cl84.png)"></div>
+            <div class="swiper-slide" style="background-image:url(./assets/img/gammeclub/cl88.png)"></div>
+            <div class="swiper-slide" style="background-image:url(./assets/img/gammeclub/cl86.png)"></div>
+              <div class="swiper-slide" style="background-image:url(./assets/img/gammeclub/cl85.png)"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination-white"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+          </div>
+          
+        </div>
     </section>
 
    

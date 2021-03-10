@@ -12,6 +12,23 @@ var mySwiper = new Swiper('.slider', {
     effect: 'fade',
 });
 
+var swiper = new Swiper('.swiper-container2', {
+	paceBetween: 30,
+    effect: 'slide',
+    autoplay: {
+        delay: 2000,
+    },
+    speed: 1000,
+    pagination: {
+      el: '.swiper-pagination2',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+
 document.querySelector('header label').addEventListener('click', function(){
     if(this.classList.contains('active')){
         this.classList.remove('active');
