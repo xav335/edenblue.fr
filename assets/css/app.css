@@ -99,6 +99,28 @@ section[data-role="votre-projet"] div:last-of-type {z-index:2;font-family:'BankG
 section[data-role="votre-projet"] div:last-of-type a {display:flex;align-items:center;font-size:1.1rem;}
 section[data-role="votre-projet"] div:last-of-type a:first-of-type {margin-right:5px;}
 
+
+section[data-role="livreor"]::before {content:'';display:block;width:117px;height:144px;background:url('../img/echelle.png');background-size:cover;position:absolute;top:-65px;right:50px;}
+section[data-role="livreor"]::after {content:'';display:block;width:100%;height:calc(100% - 30px);background:url('../img/waves.png') no-repeat top center;background-size:cover;position:absolute;top:30px;left:0;z-index:1;}
+section[data-role="livreor"] .large-7 {overflow:hidden;}
+section[data-role="livreor"] form {position:relative;z-index:2;}
+section[data-role="livreor"] {background:var(--bg-project);}
+section[data-role="livreor"] h2, section[data-role="livreor"] p, section[data-role="livreor"] a {color:var(--txt-white);text-align:left;}
+section[data-role="livreor"] h2::before, section[data-role="livreor"] h2::after {display:none;}
+section[data-role="livreor"] form .cell {display:flex;flex-direction:row;flex-wrap:wrap;}
+section[data-role="livreor"] form input {width:45%;flex:1 0 45%;margin-right:5px;}
+section[data-role="livreor"] form input[type="submit"] {font-family:'BankGothic';background:var(--yellow);border:0;border-radius:5px;height:2.4375rem;margin:0 0 1rem;padding:0.5rem;color:var(--blue);cursor:pointer;}
+section[data-role="livreor"] form input[type="submit"]:hover, section[data-role="livreor"] form input[type="submit"]:focus {background:var(--blue);color:var(--yellow);}
+section[data-role="livreor"] form textarea {height:104px;}
+section[data-role="livreor"] div:first-of-type {position:relative;}
+section[data-role="livreor"] div:first-of-type img {position:absolute;z-index:0;pointer-events:none;}
+section[data-role="livreor"] div:first-of-type img[alt="bulles"] {opacity:.2;max-width:40px;left:10%;bottom:20%;}
+section[data-role="livreor"] div:nth-of-type(2) img[alt="bulles"] {position:absolute;z-index:0;pointer-events:none;opacity:.2;max-width:110px;right:5%;bottom:5%;}
+section[data-role="livreor"] div:last-of-type {z-index:2;font-family:'BankGothic';display:flex;}
+section[data-role="livreor"] div:last-of-type a {display:flex;align-items:center;font-size:1.1rem;}
+section[data-role="livreor"] div:last-of-type a:first-of-type {margin-right:5px;}
+
+
 section[data-role="actualites"] {background:var(--bg-gray);}
 section[data-role="actualites"]::after {content:'';background:url('../img/bouee.svg') no-repeat center center;background-size:cover;width:100px;height:76px;position:absolute;bottom:-30px;right:1%;}
 section[data-role="actualites"] h2 {color:var(--chocolate);}
