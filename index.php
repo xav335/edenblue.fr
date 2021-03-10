@@ -3,7 +3,7 @@
 <html class="no-js" lang="fr">
   <head>
     <?php include 'inc/inc.head.php'; ?>
-    <title>Eden Blue</title>
+    <title>Eden Blue piscines et spas</title>
   </head>
 <body>
 
@@ -12,7 +12,7 @@
   <main class="grid-container">
 
     <section class="grid-x grid-padding-x" data-role="introduction">
-      <div class="large-12 cell">
+       <div class="large-12 medium-12 small-12 cell">
         <h1 data-animation="top">Constructeur de piscine</h1>
         <p data-animation="top">
           <strong>Eden Blue</strong>, constructeur de piscine en béton armé monobloc, en Aquitaine.<br/>
@@ -54,7 +54,7 @@
     </section>
 
     <section class="grid-x grid-padding-x" data-role="partenaire-reconnu">
-      <div class="large-12 cell">
+       <div class="large-12 medium-12 small-12 cell">
         <h2 data-animation="top">Un partenaire reconnu</h2>
         <p data-animation="top">
           La société <strong>Eden Blue</strong> est un partenaire privilégié du groupe Leader Pool professionnel de la piscine en béton armé depuis plus de 15 ans et avec plus de 7000 réalisations au niveau national et Européen.<br/>
@@ -64,7 +64,7 @@
     </section>
 
     <section class="grid-x grid-padding-x" data-role="actualites">
-      <div class="large-12 cell">
+       <div class="large-12 medium-12 small-12 cell">
         <h2 data-animation="top">Nouvelles fraiches</h2>
         <div>
           <figure data-animation="right">
@@ -91,7 +91,7 @@
           </figure>
         </div>
       </div>
-      <div class="large-12 cell"><a href="" class="button">+ d’actualités</a></div>
+       <div class="large-12 medium-12 small-12 cell"><a href="" class="button">+ d’actualités</a></div>
     </section>
 
   </main>
