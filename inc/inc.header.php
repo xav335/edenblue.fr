@@ -55,7 +55,13 @@ $result = $catproduct2->catrealisationGetParent();
                 <li><a href="amenagements-exterieurs.php#poolhouse">Pool House</a></li>
             </ul>
             </li>
-            <li><a href="equipements-techniques-de-construction.php" <?php if (strpos($pagename,'equipements-techniques-de-construction')!==false):?>class="active"<?php endif; ?>>Équipements Techniques de construction</a></li>
+            <li><a href="techniques-de-construction.php" <?php if (strpos($pagename,'techniques-de-construction')!==false):?>class="active"<?php endif; ?>>Techniques de construction</a>
+            <ul>
+                <li><a href="techniques-de-construction.php#procedes">Procédés</a></li>
+                <li><a href="techniques-de-construction.php#revetements">Revètements</a></li>
+                <li><a href="techniques-de-construction.php#abords">Abords</a></li>
+            </ul>
+            </li>
             <li><a href="" <?php if (strpos($pagename,'actualite')!==false):?>class="active"<?php endif; ?>>Actualité</a></li>
             <li><a href="" <?php if (strpos($pagename,'contact')!==false)                               :?>class="active"<?php endif; ?>>Contact</a></li>
           </ul>
