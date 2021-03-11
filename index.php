@@ -54,12 +54,30 @@
     </section>
 
     <section class="grid-x grid-padding-x" data-role="partenaire-reconnu">
-       <div class="large-12 medium-12 small-12 cell">
+       <div class="large-12 medium-12 small-12 cell text-center">
         <h2 data-animation="top">Un partenaire reconnu</h2>
         <p data-animation="top">
-          La société <strong>Eden Blue</strong> est un partenaire privilégié du groupe Leader Pool professionnel de la piscine en béton armé depuis plus de 15 ans et avec plus de 7000 réalisations au niveau national et Européen.<br/>
-          <strong>Eden Blue</strong> est une marque déposée depuis 2004 et utilise le procédé Leader Pool unique, breveté et agréé SOCOTEC pour la construction des piscines haut de gamme s’intégrant parfaitement à leur environnement.
+          La société <strong>Eden Blue</strong> est un partenaire privilégié du groupe Leader Pool professionnel de la piscine
+           en béton armé depuis plus de 18 ans et avec plus de 10000 réalisations au niveau national et Européen.<br/>
+          <strong>Eden Blue</strong> est une marque déposée depuis 2004 et utilise le procédé <a href="https://www.leaderpool.fr/" target="_blank">Leader&nbsp;Pool</a> unique, breveté et
+           agréé SOCOTEC pour la construction des piscines haut de gamme s’intégrant parfaitement à leur environnement.
         </p>
+        <p data-animation="top">
+            Notre équipe s’appuie sur 20 années d’expériences pour vous proposer le projet qui correspond à vos attentes. <br/>
+            Nous utilisons deux types de revêtements qui vous offre la possibilité de créer tous les effets et toutes les ambiances que vous aurez imaginez.<br/>
+            Des piscines de caractère, contemporaine, miroir, à débordement, naturelles, traditionnelle…<br/><br/>
+            
+            Eden Blue, professionnel de la piscine en béton armé monobloc, en Aquitaine.Nous intervenons dans toute la Gironde (Bassin d'Arcachon, Bordeaux, Libourne,  Blaye, Médoc...) et dans les départements limitrophes (Dordogne, Charente, Landes et Lot et Garonne<br/><br/>
+                        </p>                                           
+            <h2>Notre engagement : </h2>
+            
+            <ul data-animation="top">
+              <li>Etude personnalisée et réactivité.</li>
+              <li>Accompagnement tout au long du processus, de la conception à la réception de votre projet.</li>
+              <li>Charte/suivi qualité : contrôle qualité et procès verbaux à toutes les étapes de réalisation.</li>
+              <li>Constructions dans les règles de l’art.</li>
+              <li>SAV de qualité.</li>
+            </ul>
       </div>
     </section>
 
