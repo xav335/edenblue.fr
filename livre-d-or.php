@@ -1,6 +1,12 @@
+<?php include_once 'inc/inc.config.php'; ?>
+<?php include_once 'admin/classes/utils.php';?>
 <?php 
-include_once 'inc/inc.config.php';
-include_once 'admin/classes/utils.php';
+require_once 'admin/classes/Goldbook.php';
+
+	$goldbook = new Goldbook();
+	$result2 = $goldbook->goldbookGet(null);
+	print_r($result);
+	
 ?>
 <!doctype html>
 <html class="no-js" lang="fr">
@@ -18,68 +24,48 @@ include_once 'admin/classes/utils.php';
       <div class="large-12 medium-12 small-12 cell" text-center>
         <h1>Notre livre d'or</h1>
       </div>
+      <?php if (!empty($result2)) : 
+            $i=0;?>
+          <?php foreach ($result2 as $value) : 
+                $i++; ?>
+              <?php if($value['online']=='1') :?>
+              <div class="large-6 medium-12 small-12 cell" text-center>
+                 <p>
+                    <strong><?php echo $value['nom'] ?></strong>&nbsp;(<?php echo traitement_datetime_affiche($value['date']) ?>)
+                 </p>
+                <p>
+                    <?php echo nl2br($value['message']) ?>
+                </p>
+              </div>	
+              <?php if ($i%2==0) : ?>
+                 <div class="large-12 medium-12 small-12 cell" text-center>&nbsp;</div>
+              <?php endif;?>
+              <?php endif;?>
+          <?php endforeach;?>
+      <?php endif;?>
       
-      <div class="large-6 medium-12 small-12 cell" text-center>
-         <p>
-            <strong>Xavier Gonzalez</strong> (12/07/2019)
-         </p>
-        <p>
-            Un prestation sérieuse et complète, des professionnels présents et qui vous accompagnent durant toute la mise ne oeuvre avec en outre une qualité et solidité très haut de gamme. Je recommande chaudement.
-        </p>
-      </div>	
-      <div class="large-6 medium-12 small-12 cell" text-center>
-         <p>
-            <strong>ELISABETH PROVOST</strong> (10/04/2019)
-         </p>
-        <p>
-            Une équipe d'enfer, et toujours disponible.
-            Travaux réalisé chez mes parents à CAVIGNAC au top, merci pour votre professionnalisme 
-        </p>
-      </div>	
-      
-      <div class="large-12 medium-12 small-12 cell" text-center>
-       &nbsp;
-      </div>
-      
-      
-      <div class="large-6 medium-12 small-12 cell" text-center>
-         <p>
-            <strong>olette mirac</strong> (12/08/2018)
-         </p>
-        <p>
-            Super travail, bon conseil. Couple adorable.
-        </p>
-      </div>	
-      <div class="large-6 medium-12 small-12 cell" text-center>
-         <p>
-            <strong>Pascale LUCAS</strong> (20/06/2018)
-         </p>
-        <p>
-            Vous souhaitez avoir une belle piscine, un produit voire même un simple renseignement... n hésitez pas à contacter ÉDEN BLUE. Une équipe sérieuse et professionnelle.
-        </p>
-      </div>	
-								
     </section>
   
     <section class="grid-x grid-padding-x" role="">
       <div class="large-12 medium-12 small-12 cell" text-center>
         <h1>Laissez-nous votre témoignage</h1>
       </div>
-								
+			 <div id="resultat"></div>					
     </section>
     
      <section class="grid-x grid-padding-x" data-role="livreor">
-      
+     
       <div class="large-12 medium-12 small-12 cell">
         <img src="assets/img/bubbles.svg" alt="bulles">
         
-        <form class="grid-x grid-padding-x" data-animation="top">
+        <form class="grid-x grid-padding-x" data-animation="top" id="formulaire" method="post" action="livre-d-or.php">
+            <input type="hidden" name="datepicker"   value="<?php echo date("d/m/Y")?>">
           <div class="large-5 medium-5 small-12 cell">
-            <input type="text" name="nom" placeholder="Nom" /><input type="text" name="prenom" placeholder="Prénom" />
-            <input type="email" name="email" placeholder="e-mail" />
+            <input type="text" name="nom" placeholder="Nom" required /><input type="text" name="prenom" placeholder="Prénom"  required />
+            <input type="email" name="email" placeholder="e-mail" required />
           </div>
           <div class="large-7 medium-7 small-12 cell">
-             <textarea name="message" placeholder="Votre message ici"></textarea>
+             <textarea name="message" placeholder="Votre message ici" required ></textarea>
           </div>
           <div class="large-12 medium-12 small-12 cell">
             <input type="submit" value="Envoyer">
@@ -90,11 +76,42 @@ include_once 'admin/classes/utils.php';
     </section>
 
     
-    
-    
   </main>
 
   <?php include 'inc/inc.footer.php'; ?>
 
 </body>
+<script type="text/javascript">
+
+	$(document).on('submit','#formulaire',function(e) {
+	  e.preventDefault();
+	  data = $(this).serializeArray();
+
+	  data.push({
+	   		name: 'action',
+	    	value: 'sendMail'
+	  	})
+
+	  console.log(data);
+
+	    /* I put the above code for check data before send to ajax*/
+	    $.ajax({
+		        url: '/ajax/goldbook.php',
+		        type: 'post',
+		        data: data,
+		        success: function (data) {
+		            $("#resultat").html("<h3>Merci pour votre message</h3>");
+		        	$("#nom").val("");
+		        	$("#prenom").val("");
+		           	$("#email").val("");
+		           	$("#message").val("");
+		        },
+		        error: function() {
+		        	 $("#resultat").html("<h3>Une erreur s'est produite !</h3>");
+		        }
+		   	});
+	return false;
+	})
+
+</script>
 </html>

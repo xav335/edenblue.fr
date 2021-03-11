@@ -201,9 +201,9 @@ class Contact extends StorageManager
             $sql = "INSERT INTO  .`contact`
 						(`name`, `email`, `firstname`,`password`,`newsletter`,`fromgoldbook`,`fromcontact`)
 						VALUES (
-						'" . addslashes($value['name']) . "',
+						'" . addslashes($value['nom']) . "',
 						'" . addslashes($value['email']) . "',
-						'" . addslashes($value['firstname']) . "',
+						'" . addslashes($value['prenom']) . "',
 						'" . randomChar(5) . "',
 						" . $newsletter . ",
 						" . $fromgoldbook . ",

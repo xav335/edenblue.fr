@@ -61,7 +61,7 @@ class Goldbook extends StorageManager {
 						(`date`, `nom`, `email`, `message`,`online`)
 						VALUES (
 						'". $this->inserer_date($value['datepicker']) ."',
-						'". addslashes($value['name']) ."',
+						'". addslashes($value['nom'] .'  '. $value['prenom'] ) ."',
 						'". addslashes($value['email']) ."',
 						'". addslashes($value['message']) ."',
 						". $online ."

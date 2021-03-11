@@ -6,7 +6,7 @@ include_once 'admin/classes/utils.php';
 require_once 'admin/classes/Catrealisation.php';
 
 $catproduct2 = new Catrealisation();
-$result = $catproduct2->catrealisationGetParent();
+$resultinc = $catproduct2->catrealisationGetParent();
 //print_r($result);
 
 ?>
@@ -34,8 +34,8 @@ $result = $catproduct2->catrealisationGetParent();
             <li>
                 <a href="nos-realisations.php" <?php if (strpos($pagename,'nos-realisations')!==false) :?>class="active"<?php endif; ?>>Nos réalisations</a>
                 <ul>
-                 <?php if ( !empty( $result ) ) :?>
-                    <?php foreach ( $result as $value ) :  ?>
+                 <?php if ( !empty( $resultinc ) ) :?>
+                    <?php foreach ( $resultinc as $value ) :  ?>
                     <li><a href="nos-realisations-detail.php?id=<?php echo $value['id']?>"><?php echo $value['label']?></a></li>
                     <?php endforeach;?>
                  <?php endif;?> 
