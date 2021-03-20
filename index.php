@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html class="no-js" lang="fr">
   <head>
@@ -15,60 +14,46 @@
        <div class="large-12 medium-12 small-12 cell">
         <h1 data-animation="top">Constructeur de piscine</h1>
         <p data-animation="top">
-          <strong>Eden Blue</strong>, constructeur de piscine en béton armé monobloc, en Aquitaine.<br/>
+          <strong>Eden Blue</strong>, constructeur de piscine en béton armé monobloc, en Aquitaine.<br>
           Nous intervenons dans toute la Gironde (Bassin d’Arcachon, Bordeaux, Libourne,  Blaye, Médoc…) et dans les départements limitrophes (Dordogne, Charente, Landes et Lot et Garonne)
         </p>
       </div>
+      
     </section>
 
-    <section class="grid-x grid-padding-x" data-role="votre-projet">
-      <div class="large-5 medium-5 small-12 cell">
-        <img src="assets/img/enfant-brassards.svg" alt="enfant brassards">
-        <img src="assets/img/nageuse.svg" alt="nageuse">
-        <img src="assets/img/bubbles.svg" alt="bulles">
-      </div>
-      <div class="large-7 medium-7 small-12 cell">
-        <img src="assets/img/bubbles.svg" alt="bulles">
-        <form class="grid-x grid-padding-x" data-animation="top">
-          <div class="large-12 medium-12 small-12 cell">
-            <h2>Parlons de votre projet</h2>
-          </div>
-          <div class="large-6 medium-6 small-12 cell">
-            <input type="text" name="nom" placeholder="Nom" /><input type="text" name="prenom" placeholder="Prénom" />
-            <input type="text" name="cp" placeholder="Code postal" /><input type="text" name="ville" placeholder="Ville" />
-            <input type="tel" name="telephone" placeholder="Téléphone" />
-            <input type="email" name="email" placeholder="e-mail" />
-          </div>
-          <div class="large-6 medium-6 small-12 cell">
-            <textarea name="message" placeholder="Votre projet en quelques mots"></textarea>
-          </div>
-          <div class="large-6 medium-6 small-12 cell"></div>
-          <div class="large-6 medium-6 small-12 cell">
-            <input type="submit" value="Être rappelé(e)">
-          </div>
-        </form>
-      </div>
-      <div class="large-12 medium-12 small-12 cell">
-        <div data-animation="right"><a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a> <a href="tel:+33533880011">05 33 88 00 11</a></div>
-      </div>
-    </section>
+   
 
     <section class="grid-x grid-padding-x" data-role="partenaire-reconnu">
        <div class="large-12 medium-12 small-12 cell text-center">
         <h2 data-animation="top">Un partenaire reconnu</h2>
+       </div>
+      <div class="large-8 medium-8 small-12 cell text-center">
         <p data-animation="top">
           La société <strong>Eden Blue</strong> est un partenaire privilégié du groupe Leader Pool professionnel de la piscine
-           en béton armé depuis plus de 18 ans et avec plus de 10000 réalisations au niveau national et Européen.<br/>
-          <strong>Eden Blue</strong> est une marque déposée depuis 2004 et utilise le procédé <a href="https://www.leaderpool.fr/" target="_blank">Leader&nbsp;Pool</a> unique, breveté et
+           en béton armé depuis plus de 18 ans et avec plus de 10000 réalisations au niveau national et Européen.<br>
+          <strong>Eden Blue</strong> est une marque déposée depuis 2004 et utilise le procédé 
+          <a href="https://www.leaderpool.fr/" target="_blank">Leader&nbsp;Pool</a> unique, breveté et
            agréé SOCOTEC pour la construction des piscines haut de gamme s’intégrant parfaitement à leur environnement.
         </p>
         <p data-animation="top">
-            Notre équipe s’appuie sur 20 années d’expériences pour vous proposer le projet qui correspond à vos attentes. <br/>
-            Nous utilisons deux types de revêtements qui vous offre la possibilité de créer tous les effets et toutes les ambiances que vous aurez imaginez.<br/>
-            Des piscines de caractère, contemporaine, miroir, à débordement, naturelles, traditionnelle…<br/><br/>
+            Notre équipe s’appuie sur 20 années d’expériences pour vous proposer le projet qui correspond à vos attentes. <br>
+            Nous utilisons deux types de revêtements qui vous offre la possibilité de créer tous les effets et toutes les 
+            ambiances que vous aurez imaginez.<br>
+            Des piscines de caractère, contemporaine, miroir, à débordement, naturelles, traditionnelle…<br><br>
             
-            Eden Blue, professionnel de la piscine en béton armé monobloc, en Aquitaine.Nous intervenons dans toute la Gironde (Bassin d'Arcachon, Bordeaux, Libourne,  Blaye, Médoc...) et dans les départements limitrophes (Dordogne, Charente, Landes et Lot et Garonne<br/><br/>
-                        </p>                                           
+            Eden Blue, professionnel de la piscine en béton armé monobloc, en Aquitaine. Nous intervenons dans toute la Gironde 
+            (Bassin d'Arcachon, Bordeaux, Libourne,  Blaye, Médoc...) et dans les départements limitrophes (Dordogne, Charente, 
+            Landes et Lot et Garonne<br><br>
+        </p>   
+        
+     </div>
+     <div class="large-4 medium-4 small-12 cell text-center">
+        <a data-fancybox data-width="700" data-height="700" href="https://youtu.be/hjErQJODCsE"> <img src="assets/img/video/procede.png" alt="video procede Edenblue"></a>    
+       <br/> <br/>
+        <p>Construction d'une piscine en béton armé monobloc avec le procédé leaderpool</p>
+     </div>
+     
+     <div class="large-12 medium-12 small-12 cell text-center">
             <h2>Notre engagement : </h2>
             
             <ul data-animation="top">
@@ -91,7 +76,7 @@
             <figcaption>
               <label for="actu-1">+</label>
               <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis volutpat dolor, finibus imperdiet dolor consequat rhoncus. Integer eget odio nunc. Suspendisse quis est ante...<br/>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis volutpat dolor, finibus imperdiet dolor consequat rhoncus. Integer eget odio nunc. Suspendisse quis est ante...<br>
                 <a href="#">Lire la suite</a>
               </div>
             </figcaption>
@@ -102,7 +87,7 @@
             <figcaption>
               <label for="actu-2">+</label>
               <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis volutpat dolor, finibus imperdiet dolor consequat rhoncus. Integer eget odio nunc. Suspendisse quis est ante...<br/>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis volutpat dolor, finibus imperdiet dolor consequat rhoncus. Integer eget odio nunc. Suspendisse quis est ante...<br>
                 <a href="#">Lire la suite</a>
               </div>
             </figcaption>

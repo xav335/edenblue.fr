@@ -30,7 +30,8 @@ include_once 'admin/classes/utils.php';
         <p data-animation="top">
             Il s’agit d’un coffrage permettant la réalisation de voiles en béton armé banché. Ces coffrages sont munis de poutrelles triangulées qui assurent une rigidité exceptionnelle des parois, permettant ainsi la construction de plages en béton en porte à faux. Des chaînages périphériques haut et bas reliés par les poutrelles triangulées ceinturent complètement le bassin. Côté terre la tôle galvanisée sert de coffrage et protège de l’acidité des terres.<br><br>
             A l’intérieur, un grillage à fines mailles galvanisées sert de coffrage. Lors du coulage de la piscine vous aurez ainsi une visibilité parfaite de votre exécution. De plus, ce grillage évite tout risque de microfissures. Ce qui permet une construction de votre bassin en béton en une seule fois.<br><br>
-            Nous pouvons de ce fait réalisé vos rêves en construisant votre piscine, quelle soit design ou en forme libre . Nous adaptons les budget en fonction de vos désidératas
+            Nous pouvons de ce fait réalisé vos rêves en construisant votre piscine, quelle soit design ou en forme libre . 
+            Nous adaptons les budget en fonction de vos désidératas. <a data-fancybox data-width="700" data-height="700" href="https://youtu.be/qFdBX-oBbR4"><b>(VOIR LA VIDEO)</b></a>
         </p>
         
          
@@ -97,20 +98,24 @@ include_once 'admin/classes/utils.php';
 	  <div class="large-6 medium-6 small-12 cell" id="procedes">
         <h2 class="sous-titre">Procédés</h2>
         <p data-animation="top">
-            La longévité d’une piscine dépend de la solidité de sa structure.
-            Le procédé Leader Pool est unique, breveté et agréé Socotec.
-            Il permet la réalisation de tout type de piscine : de la plus simple à la plus élaborée, en alliant les valeurs du traditionnel et de la technologie.
-            Tous les matériaux utilisés pour la conception de votre structure sont issus des plus grandes entreprises européennes et respectent les normes en vigueurs.
-            Les « plus » de ce  système constructif :
-            -Permet tous les revêtements intérieur.
-            -Toutes  les formes : libres, linéaires, paysagées…
-            -Un ferraillage continu et parfaitement positionné.
-            L’utilisation de poutrelles triangulées assure une parfaite rigidité et  stabilité des parois et permet  la construction d’ouvrages complexes : plages en porte à faux,  plages immergées…
-            Le parfait ancrage des parois aux pieds par un chaînage périphérique assure une insensibilité aux poussées d’eau et de terre.
-            -Le grillage galvanisé à l’intérieur du bassin écarte tout risque de microfissure et offre une visibilité parfaite du coulage du béton.
+            La longévité d’une piscine dépend de la solidité de sa structure.<br>
+            Le procédé Leader Pool est unique, breveté et agréé Socotec.<br>
+            Il permet la réalisation de tout type de piscine : de la plus simple à la plus élaborée, en alliant les valeurs du traditionnel et de la technologie.<br>
+            Tous les matériaux utilisés pour la conception de votre structure sont issus des plus grandes entreprises européennes et respectent les normes en vigueurs.<br><br>
+            Les « plus » de ce  système constructif :<br>
+            -Permet tous les revêtements intérieur.<br>
+            -Toutes  les formes : libres, linéaires, paysagées…<br>
+            -Un ferraillage continu et parfaitement positionné.<br><br>
+      
+            L’utilisation de poutrelles triangulées assure une parfaite rigidité et  stabilité des parois et permet  
+            la construction d’ouvrages complexes : plages en porte à faux,  plages immergées…<br>
+            Le parfait ancrage des parois aux pieds par un chaînage périphérique assure une insensibilité aux poussées d’eau et de terre.<br>
+            -Le grillage galvanisé à l’intérieur du bassin écarte tout risque de microfissure et offre une visibilité parfaite du coulage du béton.<br>
             La présence de la tôle galvanisée, côté terre, protège de l’acidité des sols, prolongeant ainsi la durée de vie des piscines Eden Blue.
-               
+               <a data-fancybox data-width="700" data-height="700" href="https://youtu.be/hjErQJODCsE"><b>(VOIR LA VIDEO)</b></a>    
+        
         </p>
+       
       </div>
       
       <div class="large-12 medium-12 small-12 cell" text-center>
@@ -121,23 +126,23 @@ include_once 'admin/classes/utils.php';
        <div class="large-6 medium-6 small-12 cell" id="revetements">
         <h2 class="sous-titre">Revêtements</h2>
         <p data-animation="top">
-            Pour créer l’univers que vous désirez, Eden Blue propose deux types de revêtements qui s’adaptent à toutes les formes.
+            Pour créer l’univers que vous désirez, Eden Blue propose deux types de revêtements qui s’adaptent à toutes les formes.<br><br>
 
 
-            -  «  Les enduits », la qualité en toute simplicité :
-            Pour créer l’univers que vous désirez, Eden Blue vous propose le revêtement EDEN ROC qui s’adapte à toutes les formes de piscines.
-            Le revêtement EDEN ROC donne aux bassins un éclat particulier laissant ainsi libre court à toutes les ambiances d’eau.
-            Ce revêtement, très agréable au toucher, renforce l’aspect naturel de votre piscine grâce à un large choix de couleurs, de textures et aux effets de matières.
-            EDEN ROC résiste aux chocs thermiques, aux attaques acides, aux UV, au gel, aux traitements de l’eau et permet un nettoyage aisé de votre bassin.
-            En choisissant les revêtements à base de quartz EDEN ROC exclusivité EDEN BLUE vous obtiendrez une sensation unique de velours et une variété infinie de couleurs.
-            Ce revêtement noble et naturel est la signature de la société EDEN BLUE
+            -  «  Les enduits », la qualité en toute simplicité :<br><br>
+            Pour créer l’univers que vous désirez, Eden Blue vous propose le revêtement EDEN ROC qui s’adapte à toutes les formes de piscines.<br>
+            Le revêtement EDEN ROC donne aux bassins un éclat particulier laissant ainsi libre court à toutes les ambiances d’eau.<br>
+            Ce revêtement, très agréable au toucher, renforce l’aspect naturel de votre piscine grâce à un large choix de couleurs, de textures et aux effets de matières.<br>
+            EDEN ROC résiste aux chocs thermiques, aux attaques acides, aux UV, au gel, aux traitements de l’eau et permet un nettoyage aisé de votre bassin.<br>
+            En choisissant les revêtements à base de quartz EDEN ROC exclusivité EDEN BLUE vous obtiendrez une sensation unique de velours et une variété infinie de couleurs.<br><br>
+            Ce revêtement noble et naturel est la signature de la société EDEN BLUE<br><br>
             
-            - « Le carrelage », le plus noble et luxueux :
+            - « Le carrelage », le plus noble et luxueux :<br><br>
             
-            Emaux et pâte de verre donnent au bassin un éclat particulier laissant ainsi libre court à toutes les ambiances d’eau.
-            Un très large choix de couleurs, de textures et de dimensions vous offrira une mosaïque d’une grande pureté.
-            -Ce matériau résiste aux chocs thermiques, aux attaques acides, aux U.V, au gel, aux traitements de l’eau et permet un nettoyage aisé de votre bassin.
-            -grâce à la réalisation des joints époxy nous obtenons une étanchéité proche de la perfection et surtout une durée de vie inégalée.
+            Emaux et pâte de verre donnent au bassin un éclat particulier laissant ainsi libre court à toutes les ambiances d’eau.<br>
+            Un très large choix de couleurs, de textures et de dimensions vous offrira une mosaïque d’une grande pureté.<br>
+            -Ce matériau résiste aux chocs thermiques, aux attaques acides, aux U.V, au gel, aux traitements de l’eau et permet un nettoyage aisé de votre bassin.<br>
+            -grâce à la réalisation des joints époxy nous obtenons une étanchéité proche de la perfection et surtout une durée de vie inégalée.<br>
                     
         </p>
       </div>
@@ -158,13 +163,14 @@ include_once 'admin/classes/utils.php';
         <h2 class="sous-titre">Abords
         </h2>
         <p data-animation="top">
-               Afin que vos bassins puissent parfaitement s’intégrer dans leur environnement et vous permettre de vivre une expérience unique, Eden Blue vous propose différentes finitions du pourtour de vos abords :      
+               Afin que vos bassins puissent parfaitement s’intégrer dans leur environnement et vous permettre de vivre
+                une expérience unique, Eden Blue vous propose différentes finitions du pourtour de vos abords :      <br><br>
 
-                -Des  margelles en pierre, bois , grés cérame d’une très grande qualité.
+                -Des  margelles en pierre, bois , grés cérame d’une très grande qualité.<br><br>
 
-                La réalisation de plages immergées ou californiennes donnent la possibilité à l’ensemble de la famille de profiter des joies de l’eau et de personnaliser votre bassin.
+                La réalisation de plages immergées ou californiennes donnent la possibilité à l’ensemble de la
+                 famille de profiter des joies de l’eau et de personnaliser votre bassin.
 
-                    
         </p>
       </div>
 	   </div>
