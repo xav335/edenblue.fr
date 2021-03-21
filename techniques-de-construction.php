@@ -91,7 +91,7 @@ include_once 'admin/classes/utils.php';
          &nbsp; 
       </div>
 	  <div class="large-6 medium-6 small-12 cell" id="procedes">
-        <h2 class="sous-titre">Procédés</h2>
+        <h2>Procédés</h2>
       </div>		
       <div class="large-6 medium-12 small-12 cell" text-center>
           <div class="flex-video">
@@ -126,7 +126,7 @@ include_once 'admin/classes/utils.php';
       
       
       <div class="large-6 medium-6 small-12 cell" id="revetements">
-        <h2 class="sous-titre">Revêtements</h2>
+        <h2>Revêtements</h2>
       </div>
        <div class="large-6 medium-12 small-12 cell" text-center>
         &nbsp;
@@ -196,8 +196,7 @@ include_once 'admin/classes/utils.php';
       
       
        <div class="large-6 medium-6 small-12 cell" id="abords">
-        <h2 class="sous-titre">Abords
-        </h2>
+        <h2>Abords</h2>
         <p data-animation="top">
                Afin que vos bassins puissent parfaitement s’intégrer dans leur environnement et vous permettre de vivre
                 une expérience unique, Eden Blue vous propose différentes finitions du pourtour de vos abords :      <br><br>
@@ -206,7 +205,6 @@ include_once 'admin/classes/utils.php';
 
                 La réalisation de plages immergées ou californiennes donnent la possibilité à l’ensemble de la
                  famille de profiter des joies de l’eau et de personnaliser votre bassin.
-
         </p>
       </div>
 	   </div>
