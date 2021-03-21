@@ -5,7 +5,7 @@ require_once 'admin/classes/Goldbook.php';
 
 	$goldbook = new Goldbook();
 	$result2 = $goldbook->goldbookGet(null);
-	print_r($result);
+	//print_r($result2);
 	
 ?>
 <!doctype html>

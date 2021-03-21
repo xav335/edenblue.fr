@@ -31,11 +31,8 @@ include_once 'admin/classes/utils.php';
             Il s’agit d’un coffrage permettant la réalisation de voiles en béton armé banché. Ces coffrages sont munis de poutrelles triangulées qui assurent une rigidité exceptionnelle des parois, permettant ainsi la construction de plages en béton en porte à faux. Des chaînages périphériques haut et bas reliés par les poutrelles triangulées ceinturent complètement le bassin. Côté terre la tôle galvanisée sert de coffrage et protège de l’acidité des terres.<br><br>
             A l’intérieur, un grillage à fines mailles galvanisées sert de coffrage. Lors du coulage de la piscine vous aurez ainsi une visibilité parfaite de votre exécution. De plus, ce grillage évite tout risque de microfissures. Ce qui permet une construction de votre bassin en béton en une seule fois.<br><br>
             Nous pouvons de ce fait réalisé vos rêves en construisant votre piscine, quelle soit design ou en forme libre . 
-            Nous adaptons les budget en fonction de vos désidératas. <a data-fancybox data-width="700" data-height="700" href="https://youtu.be/qFdBX-oBbR4"><b>(VOIR LA VIDEO)</b></a>
+            Nous adaptons les budget en fonction de vos désidératas. 
         </p>
-        
-         
-          
          
       </div>
        <div class="large-6 medium-12 small-12 cell" >
@@ -58,6 +55,7 @@ include_once 'admin/classes/utils.php';
               <li>Le grillage galvanisé à l’intérieur du <strong>bassin</strong> écarte tout risque de microfissure et permet une visibilité parfaite lors du coulage du <strong>béton.</strong></li>
               <li>La présence de tôles galvanisées, côté terre, protège de l’acidité des terres</li>
              </ul>
+             <p class="text-center"> <a data-fancybox data-width="700" data-height="700" href="https://youtu.be/qFdBX-oBbR4"><b>(VIDEO CHANTIER)</b></a>  </p>
       </div> 
       <div class="large-6 medium-12 small-12 cell" text-center>
         	<p data-animation="top">
@@ -89,33 +87,37 @@ include_once 'admin/classes/utils.php';
         <hr>
       </div>	
       
-      		
       <div class="large-6 medium-12 small-12 cell" text-center>
-         <a data-fancybox="spa1" href="assets/img/amenagements-exterieurs/amenagements-paysage.jpg">
-            <img src="assets/img/amenagements-exterieurs/amenagements-paysage.jpg" alt="amenagements-exterieurs Edenblue">
-        </a>   
+         &nbsp; 
       </div>
 	  <div class="large-6 medium-6 small-12 cell" id="procedes">
         <h2 class="sous-titre">Procédés</h2>
+      </div>		
+      <div class="large-6 medium-12 small-12 cell" text-center>
+          <div class="flex-video">
+            <iframe src="https://www.youtube.com/embed/hjErQJODCsE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>  
+      </div>
+	  <div class="large-6 medium-6 small-12 cell" id="procedes">
         <p data-animation="top">
             La longévité d’une piscine dépend de la solidité de sa structure.<br>
             Le procédé Leader Pool est unique, breveté et agréé Socotec.<br>
             Il permet la réalisation de tout type de piscine : de la plus simple à la plus élaborée, en alliant les valeurs du traditionnel et de la technologie.<br>
             Tous les matériaux utilisés pour la conception de votre structure sont issus des plus grandes entreprises européennes et respectent les normes en vigueurs.<br><br>
-            Les « plus » de ce  système constructif :<br>
-            -Permet tous les revêtements intérieur.<br>
-            -Toutes  les formes : libres, linéaires, paysagées…<br>
-            -Un ferraillage continu et parfaitement positionné.<br><br>
+            Les « plus » de ce  système constructif :<br><br>
+             &nbsp;-Permet tous les revêtements intérieur.<br>
+             &nbsp;-Toutes  les formes : libres, linéaires, paysagées…<br>
+             &nbsp;-Un ferraillage continu et parfaitement positionné.<br><br>
       
             L’utilisation de poutrelles triangulées assure une parfaite rigidité et  stabilité des parois et permet  
             la construction d’ouvrages complexes : plages en porte à faux,  plages immergées…<br>
             Le parfait ancrage des parois aux pieds par un chaînage périphérique assure une insensibilité aux poussées d’eau et de terre.<br>
             -Le grillage galvanisé à l’intérieur du bassin écarte tout risque de microfissure et offre une visibilité parfaite du coulage du béton.<br>
-            La présence de la tôle galvanisée, côté terre, protège de l’acidité des sols, prolongeant ainsi la durée de vie des piscines Eden Blue.
-               <a data-fancybox data-width="700" data-height="700" href="https://youtu.be/hjErQJODCsE"><b>(VOIR LA VIDEO)</b></a>    
-        
+            La présence de la tôle galvanisée, côté terre, protège de l’acidité des sols, prolongeant ainsi la durée de vie des piscines Eden Blue.<br>
+              
+            <a href="assets/pdf/leaderpool.pdf" target="_blank"><img src="assets/pdf/telecharger.jpg" alt="amenagements-exterieurs Edenblue">Telechager la documentation</a>   
         </p>
-       
+        
       </div>
       
       <div class="large-12 medium-12 small-12 cell" text-center>
@@ -123,8 +125,13 @@ include_once 'admin/classes/utils.php';
       </div>
       
       
-       <div class="large-6 medium-6 small-12 cell" id="revetements">
+      <div class="large-6 medium-6 small-12 cell" id="revetements">
         <h2 class="sous-titre">Revêtements</h2>
+      </div>
+       <div class="large-6 medium-12 small-12 cell" text-center>
+        &nbsp;
+      </div>
+       <div class="large-6 medium-6 small-12 cell" id="revetements">
         <p data-animation="top">
             Pour créer l’univers que vous désirez, Eden Blue propose deux types de revêtements qui s’adaptent à toutes les formes.<br><br>
 
@@ -139,18 +146,46 @@ include_once 'admin/classes/utils.php';
             
             - « Le carrelage », le plus noble et luxueux :<br><br>
             
-            Emaux et pâte de verre donnent au bassin un éclat particulier laissant ainsi libre court à toutes les ambiances d’eau.<br>
-            Un très large choix de couleurs, de textures et de dimensions vous offrira une mosaïque d’une grande pureté.<br>
-            -Ce matériau résiste aux chocs thermiques, aux attaques acides, aux U.V, au gel, aux traitements de l’eau et permet un nettoyage aisé de votre bassin.<br>
-            -grâce à la réalisation des joints époxy nous obtenons une étanchéité proche de la perfection et surtout une durée de vie inégalée.<br>
-                    
+             Emaux et pâte de verre donnent au bassin un éclat particulier laissant ainsi libre court à toutes les ambiances d’eau.<br>
+             Un très large choix de couleurs, de textures et de dimensions vous offrira une mosaïque d’une grande pureté.<br>
+                       
         </p>
       </div>
 	   </div>
        <div class="large-6 medium-12 small-12 cell" text-center>
-         <a data-fancybox="spa1" href="assets/img/amenagements-exterieurs/pool-house.png">
-            <img src="assets/img/amenagements-exterieurs/pool-house.png" alt="amenagements-exterieurs Edenblue">
-        </a>   
+             
+       
+             <div class="grid-x grid-padding-x" role="">
+                  <div class="large-12 medium-12 small-12 cell" id="revetements">
+                    <p data-animation="top">
+                       
+                        -Ce matériau résiste aux chocs thermiques, aux attaques acides, aux U.V, au gel, aux traitements de l’eau et permet un nettoyage aisé de votre bassin.<br>
+                        -grâce à la réalisation des joints époxy nous obtenons une étanchéité proche de la perfection et surtout une durée de vie inégalée.<br>
+                                
+                    </p>
+                  </div>
+                 <div class="large-6 medium-6 small-12 cell" text-center>
+                    <a data-fancybox="spa1" href="assets/img/amenagements-exterieurs/pool-house.png">
+                        <img src="assets/img/amenagements-exterieurs/pool-house.png" alt="amenagements-exterieurs Edenblue">
+                    </a><br><br>
+                 </div>    
+                 <div class="large-6 medium-6 small-12 cell" text-center>
+                    <a data-fancybox="revet" href="assets/img/amenagements-exterieurs/pool-house.png">
+                        <img src="assets/img/amenagements-exterieurs/pool-house.png" alt="amenagements-exterieurs Edenblue">
+                    </a><br><br>
+                 </div>    
+                 <div class="large-6 medium-6 small-12 cell" text-center>
+                    <a data-fancybox="revet" href="assets/img/amenagements-exterieurs/pool-house.png">
+                        <img src="assets/img/amenagements-exterieurs/pool-house.png" alt="amenagements-exterieurs Edenblue">
+                    </a><br><br>
+                 </div>    
+                 <div class="large-6 medium-6 small-12 cell" text-center>
+                    <a data-fancybox="revets" href="assets/img/amenagements-exterieurs/pool-house.png">
+                        <img src="assets/img/amenagements-exterieurs/pool-house.png" alt="amenagements-exterieurs Edenblue">
+                    </a> <br><br>
+                 </div>   
+             </div>
+       
       </div>
       
       

@@ -48,8 +48,10 @@
         
      </div>
      <div class="large-4 medium-4 small-12 cell text-center">
-        <a data-fancybox data-width="700" data-height="700" href="https://youtu.be/hjErQJODCsE"> <img src="assets/img/video/procede.png" alt="video procede Edenblue"></a>    
-       <br/> <br/>
+        <div class="flex-video">
+            <iframe src="https://www.youtube.com/embed/hjErQJODCsE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <br/>
         <p>Construction d'une piscine en béton armé monobloc avec le procédé leaderpool</p>
      </div>
      

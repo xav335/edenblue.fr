@@ -106,7 +106,11 @@
             <strong>Equipements</strong> : UV/ozone, projecteur leds, fontaines éclairées, couverture </br>
         </p>
       </div>
-       
+        <div class="large-12 medium-12 small-12 cell">
+        <p class="text-center">
+         <a href="assets/pdf/leaderpool.pdf" target="_blank"><img src="assets/pdf/telecharger.jpg" alt="amenagements-exterieurs Edenblue">Telechager la documentation</a>
+        </p>      
+      </div>
     </section>
     
   </main>
