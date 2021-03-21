@@ -1,3 +1,11 @@
+<?php 
+include_once 'inc/inc.config.php';
+include_once 'admin/classes/utils.php';
+require_once 'admin/classes/News.php';
+$news = new News();
+$result = $news->newsGetOffset(0, 2);
+//print_r($result);
+?>
 <!doctype html>
 <html class="no-js" lang="fr">
   <head>
@@ -18,7 +26,6 @@
           Nous intervenons dans toute la Gironde (Bassin d’Arcachon, Bordeaux, Libourne,  Blaye, Médoc…) et dans les départements limitrophes (Dordogne, Charente, Landes et Lot et Garonne)
         </p>
       </div>
-      
     </section>
 
    
@@ -66,38 +73,55 @@
               <li>SAV de qualité.</li>
             </ul>
       </div>
+      <div class="grid-x grid-padding-x text-center">
+                <div class="large-6 medium-6 small-3 cell" >
+                     &nbsp;
+                </div>
+                <div class="large-2 medium-2 small-3 cell" >
+                    <img src="assets/img/techniques-de-construction/decenale.png" alt="techniques de construction Edenblue">
+                </div>
+                <div class="large-2 medium-2 small-3 cell" >
+                    <img src="assets/img/techniques-de-construction/socotec.png"  alt="techniques de construction Edenblue">
+                </div>
+                <div class="large-2 medium-2 small-3 cell" >
+                    <img src="assets/img/techniques-de-construction/madefrance.png"  alt="techniques de construction Edenblue">
+                </div>
+               
+            </div>
     </section>
-
+           
+    
+  <?php if ( !empty( $result ) ) :    
+        $i=0;?>  
     <section class="grid-x grid-padding-x" data-role="actualites">
-       <div class="large-12 medium-12 small-12 cell">
-        <h2 data-animation="top">Nouvelles fraiches</h2>
+        <div class="large-12 medium-12 small-12 cell">
+            <h2 data-animation="top">Nouvelles fraiches</h2>
         <div>
+          <?php foreach ( $result as $value ) :  
+                $i++;?>
           <figure data-animation="right">
-            <img src="assets/img/piscine-interieure.jpg" alt="piscine intérieure">
-            <input type="checkbox" name="actu" id="actu-1">
+             <?php if ( !empty( $value['image1'] ) ) :    ?>
+                <img src="photos/news<?php echo $value['image1']?>" alt="piscine intérieure">
+             <?php else :?>
+                 <img src="assets/img/piscine-interieure.jpg" alt="piscine intérieure">
+             <?php endif;?>   
+            <input type="checkbox" name="actu" id="actu-<?php echo $i ?>">
             <figcaption>
-              <label for="actu-1">+</label>
+              <label for="actu-<?php echo $i ?>">+</label>
               <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis volutpat dolor, finibus imperdiet dolor consequat rhoncus. Integer eget odio nunc. Suspendisse quis est ante...<br>
-                <a href="#">Lire la suite</a>
+                <b><?php echo nl2br($value['titre'])?></b><br>
+                <?php echo nl2br($value['contenu'])?><br>
+                <a href="<?php echo $value['accroche']?>" target="_blank">Lire la suite</a>
               </div>
             </figcaption>
           </figure>
-          <figure data-animation="left">
-            <img src="assets/img/piscine-interieure.jpg" alt="piscine intérieure">
-            <input type="checkbox" name="actu" id="actu-2">
-            <figcaption>
-              <label for="actu-2">+</label>
-              <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam facilisis volutpat dolor, finibus imperdiet dolor consequat rhoncus. Integer eget odio nunc. Suspendisse quis est ante...<br>
-                <a href="#">Lire la suite</a>
-              </div>
-            </figcaption>
-          </figure>
+          <?php endforeach;?>
+          
         </div>
       </div>
-       <div class="large-12 medium-12 small-12 cell"><a href="" class="button">+ d’actualités</a></div>
+       <div class="large-12 medium-12 small-12 cell"><a href="actualite.php" class="button">+ d’actualités</a></div>
     </section>
+  <?php endif;?>  
 
   </main>
 

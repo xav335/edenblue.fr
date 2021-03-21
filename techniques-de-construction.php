@@ -41,7 +41,7 @@ include_once 'admin/classes/utils.php';
         </a>   
       </div>
       <div class="large-6 medium-12 small-12 cell" text-center>
-            <h4 class="sous-titre"><strong>Notre procédé</strong></h4>
+            <h4 class="sous-titre">Notre procédé</h4>
               <p data-animation="top">
                 Une construction spécifique qui permet d’assurer une solidité du produit, une excellente tenue dans le temps mais aussi de permettre d’offrir une gamme de choix quasi-illimitée pour la conception d’une piscine sur-mesure.<br><br>
                 <strong>Le procédé de construction de votre piscine présente tous les avantages du monobloc en béton armé</strong>
@@ -159,7 +159,8 @@ include_once 'admin/classes/utils.php';
                   <div class="large-12 medium-12 small-12 cell" id="revetements">
                     <p data-animation="top">
                        
-                        -Ce matériau résiste aux chocs thermiques, aux attaques acides, aux U.V, au gel, aux traitements de l’eau et permet un nettoyage aisé de votre bassin.<br>
+                        -Ce matériau résiste aux chocs thermiques, aux attaques acides, aux U.V, au gel, aux traitements de l’eau et permet un nettoyage
+                         aisé de votre bassin.<br>
                         -grâce à la réalisation des joints époxy nous obtenons une étanchéité proche de la perfection et surtout une durée de vie inégalée.<br>
                                 
                     </p>

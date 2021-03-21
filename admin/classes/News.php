@@ -12,7 +12,7 @@ class News extends StorageManager {
 		//print_r($requete);
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
-		while( $row = mysqli_fetch_assoc( $result)){
+		while( ($row = mysqli_fetch_assoc( $result)) != false) {
 			$new_array[] = $row;
 		}
 		$this->dbDisConnect();
@@ -30,11 +30,24 @@ class News extends StorageManager {
 		//print_r($requete);
 		$new_array = null;
 		$result = mysqli_query($this->mysqli,$requete);
-		while( $row = mysqli_fetch_assoc( $result)){
+		while( ($row = mysqli_fetch_assoc( $result)) != false) {
 			$new_array[] = $row;
 		}
 		$this->dbDisConnect();
 		return $new_array;
+	}
+	
+	public function newsGetOffset($offset,$count){
+	    $this->dbConnect();
+	    $requete = "SELECT * FROM `news` WHERE online=1 ORDER BY date_news DESC LIMIT ". $offset .",". $count .";" ;
+	    //print_r($requete);
+	    $new_array = null;
+	    $result = mysqli_query($this->mysqli,$requete);
+	    while( ($row = mysqli_fetch_assoc( $result)) != false) {
+	        $new_array[] = $row;
+	    }
+	    $this->dbDisConnect();
+	    return $new_array;
 	}
 	
 	public function newsAdd($value){

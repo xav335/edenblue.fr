@@ -61,11 +61,11 @@ require_once 'admin/classes/Goldbook.php';
         <form class="grid-x grid-padding-x" data-animation="top" id="formulaire" method="post" action="livre-d-or.php">
             <input type="hidden" name="datepicker"   value="<?php echo date("d/m/Y")?>">
           <div class="large-5 medium-5 small-12 cell">
-            <input type="text" name="nom" placeholder="Nom" required /><input type="text" name="prenom" placeholder="Prénom"  required />
-            <input type="email" name="email" placeholder="e-mail" required />
+            <input type="text" name="nom" id="nom" placeholder="Nom" required /><input type="text" name="prenom" id="prenom" placeholder="Prénom"  required />
+            <input type="email" name="email" id="email" placeholder="e-mail" required />
           </div>
           <div class="large-7 medium-7 small-12 cell">
-             <textarea name="message" placeholder="Votre message ici" required ></textarea>
+             <textarea name="message" id="message" placeholder="Votre message ici" required ></textarea>
           </div>
           <div class="large-12 medium-12 small-12 cell">
             <input type="submit" value="Envoyer">
