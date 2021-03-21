@@ -18,6 +18,7 @@ if (!empty($_GET)){ //Modif
 		$date_news= 	traitement_datetime_affiche($result[0]['date_news']);
 		$accroche= 		$result[0]['accroche'];
 		$contenu= 	$result[0]['contenu'];
+		$video= 	$result[0]['video'];
 		if($result[0]['online']=='1') {
 			$online = 'checked';
 		} else {
@@ -42,6 +43,7 @@ if (!empty($_GET)){ //Modif
 	$date_news= 	null;
 	$accroche= 		null;
 	$contenu= 		null;
+	$video= 		null;
 	$online = 		null;
 	for ($i=1;$i<2;$i++) {
 		$img[$i]  = 'img/favicon.png';
@@ -89,6 +91,11 @@ if (!empty($_GET)){ //Modif
 						<label for="accroche">Lien vers produit ou page du site :</label><br>
 		           		<input class="col-sm-8"  name="accroche"  id="accroche" value="<?php echo $accroche ?>" />
 		            </div> 
+		            
+		            <div class="form-group">
+						<label for="accroche">Code Youtube :</label><br>
+		           		<textarea class="col-sm-11" name="video" id="video" rows="3" ><?php echo $video ?></textarea>
+		            </div>
 		           
 		            <div class="form-group"><br>
 						<label  for="titre">Choisissez la photos </label>

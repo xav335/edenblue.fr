@@ -39,11 +39,14 @@ require 'classes/News.php';
 							<th class="col-md-2" style="">
 								lien 
 							</th>
-							<th class="col-md-5" style="">
+							<th class="col-md-4" style="">
 								Contenu
 							</th>
 							<th class="col-md-1" style="">
 								Photo
+							</th>
+							<th class="col-md-1" style="">
+								VIDEO
 							</th>
 							<th class="col-md-1" style="">
 								A la une
@@ -72,7 +75,8 @@ require 'classes/News.php';
 								<td><?php echo $value['titre']?></td>
 								<td><?php echo $value['accroche']?></td>
 								<td><?php echo $value['contenu']?></td>
-								<td><?php if(!empty($value['image1']) && isset($value['image1'])) echo 'image OK' ?></td>
+								<td><?php if(!empty($value['image1']) && isset($value['image1'])) :?><img src="img/check.png" width="30" ><?php endif;?></td>
+								<td><?php if(!empty($value['video']) && isset($value['video'])): ?><img src="img/check.png" width="30" ><?php endif;?></td>
 								<td><img src="img/<?php echo $online ?>.png" width="30" ></td>
 								<td><a href="news-edit.php?id=<?php echo $value['id_news'] ?>"><img src="img/modif.png" width="30" alt="Modifier" ></a></td>
 								<td>

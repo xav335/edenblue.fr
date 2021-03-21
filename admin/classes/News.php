@@ -59,12 +59,13 @@ class News extends StorageManager {
 		try {
 			($value['online']=='on') ? $online = 1 : $online = 0;
 			$sql = "INSERT INTO  `news`
-						(`date_news`, `titre`, `accroche`, `image1`, `contenu`, `online`)
+						(`date_news`, `titre`, `accroche`, `image1`, `video`, `contenu`, `online`)
 						VALUES (
 						'". $this->inserer_date($value['datepicker']) ."', 
 						'". addslashes($value['titre']) ."',
 						'". addslashes($value['accroche']) ."',
 						'". addslashes($value['url1']) ."',
+						'". addslashes($value['video']) ."',
 						'". addslashes($value['contenu']) ."',
 						". $online ." 	
 					);";
@@ -98,6 +99,7 @@ class News extends StorageManager {
 					`titre`='". addslashes($value['titre']) ."', 
 					`accroche`='". addslashes($value['accroche']) ."', 
 					`image1`='". addslashes($value['url1']) ."',
+					 `video`='". addslashes($value['video']) ."',
 					`contenu`='". addslashes($value['contenu']) ."',
 					`online`=". $online ."		 
 					WHERE `id_news`=". $value['id'] .";";

@@ -55,7 +55,7 @@ include_once 'admin/classes/utils.php';
               <li>Le grillage galvanisé à l’intérieur du <strong>bassin</strong> écarte tout risque de microfissure et permet une visibilité parfaite lors du coulage du <strong>béton.</strong></li>
               <li>La présence de tôles galvanisées, côté terre, protège de l’acidité des terres</li>
              </ul>
-             <p class="text-center"> <a data-fancybox data-width="700" data-height="700" href="https://youtu.be/qFdBX-oBbR4"><b>(VIDEO CHANTIER)</b></a>  </p>
+             <p class="text-center"> <a data-fancybox data-width="700" data-height="700" href="https://youtu.be/x-K9qA0tVpc"><b>(VIDEO CHANTIER)</b></a>  </p>
       </div> 
       <div class="large-6 medium-12 small-12 cell" text-center>
         	<p data-animation="top">

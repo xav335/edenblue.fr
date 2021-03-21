@@ -31,10 +31,21 @@ $result = $news->newsGet(null);
                     <p data-animation="top">
                             <?php echo nl2br($value['contenu'])?>
                          </p>
+                          <?php if( !empty( $value['image1'] )) :?>
                              <a data-fancybox="spa1" href="photos/news<?php echo $value['image1']?>"><br>
                                 <img src="photos/news<?php echo $value['image1']?>" alt="amenagements-exterieurs Edenblue">
                             </a>  
+                             <br><br>
+                           <?php endif;?>   
+                           <?php if( !empty( $value['video'] )) :?>
+                             <div class="flex-video">
+                                <?php echo $value['video']?>
+                            </div>  
+                            <?php endif;?>  
                    <br><br>
+                   <?php if( !empty( $value['accroche'] )) :?>
+                   <p class="text-center"> <a href="<?php echo $value['accroche']?>" target="_blank"><b>En savoir +</b></a>  </p>
+                   <?php endif;?> 
               </div>
              
       
