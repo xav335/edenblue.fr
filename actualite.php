@@ -31,10 +31,10 @@ $result = $news->newsGet(null);
                     <p data-animation="top">
                             <?php echo nl2br($value['contenu'])?>
                          </p>
-                             <a data-fancybox="spa1" href="assets/img/techniques-de-construction/shema.png"><br>
+                             <a data-fancybox="spa1" href="photos/news<?php echo $value['image1']?>"><br>
                                 <img src="photos/news<?php echo $value['image1']?>" alt="amenagements-exterieurs Edenblue">
                             </a>  
-                   
+                   <br><br>
               </div>
              
       
