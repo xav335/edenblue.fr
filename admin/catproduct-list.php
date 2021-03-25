@@ -152,7 +152,7 @@
 								</select>
 						<?php endif; ?>
 							
-									<a href="/admin/product-list.php?categorie=" <?php echo $value[ "id" ] ?>> <?php echo $decalage.$value[ "label" ] ?></a>
+									<a href="/admin/product-list.php?categorie=<?php echo $value[ "id" ] ?>"> <?php echo $decalage.$value[ "label" ] ?></a>
 								</td>
 								<td> <?php echo $description ?></td>
 								<td>
