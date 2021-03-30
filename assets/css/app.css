@@ -316,3 +316,9 @@ section[data-role="actualites"], footer {overflow:hidden;}
   body.spa section[data-role="votre-projet"] {overflow:hidden;}
   body.not-home .slider.swiper-container {height:230px;}
 }
+@media screen and (max-width:640px) and (max-height:580px){
+  header nav ul {zoom:.95;}
+  header nav li a {line-height:2.5;}
+  header nav ul ul li a {font-size:.8rem;}
+  nav ul + div a {font-size:1.4rem;}
+}

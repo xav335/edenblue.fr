@@ -44,9 +44,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         let liensMenu = document.querySelectorAll('nav ul > li a');
         liensMenu.forEach(lien => {
             lien.addEventListener('click', function(e){
+                liensMenu.forEach(lien => {
+                    lien.classList.remove('open');
+                });
                 if(this.nextElementSibling){
                     e.preventDefault();
-                    this.classList.toggle('open');
+                    this.classList.add('open');
                 }
             });
         });
