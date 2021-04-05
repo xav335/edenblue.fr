@@ -21,22 +21,22 @@
       <div class="large-12 cell">
         <div class="grid-x grid-padding-x">
           <div class="large-4 cell"></div>
-          <div class="large-4 cell"><img src="assets/img/photo-spa-1.png" alt="" class="img-spa-top" /></div>
+          <div class="large-4 cell"><a href="spa-serie-club.php"><img src="assets/img/gammeclub/cl84c.png" alt="" class="img-spa-top" /></a></div>
           <div class="large-4 cell"></div>
           <div class="large-4 cell text-right">
-            <div class="legende">Serie Club<br/>Serie sensation</div>
-            <img src="assets/img/photo-spa-2.png" alt="" class="img-spa" data-animation="right" />
+            <div class="legende"><a href="spa-serie-club.php">Serie Club</a><br/><br/><a href="spa-serie-sensation.php">Serie sensation</a></div>
+            <a href="spa-serie-sensation.php"><img src="assets/img/gammesensation/amara-vuecote-edenblue.png" alt="" class="img-spa" data-animation="right" /></a>
           </div>
           <div class="large-4 cell"></div>
           <div class="large-4 cell">
-            <img src="assets/img/photo-spa-4.png" alt="" class="img-spa" data-animation="left" />
+             <a href="spa-serie-privilege.php"><img src="assets/img/gammeprivilege/nautilus-vuecote-edenblue.png" alt="" class="img-spa" data-animation="left" /></a>
             <div class="legende">
-              Serei prestige <br/>
-              Serie sport
+              <a href="spa-serie-privilege.php">Série privilège</a> <br/><br/>
+               <a href="spa-serie-sport.php">Serie sport</a>
             </div>
           </div>
           <div class="large-4 cell"></div>
-          <div class="large-4 cell"><img src="assets/img/photo-spa-3.png" alt="" class="img-spa-bottom" /></div>
+          <div class="large-4 cell"><a href="spa-serie-sport.php"><img src="assets/img/gammesport/aquex19-vuecote-edenblue.png" alt="" class="img-spa-bottom" /></a></div>
           <div class="large-4 cell"></div>
         </div>
       </div>
