@@ -33,13 +33,13 @@ include_once 'admin/classes/utils.php';
             Nous pouvons de ce fait réalisé vos rêves en construisant votre piscine, quelle soit design ou en forme libre . 
             Nous adaptons les budget en fonction de vos désidératas. 
         </p>
-         
       </div>
-       <div class="large-6 medium-12 small-12 cell" >
+      <div class="large-6 medium-12 small-12 cell" >
          <a data-fancybox="spa1" href="assets/img/techniques-de-construction/shema.png"><br>
             <img src="assets/img/techniques-de-construction/shema2.png" alt="amenagements-exterieurs Edenblue">
         </a>   
       </div>
+      
       <div class="large-6 medium-12 small-12 cell" text-center>
             <h4 class="sous-titre">Notre procédé</h4>
               <p data-animation="top">
@@ -82,6 +82,34 @@ include_once 'admin/classes/utils.php';
                 </div>
             </div>
 	  </div>	
+	
+	  <div class="large-12 medium-12 small-12 cell" text-center>
+             <div class="grid-x grid-padding-x" role="">
+                  <div class="large-12 medium-12 small-12 cell" >
+                   &nbsp;
+                  </div>
+                 <div class="large-3 medium-6 small-12 cell" text-center>
+                    <a data-fancybox="const" href="assets/img/techniques-de-construction/1.jpg">
+                        <img src="assets/img/techniques-de-construction/1.jpg" alt="amenagements-exterieurs Edenblue">
+                    </a><br><br>
+                 </div>    
+                 <div class="large-3 medium-6 small-12 cell" text-center>
+                    <a data-fancybox="const" href="assets/img/techniques-de-construction/2.jpg">
+                        <img src="assets/img/techniques-de-construction/2.jpg" alt="amenagements-exterieurs Edenblue">
+                    </a><br><br>
+                 </div>    
+                 <div class="large-3 medium-6 small-12 cell" text-center>
+                    <a data-fancybox="const" href="assets/img/techniques-de-construction/3.jpg">
+                        <img src="assets/img/techniques-de-construction/3.jpg" alt="amenagements-exterieurs Edenblue">
+                    </a><br><br>
+                 </div>    
+                 <div class="large-3 medium-6 small-12 cell" text-center>
+                    <a data-fancybox="const" href="assets/img/techniques-de-construction/4.jpg">
+                        <img src="assets/img/techniques-de-construction/4.jpg" alt="amenagements-exterieurs Edenblue">
+                    </a> <br><br>
+                 </div>   
+             </div>
+      </div>
 			
 	  <div class="large-12 medium-12 small-12 cell" text-center>
         <hr>
@@ -93,6 +121,7 @@ include_once 'admin/classes/utils.php';
 	  <div class="large-6 medium-6 small-12 cell" id="procedes">
         <h2>Procédés</h2>
       </div>		
+      
       <div class="large-6 medium-12 small-12 cell" text-center>
           <div class="flex-video">
             <iframe src="https://www.youtube.com/embed/hjErQJODCsE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -117,21 +146,20 @@ include_once 'admin/classes/utils.php';
               
             <a href="assets/pdf/leaderpool.pdf" target="_blank"><img src="assets/pdf/telecharger.jpg" alt="amenagements-exterieurs Edenblue">Telechager la documentation</a>   
         </p>
-        
       </div>
       
       <div class="large-12 medium-12 small-12 cell" text-center>
         <hr>
       </div>
       
-      
       <div class="large-6 medium-6 small-12 cell" id="revetements">
         <h2>Revêtements</h2>
       </div>
-       <div class="large-6 medium-12 small-12 cell" text-center>
+      <div class="large-6 medium-12 small-12 cell" text-center>
         &nbsp;
       </div>
-       <div class="large-6 medium-6 small-12 cell" id="revetements">
+       
+      <div class="large-6 medium-6 small-12 cell" id="revetements">
         <p data-animation="top">
             Pour créer l’univers que vous désirez, Eden Blue propose deux types de revêtements qui s’adaptent à toutes les formes.<br><br>
 
@@ -147,55 +175,50 @@ include_once 'admin/classes/utils.php';
             - « Le carrelage », le plus noble et luxueux :<br><br>
             
              Emaux et pâte de verre donnent au bassin un éclat particulier laissant ainsi libre court à toutes les ambiances d’eau.<br>
-             Un très large choix de couleurs, de textures et de dimensions vous offrira une mosaïque d’une grande pureté.<br>
+            Un très large choix de couleurs, de textures et de dimensions vous offrira une mosaïque d’une grande pureté.<br>
                        
         </p>
       </div>
-	   </div>
-       <div class="large-6 medium-12 small-12 cell" text-center>
+      <div class="large-6 medium-12 small-12 cell" text-center>
              
        
              <div class="grid-x grid-padding-x" role="">
-                  <div class="large-12 medium-12 small-12 cell" id="revetements">
+                  <div class="large-12 medium-12 small-12 cell">
                     <p data-animation="top">
-                       
+                         
                         -Ce matériau résiste aux chocs thermiques, aux attaques acides, aux U.V, au gel, aux traitements de l’eau et permet un nettoyage
                          aisé de votre bassin.<br>
                         -grâce à la réalisation des joints époxy nous obtenons une étanchéité proche de la perfection et surtout une durée de vie inégalée.<br>
-                                
                     </p>
                   </div>
                  <div class="large-6 medium-6 small-12 cell" text-center>
-                    <a data-fancybox="spa1" href="assets/img/amenagements-exterieurs/pool-house.png">
-                        <img src="assets/img/amenagements-exterieurs/pool-house.png" alt="amenagements-exterieurs Edenblue">
+                    <a data-fancybox="revet" href="assets/img/techniques-de-construction/revet1.jpg">
+                        <img src="assets/img/techniques-de-construction/revet1.jpg" alt="amenagements-exterieurs Edenblue">
                     </a><br><br>
                  </div>    
                  <div class="large-6 medium-6 small-12 cell" text-center>
-                    <a data-fancybox="revet" href="assets/img/amenagements-exterieurs/pool-house.png">
-                        <img src="assets/img/amenagements-exterieurs/pool-house.png" alt="amenagements-exterieurs Edenblue">
+                    <a data-fancybox="revet" href="assets/img/techniques-de-construction/revet2.jpg">
+                        <img src="assets/img/techniques-de-construction/revet2.jpg" alt="amenagements-exterieurs Edenblue">
                     </a><br><br>
                  </div>    
                  <div class="large-6 medium-6 small-12 cell" text-center>
-                    <a data-fancybox="revet" href="assets/img/amenagements-exterieurs/pool-house.png">
-                        <img src="assets/img/amenagements-exterieurs/pool-house.png" alt="amenagements-exterieurs Edenblue">
+                    <a data-fancybox="revet" href="assets/img/techniques-de-construction/revet3.jpg">
+                        <img src="assets/img/techniques-de-construction/revet3.jpg" alt="amenagements-exterieurs Edenblue">
                     </a><br><br>
                  </div>    
                  <div class="large-6 medium-6 small-12 cell" text-center>
-                    <a data-fancybox="revets" href="assets/img/amenagements-exterieurs/pool-house.png">
-                        <img src="assets/img/amenagements-exterieurs/pool-house.png" alt="amenagements-exterieurs Edenblue">
+                    <a data-fancybox="revet" href="assets/img/techniques-de-construction/revet4.jpg">
+                        <img src="assets/img/techniques-de-construction/revet4.jpg" alt="amenagements-exterieurs Edenblue">
                     </a> <br><br>
                  </div>   
              </div>
-       
       </div>
-      
       
       <div class="large-12 medium-12 small-12 cell" text-center>
         <hr>
       </div>
       
-      
-       <div class="large-6 medium-6 small-12 cell" id="abords">
+      <div class="large-6 medium-6 small-12 cell" id="abords">
         <h2>Abords</h2>
         <p data-animation="top">
                Afin que vos bassins puissent parfaitement s’intégrer dans leur environnement et vous permettre de vivre
@@ -207,14 +230,42 @@ include_once 'admin/classes/utils.php';
                  famille de profiter des joies de l’eau et de personnaliser votre bassin.
         </p>
       </div>
-	   </div>
-       <div class="large-6 medium-12 small-12 cell" text-center>
-         <a data-fancybox="spa1" href="assets/img/amenagements-exterieurs/pool-house.png">
+      <div class="large-6 medium-12 small-12 cell" text-center>
+         <a data-fancybox="abor" href="assets/img/amenagements-exterieurs/pool-house.png">
             <img src="assets/img/amenagements-exterieurs/pool-house.png" alt="amenagements-exterieurs Edenblue">
         </a>   
       </div>
+
+      <div class="large-12 medium-12 small-12 cell" text-center>
+             <div class="grid-x grid-padding-x" role="">
+                  <div class="large-12 medium-12 small-12 cell" id="revetements">
+                   &nbsp;
+                  </div>
+                 <div class="large-6 medium-6 small-12 cell" text-center>
+                    <a data-fancybox="abor" href="assets/img/techniques-de-construction/abord1.jpg">
+                        <img src="assets/img/techniques-de-construction/abord1.jpg" alt="amenagements-exterieurs Edenblue">
+                    </a><br><br>
+                 </div>    
+                 <div class="large-6 medium-6 small-12 cell" text-center>
+                    <a data-fancybox="abor" href="assets/img/techniques-de-construction/abord2.jpg">
+                        <img src="assets/img/techniques-de-construction/abord2.jpg" alt="amenagements-exterieurs Edenblue">
+                    </a><br><br>
+                 </div>    
+                 <div class="large-6 medium-6 small-12 cell" text-center>
+                    <a data-fancybox="abor" href="assets/img/techniques-de-construction/abord3.jpg">
+                        <img src="assets/img/techniques-de-construction/abord3.jpg" alt="amenagements-exterieurs Edenblue">
+                    </a><br><br>
+                 </div>    
+                 <div class="large-6 medium-6 small-12 cell" text-center>
+                    <a data-fancybox="abor" href="assets/img/techniques-de-construction/abord4.jpg">
+                        <img src="assets/img/techniques-de-construction/abord4.jpg" alt="amenagements-exterieurs Edenblue">
+                    </a> <br><br>
+                 </div>   
+             </div>
+      </div>
       
-								
+      
+      
     </section>
 
   </main>

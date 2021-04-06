@@ -27,6 +27,21 @@
         </a>    
       </div>
       <br>
+      
+      <div class="large-3 medium-4 small-12 cell">
+        <a data-fancybox="spa" href="assets/img/gammeprivilege/naka-st-edenblue.png">
+            <figcaption>PRIVILEGE - NAKA </figcaption>
+            <img src="assets/img/gammeprivilege/naka-st-edenblue.png" alt="Spa Club Edenblue">
+        </a>    
+        <p>
+            <strong>Dimensions </strong> : 209 x 209 x 92 cm</br>
+            <strong>Nombre de places </strong> : 6 dont 1 allongé </br>
+            <strong>Nombre de pompes </strong> : 1 bi-vitesses (3 CV)</br>
+            <strong>Buses </strong> : 36 </br>
+            <strong>Equipements </strong> : UV/ozone, projecteur leds, leds sous vannes, fontaines éclairées, couverture d’isolation (15 x 10 cm)</br>
+        </p>
+      </div>
+      
       <div class="large-3 medium-4 small-12 cell">
         <a data-fancybox="spa" href="assets/img/gammeprivilege/clea-st-edenblue.png">
             <figcaption>PRIVILEGE - CLEA ST</figcaption>
@@ -138,16 +153,20 @@
             <strong>Equipements </strong> :station musicale INP4, UV/ozone, buses translucides avec leds, projecteur leds, leds sous vannes, fontaines éclairées, couverture d’isolation (15 x 10 cm)</br>
         </p>
       </div>
+       
+      <div class="large-3 medium-4 small-12 cell">
+        &nbsp;
+      </div> 
       
-      <div class="large-6 medium-6 small-12 cell">
+      <div class="large-6 medium-4 small-12 cell">
          <a data-fancybox="spa" href="assets/img/gammeprivilege/nautilus-vuecote-edenblue.png">
             <img src="assets/img/gammeprivilege/nautilus-vuecote-edenblue.png" alt="Spa Club Edenblue">
         </a>
       </div>
       
-      <div class="large-6 medium-6 small-12 cell">
+      <div class="large-12 medium-12 small-12 cell">
         <p class="text-center"><br><br><br>
-         <a href="assets/pdf/edenblue-spas-2021.pdf" target="_blank"><img src="assets/pdf/telecharger.jpg" alt="amenagements-exterieurs Edenblue">Télécharger la documentation</a>
+         <a href="assets/pdf/edenblue-spas-2021.pdf" target="_blank"><img src="assets/pdf/telecharger.jpg" alt="amenagements-exterieurs Edenblue"></a>&nbsp;&nbsp;<a href="assets/pdf/edenblue-spas-2021.pdf" target="_blank"><a href="assets/pdf/edenblue-spas-2021.pdf" target="_blank">Télécharger la documentation</a>
         </p>      
       </div>
     </section>

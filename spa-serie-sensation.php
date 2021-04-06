@@ -94,8 +94,8 @@
       
       <div class="large-6 medium-6 small-12 cell">
         <p class="text-center"><br><br><br>
-         <a href="assets/pdf/edenblue-spas-2021.pdf" target="_blank"><img src="assets/pdf/telecharger.jpg" alt="amenagements-exterieurs Edenblue">Télécharger la documentation</a>
-        </p>      
+         <a href="assets/pdf/edenblue-spas-2021.pdf" target="_blank"><img src="assets/pdf/telecharger.jpg" alt="amenagements-exterieurs Edenblue"></a>&nbsp;&nbsp;<a href="assets/pdf/edenblue-spas-2021.pdf" target="_blank"><a href="assets/pdf/edenblue-spas-2021.pdf" target="_blank">Télécharger la documentation</a>
+        </p>    
       </div>
     </section>
     

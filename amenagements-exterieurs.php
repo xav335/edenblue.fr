@@ -78,8 +78,8 @@ include_once 'admin/classes/utils.php';
       </div>
 	   </div>
        <div class="large-6 medium-12 small-12 cell" text-center>
-         <a data-fancybox="spa1" href="assets/img/amenagements-exterieurs/pool-house.png">
-            <img src="assets/img/amenagements-exterieurs/pool-house.png" alt="amenagements-exterieurs Edenblue">
+         <a data-fancybox="spa1" href="assets/img/amenagements-exterieurs/pool-house.jpg">
+            <img src="assets/img/amenagements-exterieurs/pool-house.jpg" alt="amenagements-exterieurs Edenblue">
         </a>   
       </div>
 								
