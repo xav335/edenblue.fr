@@ -73,21 +73,26 @@ $result = $news->newsGetOffset(0, 2);
               <li>SAV de qualité.</li>
             </ul>
       </div>
-      <div class="grid-x grid-padding-x text-center">
-                <div class="large-6 medium-6 small-3 cell" >
-                     &nbsp;
+       
+      <div class="large-12 medium-12 small-12 cell ">
+        <div class="grid-x grid-padding-x " role="">
+                <div class="large-3 medium-3 small-3 cell" >
+                    &nbsp;
                 </div>
-                <div class="large-2 medium-2 small-3 cell" >
+                <div class="large-2 medium-2 small-2 cell" >
                     <img src="assets/img/techniques-de-construction/decenale.png" alt="techniques de construction Edenblue">
                 </div>
-                <div class="large-2 medium-2 small-3 cell" >
+                <div class="large-2 medium-2 small-2 cell" >
                     <img src="assets/img/techniques-de-construction/socotec.png"  alt="techniques de construction Edenblue">
                 </div>
-                <div class="large-2 medium-2 small-3 cell" >
+                <div class="large-2 medium-2 small-2 cell" >
                     <img src="assets/img/techniques-de-construction/madefrance.png"  alt="techniques de construction Edenblue">
                 </div>
-               
-            </div>
+                <div class="large-3 medium-3 small-3 cell" >
+                    &nbsp;
+                </div>
+           </div>    
+       </div>
     </section>
            
     
