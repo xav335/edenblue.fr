@@ -32,17 +32,17 @@ include_once 'admin/classes/utils.php';
             ont été sélectionnés par nos soins pour leurs qualités.
          </p>
       </div>
-      <div class="large-12 medium-12 small-12 cell" >
-         <a data-fancybox="spa1" href="assets/img/equipements/nettoyage.jpg"><br>
-            <img src="assets/img/equipements/nettoyage.jpg" alt="amenagements-exterieurs Edenblue">
-        </a>   
-      </div>
+     
       
        <div class="large-12 medium-12 small-12 cell" text-center>
         <hr>
       </div>	
       
-      
+      <div class="large-12 medium-12 small-12 cell" >
+         <a data-fancybox="spa1" href="assets/img/equipements/nettoyage.jpg"><br>
+            <img src="assets/img/equipements/nettoyage.jpg" alt="amenagements-exterieurs Edenblue">
+        </a>   
+      </div>
       
       
       
