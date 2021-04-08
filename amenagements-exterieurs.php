@@ -15,11 +15,11 @@ include_once 'admin/classes/utils.php';
   <main class="grid-container">
 
     <section class="grid-x grid-padding-x" role="gallery">
-      <div class="large-12 medium-12 small-12 cell" text-center>
+      <div class="large-12 medium-12 small-12 cell" >
         <h1>Aménagements extérieurs</h1>
       </div>
       
-      <div class="large-6 medium-12 small-12 cell" text-center>
+      <div class="large-6 medium-12 small-12 cell " >
          <p data-animation="top">
          <strong>Eden Blue</strong> vous propose de vous accompagnez dans la réalisation de vos aménagements paysagés et de vos abords afin que vous puissiez bénéficier de ce qui ce fait de mieux :
          </p>
@@ -36,20 +36,39 @@ include_once 'admin/classes/utils.php';
         </p>
         
       </div>
-       <div class="large-6 medium-12 small-12 cell" text-center>
-         <a data-fancybox="spa1" href="assets/img/amenagements-exterieurs/amenagements-exterieurs.png">
-            <img src="assets/img/amenagements-exterieurs/amenagements-exterieurs.png" alt="amenagements-exterieurs Edenblue">
-        </a>   
-      </div>
+         <div class="large-6 medium-6 small-12 cell" >
+                    <div class="slider2 swiper-container">
+                        <div class="swiper-wrapper">
+                             <div class="swiper-slide">
+                                  <a data-fancybox="abor" href="assets/img/techniques-de-construction/abord2.jpg">
+                                <img src="assets/img/techniques-de-construction/abord2.jpg" alt="amenagements-exterieurs Edenblue"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                  <a data-fancybox="abor" href="assets/img/techniques-de-construction/abord3.jpg">
+                                <img src="assets/img/techniques-de-construction/abord3.jpg" alt="amenagements-exterieurs Edenblue"></a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a data-fancybox="abor" href="assets/img/techniques-de-construction/abord4.jpg">
+            s                   <img src="assets/img/techniques-de-construction/abord4.jpg" alt="amenagements-exterieurs Edenblue"></a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a data-fancybox="abor" href="assets/img/techniques-de-construction/abord1.jpg">
+            s                   <img src="assets/img/techniques-de-construction/abord1.jpg" alt="amenagements-exterieurs Edenblue"></a>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                            <div class="swiper-pagination "></div>
+                    </div>
+                 </div>    
 			
 			
-	  <div class="large-12 medium-12 small-12 cell" text-center>
+	  <div class="large-12 medium-12 small-12 cell" >
         <hr>
       </div>	
       
       		
-      <div class="large-6 medium-12 small-12 cell" text-center>
-         <a data-fancybox="spa1" href="assets/img/amenagements-exterieurs/amenagements-paysage.jpg">
+      <div class="large-6 medium-12 small-12 cell" >
+         <a data-fancybox="abor" href="assets/img/amenagements-exterieurs/amenagements-paysage.jpg">
             <img src="assets/img/amenagements-exterieurs/amenagements-paysage.jpg" alt="amenagements-exterieurs Edenblue">
         </a>   
       </div>
@@ -62,7 +81,7 @@ include_once 'admin/classes/utils.php';
         </p>
       </div>
       
-      <div class="large-12 medium-12 small-12 cell" text-center>
+      <div class="large-12 medium-12 small-12 cell" >
         <hr>
       </div>
       
@@ -77,8 +96,8 @@ include_once 'admin/classes/utils.php';
         </p>
       </div>
 	   </div>
-       <div class="large-6 medium-12 small-12 cell" text-center>
-         <a data-fancybox="spa1" href="assets/img/amenagements-exterieurs/pool-house.jpg">
+       <div class="large-6 medium-12 small-12 cell" >
+         <a data-fancybox="abor" href="assets/img/amenagements-exterieurs/pool-house.jpg">
             <img src="assets/img/amenagements-exterieurs/pool-house.jpg" alt="amenagements-exterieurs Edenblue">
         </a>   
       </div>

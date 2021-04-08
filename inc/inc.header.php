@@ -57,11 +57,11 @@ $resultinc = $catproduct2->catrealisationGetParent();
             </li>
              <li><a href="equipements.php" <?php if (strpos($pagename,'equipements')!==false):?>class="active"<?php endif; ?>>Equipements</a>
             <ul>
-                <li><a href="equipements.php#">Traitement de l'eau</a></li>
-                <li><a href="equipements.php#">Chauffage</a></li>
-                <li><a href="equipements.php#">Nettoyage automatique</a></li>
-                <li><a href="equipements.php#">Domotique</a></li>
-                <li><a href="equipements.php#">Sécurité</a></li>
+                <li><a href="equipements.php#traitement">Traitement de l'eau</a></li>
+                <li><a href="equipements.php#chauffage">Chauffage</a></li>
+                <li><a href="equipements.php#nettoyage">Nettoyage automatique</a></li>
+                <li><a href="equipements.php#domotique">Domotique</a></li>
+                <li><a href="equipements.php#securite">Sécurité</a></li>
             </ul>
             </li>
             <li><a href="techniques-de-construction.php" <?php if (strpos($pagename,'techniques-de-construction')!==false):?>class="active"<?php endif; ?>>Techniques de construction</a>

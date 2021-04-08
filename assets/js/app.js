@@ -14,7 +14,7 @@ var mySwiper = new Swiper('.slider', {
         inverse: true,
     },
 });
-mySwiper.allowTouchMove = false;
+//mySwiper.allowTouchMove = false;
 
 var swiper2 = new Swiper('.slider2', {
 	direction: 'horizontal',
@@ -31,7 +31,7 @@ var swiper2 = new Swiper('.slider2', {
       },
   });
 
-var swiper2 = new Swiper('.slider3', {
+var swiper3 = new Swiper('.slider3', {
 	direction: 'horizontal',
     loop: true,
     autoplay: {

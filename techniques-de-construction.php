@@ -15,11 +15,11 @@ include_once 'admin/classes/utils.php';
   <main class="grid-container">
 
     <section class="grid-x grid-padding-x" role="">
-      <div class="large-12 medium-12 small-12 cell" text-center>
+      <div class="large-12 medium-12 small-12 cell text-center" >
         <h1>Techniques de construction</h1>
       </div>
       
-      <div class="large-6 medium-12 small-12 cell" text-center>
+      <div class="large-6 medium-12 small-12 cell text-center" >
          <p data-animation="top">
             <strong>Eden Blue</strong> Eden Blue privilégie avant tout la qualité et la durabilité constructive de ses ouvrages.<br><br>
              NOTRE CHOIX: <strong>une structure en béton armé monobloc.</strong>
@@ -40,7 +40,7 @@ include_once 'admin/classes/utils.php';
         </a>   
       </div>
       
-      <div class="large-6 medium-12 small-12 cell" text-center>
+      <div class="large-6 medium-12 small-12 cell text-center" >
             <h4 class="sous-titre">Notre procédé</h4>
               <p data-animation="top">
                 Une construction spécifique qui permet d’assurer une solidité du produit, une excellente tenue dans le temps mais aussi de permettre d’offrir une gamme de choix quasi-illimitée pour la conception d’une piscine sur-mesure.<br><br>
@@ -57,7 +57,7 @@ include_once 'admin/classes/utils.php';
              </ul>
              <p class="text-center"> <a data-fancybox data-width="700" data-height="700" href="https://youtu.be/x-K9qA0tVpc"><b>(VIDEO CHANTIER)</b></a>  </p>
       </div> 
-      <div class="large-6 medium-12 small-12 cell" text-center>
+      <div class="large-6 medium-12 small-12 cell text-center" >
         	<p data-animation="top">
                 <strong>Grâce à cette méthode de construction, nous pouvons réaliser des piscines sur-mesure avec tous types de revêtements.</strong><br><br>
     
@@ -83,27 +83,27 @@ include_once 'admin/classes/utils.php';
             </div>
 	  </div>	
 	
-	  <div class="large-12 medium-12 small-12 cell" text-center>
+	  <div class="large-12 medium-12 small-12 cell text-center" >
              <div class="grid-x grid-padding-x" role="">
                   <div class="large-12 medium-12 small-12 cell" >
                    &nbsp;
                   </div>
-                 <div class="large-3 medium-6 small-12 cell" text-center>
+                 <div class="large-3 medium-6 small-12 cell" >
                     <a data-fancybox="const" href="assets/img/techniques-de-construction/1.jpg">
                         <img src="assets/img/techniques-de-construction/1.jpg" alt="amenagements-exterieurs Edenblue">
                     </a><br><br>
                  </div>    
-                 <div class="large-3 medium-6 small-12 cell" text-center>
+                 <div class="large-3 medium-6 small-12 cell" >
                     <a data-fancybox="const" href="assets/img/techniques-de-construction/2.jpg">
                         <img src="assets/img/techniques-de-construction/2.jpg" alt="amenagements-exterieurs Edenblue">
                     </a><br><br>
                  </div>    
-                 <div class="large-3 medium-6 small-12 cell" text-center>
+                 <div class="large-3 medium-6 small-12 cell" >
                     <a data-fancybox="const" href="assets/img/techniques-de-construction/3.jpg">
                         <img src="assets/img/techniques-de-construction/3.jpg" alt="amenagements-exterieurs Edenblue">
                     </a><br><br>
                  </div>    
-                 <div class="large-3 medium-6 small-12 cell" text-center>
+                 <div class="large-3 medium-6 small-12 cell" >
                     <a data-fancybox="const" href="assets/img/techniques-de-construction/4.jpg">
                         <img src="assets/img/techniques-de-construction/4.jpg" alt="amenagements-exterieurs Edenblue">
                     </a> <br><br>
@@ -111,18 +111,18 @@ include_once 'admin/classes/utils.php';
              </div>
       </div>
 			
-	  <div class="large-12 medium-12 small-12 cell" text-center>
+	  <div class="large-12 medium-12 small-12 cell" >
         <hr>
       </div>	
       
-      <div class="large-6 medium-12 small-12 cell" text-center>
+      <div class="large-6 medium-12 small-12 cell" >
          &nbsp; 
       </div>
 	  <div class="large-6 medium-6 small-12 cell" id="procedes">
         <h2>Procédés</h2>
       </div>		
       
-      <div class="large-6 medium-12 small-12 cell" text-center>
+      <div class="large-6 medium-12 small-12 cell" >
           <div class="flex-video">
             <iframe src="https://www.youtube.com/embed/hjErQJODCsE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>  
@@ -148,14 +148,14 @@ include_once 'admin/classes/utils.php';
         </p>
       </div>
       
-      <div class="large-12 medium-12 small-12 cell" text-center>
+      <div class="large-12 medium-12 small-12 cell" >
         <hr>
       </div>
       
       <div class="large-6 medium-6 small-12 cell" id="revetements">
         <h2>Revêtements</h2>
       </div>
-      <div class="large-6 medium-12 small-12 cell" text-center>
+      <div class="large-6 medium-12 small-12 cell" >
         &nbsp;
       </div>
        
@@ -179,7 +179,7 @@ include_once 'admin/classes/utils.php';
                        
         </p>
       </div>
-      <div class="large-6 medium-12 small-12 cell" text-center>
+      <div class="large-6 medium-12 small-12 cell text-center" >
              
        
              <div class="grid-x grid-padding-x" role="">
@@ -191,22 +191,22 @@ include_once 'admin/classes/utils.php';
                         -grâce à la réalisation des joints époxy nous obtenons une étanchéité proche de la perfection et surtout une durée de vie inégalée.<br>
                     </p>
                   </div>
-                 <div class="large-6 medium-6 small-12 cell" text-center>
+                 <div class="large-6 medium-6 small-12 cell" >
                     <a data-fancybox="revet" href="assets/img/techniques-de-construction/revet1.jpg">
                         <img src="assets/img/techniques-de-construction/revet1.jpg" alt="amenagements-exterieurs Edenblue">
                     </a><br><br>
                  </div>    
-                 <div class="large-6 medium-6 small-12 cell" text-center>
+                 <div class="large-6 medium-6 small-12 cell" >
                     <a data-fancybox="revet" href="assets/img/techniques-de-construction/revet2.jpg">
                         <img src="assets/img/techniques-de-construction/revet2.jpg" alt="amenagements-exterieurs Edenblue">
                     </a><br><br>
                  </div>    
-                 <div class="large-6 medium-6 small-12 cell" text-center>
+                 <div class="large-6 medium-6 small-12 cell" >
                     <a data-fancybox="revet" href="assets/img/techniques-de-construction/revet3.jpg">
                         <img src="assets/img/techniques-de-construction/revet3.jpg" alt="amenagements-exterieurs Edenblue">
                     </a><br><br>
                  </div>    
-                 <div class="large-6 medium-6 small-12 cell" text-center>
+                 <div class="large-6 medium-6 small-12 cell" >
                     <a data-fancybox="revet" href="assets/img/techniques-de-construction/revet4.jpg">
                         <img src="assets/img/techniques-de-construction/revet4.jpg" alt="amenagements-exterieurs Edenblue">
                     </a> <br><br>
@@ -214,7 +214,7 @@ include_once 'admin/classes/utils.php';
              </div>
       </div>
       
-      <div class="large-12 medium-12 small-12 cell" text-center>
+      <div class="large-12 medium-12 small-12 cell" >
         <hr>
       </div>
       
@@ -230,23 +230,23 @@ include_once 'admin/classes/utils.php';
                  famille de profiter des joies de l’eau et de personnaliser votre bassin.
         </p>
       </div>
-      <div class="large-6 medium-12 small-12 cell" text-center>
+      <div class="large-6 medium-12 small-12 cell" >
          <a data-fancybox="abor" href="assets/img/amenagements-exterieurs/pool-house.png">
             <img src="assets/img/amenagements-exterieurs/pool-house.png" alt="amenagements-exterieurs Edenblue">
         </a>   
       </div>
 
-      <div class="large-12 medium-12 small-12 cell" text-center>
+      <div class="large-12 medium-12 small-12 cell" >
              <div class="grid-x grid-padding-x" role="">
                   <div class="large-12 medium-12 small-12 cell" id="revetements">
                    &nbsp;
                   </div>
-                 <div class="large-6 medium-6 small-12 cell" text-center>
+                 <div class="large-6 medium-6 small-12 cell" >
                     <a data-fancybox="abor" href="assets/img/techniques-de-construction/abord2.jpg">
                         <img src="assets/img/techniques-de-construction/abord2.jpg" alt="amenagements-exterieurs Edenblue">
                     </a><br><br>
                  </div>  
-                 <div class="large-6 medium-6 small-12 cell" text-center>
+                 <div class="large-6 medium-6 small-12 cell" >
                     <div class="slider2 swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
@@ -260,14 +260,11 @@ include_once 'admin/classes/utils.php';
                         </div>
                         <!-- Add Pagination -->
                             <div class="swiper-pagination "></div>
-                        </div>
-                    </div>    
-                     
+                    </div>
+                 </div>    
                  
              </div>
       </div>
-      
-      
       
     </section>
 
