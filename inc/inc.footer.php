@@ -30,13 +30,13 @@
       </div>
     </div>
     <div class="large-12 cell">
-      <p itemprop="copyright">©2021 - Eden Blue Piscines - <a href="">Mentions légales</a> - <a href="">Politique de protection des données</a> - <a href="">Plan du site</a></p>
+      <p itemprop="copyright">©2021 - Eden Blue Piscines - <a href="mentionslegales.php">Mentions légales</a> - <a href="">Politique de protection des données</a> - <a href="">Plan du site</a></p>
     </div>
   </footer>
 
   <script src="assets/js/vendor.js"></script>
   <script src="assets/js/foundation.js"></script>
   <script src="assets/js/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.fancybox.min.js"></script>
   <script src="assets/js/app.js"></script>

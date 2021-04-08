@@ -242,25 +242,28 @@ include_once 'admin/classes/utils.php';
                    &nbsp;
                   </div>
                  <div class="large-6 medium-6 small-12 cell" text-center>
-                    <a data-fancybox="abor" href="assets/img/techniques-de-construction/abord1.jpg">
-                        <img src="assets/img/techniques-de-construction/abord1.jpg" alt="amenagements-exterieurs Edenblue">
-                    </a><br><br>
-                 </div>    
-                 <div class="large-6 medium-6 small-12 cell" text-center>
                     <a data-fancybox="abor" href="assets/img/techniques-de-construction/abord2.jpg">
                         <img src="assets/img/techniques-de-construction/abord2.jpg" alt="amenagements-exterieurs Edenblue">
                     </a><br><br>
-                 </div>    
+                 </div>  
                  <div class="large-6 medium-6 small-12 cell" text-center>
-                    <a data-fancybox="abor" href="assets/img/techniques-de-construction/abord3.jpg">
-                        <img src="assets/img/techniques-de-construction/abord3.jpg" alt="amenagements-exterieurs Edenblue">
-                    </a><br><br>
-                 </div>    
-                 <div class="large-6 medium-6 small-12 cell" text-center>
-                    <a data-fancybox="abor" href="assets/img/techniques-de-construction/abord4.jpg">
-                        <img src="assets/img/techniques-de-construction/abord4.jpg" alt="amenagements-exterieurs Edenblue">
-                    </a> <br><br>
-                 </div>   
+                    <div class="slider2 swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                  <a data-fancybox="abor" href="assets/img/techniques-de-construction/abord3.jpg">
+                                <img src="assets/img/techniques-de-construction/abord3.jpg" alt="amenagements-exterieurs Edenblue"></a>
+                            </div>
+                            <div class="swiper-slide">
+                              <a data-fancybox="abor" href="assets/img/techniques-de-construction/abord4.jpg">
+            s                   <img src="assets/img/techniques-de-construction/abord4.jpg" alt="amenagements-exterieurs Edenblue"></a>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                            <div class="swiper-pagination "></div>
+                        </div>
+                    </div>    
+                     
+                 
              </div>
       </div>
       

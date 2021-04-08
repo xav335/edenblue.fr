@@ -10,24 +10,42 @@ var mySwiper = new Swiper('.slider', {
         clickable: true,
     },
     effect: 'fade',
+    controller: {
+        inverse: true,
+    },
 });
+mySwiper.allowTouchMove = false;
 
-var swiper = new Swiper('.swiper-container2', {
-	paceBetween: 30,
-    effect: 'slide',
+var swiper2 = new Swiper('.slider2', {
+	direction: 'horizontal',
+    loop: true,
     autoplay: {
         delay: 2000,
     },
     speed: 1000,
+    spaceBetween: 30,
+    effect: 'fade',
     pagination: {
-      el: '.swiper-pagination2',
-      clickable: true,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+        el: '.swiper-pagination',
+        clickable: true,
+      },
   });
+
+var swiper2 = new Swiper('.slider3', {
+	direction: 'horizontal',
+    loop: true,
+    autoplay: {
+        delay: 2000,
+    },
+    speed: 1000,
+    spaceBetween: 30,
+    effect: 'fade',
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+  });
+
 
 document.querySelector('header label').addEventListener('click', function(){
     if(this.classList.contains('active')){
