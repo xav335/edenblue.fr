@@ -23,6 +23,19 @@ class Catrealisation extends StorageManager {
 		return $new_array;
 	}
 	
+	public function catrealisationImageByParentGet($id){
+	    $this->dbConnect();
+	    $requete = "SELECT * FROM `catrealisation_image` WHERE num_produit=". $id  ;
+	    //print_r($requete);
+	    $new_array = null;
+	    $result = mysqli_query($this->mysqli,$requete);
+	    while( ($row = mysqli_fetch_assoc( $result)) != false) {
+	        $new_array[] = $row;
+	    }
+	    $this->dbDisConnect();
+	    return $new_array;
+	}
+	
 	public function catrealisationGetParent(){
 	    $this->dbConnect();
 	    $requete = "SELECT * FROM `catrealisation` 
@@ -435,12 +448,12 @@ class Catrealisation extends StorageManager {
 	
 	public function catproductDelete($value){
 		
-	  //Check si la categorie ne contient pas de catégorie
-	  $categlst = $this->catproductByParentGet($value);
+	  //Check si la categorie ne contient <pas de catégorie
+	  $categlst = $this->catrealisationImageByParentGet($value);
+	  //print_r($categlst);exit();
 	  if (!empty($categlst)){
 	    throw new Exception("La categorie n'est pas vide ! ",1234);
 	  }
-	  //print_r($categlst);exit;
 
 		//Check if the categorie is empty !
 		$prod = $this->getProductsByCategorie($value);

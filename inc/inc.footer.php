@@ -13,7 +13,7 @@
         <div class="large-12 cell">
           <img src="assets/img/logo-eden-blue.png" alt="logo Eden Blue" title="Eden Blue">
         </div>
-        <div itemscope itemtype="https://schema.org/LocalBusiness" class="large-12 cell">
+        <div itemscope itemtype="https://schema.org/LocalBusiness" class="large-12 cell ">
           <meta itemprop="name" content="Eden blue" />
           <meta itemprop="url" content="https://www.edenblue.fr" />
           <meta itemprop="openingHours" content="Mo-Sa 9:00-12:00" />
@@ -29,7 +29,7 @@
         </div>
       </div>
     </div>
-    <div class="large-12 cell">
+    <div class="large-12 cell ">
       <p itemprop="copyright">©2021 - Eden Blue Piscines - <a href="mentionslegales.php">Mentions légales</a> - <a href="">Politique de protection des données</a> - <a href="">Plan du site</a></p>
     </div>
   </footer>

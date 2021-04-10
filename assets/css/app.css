@@ -160,7 +160,6 @@ footer .grid-container + .large-12 {padding:30px 0 15px 0;}
 footer .grid-container + .large-12 p, footer .grid-container + .large-12 a {margin:0;color:#fff;}
 footer p[itemprop="copyright"], footer p[itemprop="address"], footer p[itemprop="address"] + p {letter-spacing:1px;text-align: center;}
 
-
 /* SPA */
 body.spa {background:var(--bg-spa);color:var(--white);}
 body.spa .slider::after {background-image:url('../img/spa-bottom-slider.png');}
@@ -169,7 +168,7 @@ body.spa nav {background-image:url('../img/spa-bg-nav.png');}
 body.spa .masked-element {filter:saturate(1) brightness(50%) contrast(200%) hue-rotate(239deg);}
 body.spa h1, body.spa .h1, body.spa h2, body.spa .h2, body.spa h3, body.spa .h3, body.spa h4, body.spa .h4, body.spa h5, body.spa .h5, body.spa h6, body.spa .h6,  body.spa ul, body.spa .ul  {--blue:#fff;}
 body.spa h1::before, body.spa h1::after, body.spa h2::before, body.spa h2::after {--blue:#0b5297;opacity:1;}
-body.spa p {--blue:#fff; text-align: justify;} /* modif Xav */
+body.spa p {--blue:#fff; } /* modif Xav */
 body.spa a {color:#fff;}
 body.spa section[data-role="votre-projet"]::before, body.spa section[data-role="votre-projet"]::after {display:none;}
 body.spa section[data-role="votre-projet"] div:first-of-type img[alt="mousse premier-plan"] {max-width:50%;bottom:0;left:0;z-index:2;animation:strech-vertical 2.5s infinite;transform-origin:bottom center;}

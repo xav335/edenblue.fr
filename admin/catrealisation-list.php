@@ -15,7 +15,7 @@
 	// ---- Modif -------------------- //
 	if ( !empty( $_GET ) ) {
 		$codeerror = $_GET[ "message" ];
-		if ( $codeerror == 1234 ) $message = "<h3 class='btn-danger'>La catégorie que vous voulez supprimer n'est pas vide : supprimer d'abord les produits qu'elle contient.</h3>"; 
+		if ( $codeerror == 1234 ) $message = "<h3 class='btn-danger'>La catégorie que vous voulez supprimer n'est pas vide : supprimer d'abord les photos qu'elle contient.</h3>"; 
 		//print_r($result);
 		//print_r($result[0][ "newsletter_detail" ]);
 		//exit();

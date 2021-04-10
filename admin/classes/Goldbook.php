@@ -50,9 +50,8 @@ class Goldbook extends StorageManager {
 	}
 	
 	public function goldbookAdd($value){
-		//print_r($value);
-		//exit();
-		 $this->dbConnect();
+		//print_r($value); exit();
+		$this->dbConnect();
 		$this->begin();
 		try {
 			($value['online']=='on') ? $online = 1 : $online = 0;
@@ -61,7 +60,7 @@ class Goldbook extends StorageManager {
 						(`date`, `nom`, `email`, `message`,`online`)
 						VALUES (
 						'". $this->inserer_date($value['datepicker']) ."',
-						'". addslashes($value['nom'] .'  '. $value['prenom'] ) ."',
+						'". addslashes($value['name']) ."',
 						'". addslashes($value['email']) ."',
 						'". addslashes($value['message']) ."',
 						". $online ."

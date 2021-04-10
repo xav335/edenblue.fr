@@ -95,7 +95,7 @@ CREATE TABLE `catrealisation` (
 
 LOCK TABLES `catrealisation` WRITE;
 /*!40000 ALTER TABLE `catrealisation` DISABLE KEYS */;
-INSERT INTO `catrealisation` VALUES (120,'Piscines miroir','<b>Eden Blue</b> vous offre la possibilité de concrétiser vos rêves les plus fous en s\'appuyant sur son expérience dans la réalisation de piscines sur mesure haut de gamme.\r\nEn créant  une piscine miroir vous aurez l’occasion d’allier esthétique et bien-être tout en réalisant un projet unique. Ces bassins vous permettront d’obtenir les reflets et les jeux de lumière que vous souhaitez mettre en avant dans votre projet tout en assurant un maximum de confort..',0,'',0,100),(121,'Piscines interieures','La société Eden Blue est spécialisée dans la conception et la réalisation de piscines intérieures avec des prestations haut de gamme et entièrement sur mesure. \r\nCette configuration de piscine vous permet de profiter des joies de l’eau tout au long de l’année et de créer une ambiance zen au sein de votre foyer.',0,'',0,100);
+INSERT INTO `catrealisation` VALUES (120,'Piscines miroir','<b>Eden Blue</b> vous offre la possibilité de concrétiser vos rêves les plus fous en s\'appuyant sur son expérience dans la réalisation de piscines sur mesure haut de gamme.\r\nEn créant  une piscine miroir vous aurez l’occasion d’allier esthétique et bien-être tout en réalisant un projet unique. Ces bassins vous permettront d’obtenir les reflets et les jeux de lumière que vous souhaitez mettre en avant dans votre projet tout en assurant un maximum de confort..',0,'',0,1),(121,'Piscines interieures','La société Eden Blue est spécialisée dans la conception et la réalisation de piscines intérieures avec des prestations haut de gamme et entièrement sur mesure. \r\nCette configuration de piscine vous permet de profiter des joies de l’eau tout au long de l’année et de créer une ambiance zen au sein de votre foyer.',0,'',0,2);
 /*!40000 ALTER TABLE `catrealisation` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -109,10 +109,10 @@ DROP TABLE IF EXISTS `catrealisation_image`;
 CREATE TABLE `catrealisation_image` (
   `num_image` int(11) NOT NULL AUTO_INCREMENT,
   `num_produit` int(11) NOT NULL,
-  `fichier` varchar(100) NOT NULL,
+  `fichier` varchar(255) NOT NULL,
   `defaut` enum('oui','non') NOT NULL DEFAULT 'non',
   PRIMARY KEY (`num_image`)
-) ENGINE=InnoDB AUTO_INCREMENT=77 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=80 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -121,8 +121,65 @@ CREATE TABLE `catrealisation_image` (
 
 LOCK TABLES `catrealisation_image` WRITE;
 /*!40000 ALTER TABLE `catrealisation_image` DISABLE KEYS */;
-INSERT INTO `catrealisation_image` VALUES (36,115,'/20160926_164757-115.jpg','non'),(37,115,'/20170601_154216-115.jpg','non'),(42,114,'/piscine_naturelle3-114.jpg','oui'),(43,114,'/piscine_naturelle1-114.jpg','non'),(44,115,'/piscine beton gironde-115.jpg','oui'),(45,113,'/21-113.jpg','oui'),(46,115,'/gautier_1-115.jpg','non'),(47,118,'/piscine_naturelle2-118.jpg','non'),(48,118,'/piscine_naturelle1-118.jpg','oui'),(49,119,'/20141105_154704-119.jpg','oui'),(50,119,'/21-119.jpg','non'),(51,119,'/22-119.jpg','non'),(65,120,'/piscine_miroir_en_beton_et_revet - Copy 5-120.jpg','oui'),(66,120,'/piscine_miroir_en_beton_et_revet - Copy 11-120.jpg','non'),(67,120,'/piscine_miroir_en_beton_et_revet - Copy 10-120.jpg','non'),(68,120,'/piscine_miroir_en_beton_et_revet - Copy 1-120.jpg','non'),(74,121,'/piscine_inte_rieur_beton_et_reve - Copy 1-121.jpg','non'),(75,121,'/piscine_inte_rieur_beton_et_reve - Copy 2-121.jpg','oui'),(76,121,'/piscine_inte_rieur_beton_et_reve - Copy 3-121.jpg','non');
+INSERT INTO `catrealisation_image` VALUES (36,115,'/20160926_164757-115.jpg','non'),(37,115,'/20170601_154216-115.jpg','non'),(42,114,'/piscine_naturelle3-114.jpg','oui'),(43,114,'/piscine_naturelle1-114.jpg','non'),(44,115,'/piscine beton gironde-115.jpg','oui'),(45,113,'/21-113.jpg','oui'),(46,115,'/gautier_1-115.jpg','non'),(47,118,'/piscine_naturelle2-118.jpg','non'),(48,118,'/piscine_naturelle1-118.jpg','oui'),(49,119,'/20141105_154704-119.jpg','oui'),(50,119,'/21-119.jpg','non'),(51,119,'/22-119.jpg','non'),(74,121,'/piscine_inte_rieur_beton_et_reve - Copy 1-121.jpg','non'),(75,121,'/piscine_inte_rieur_beton_et_reve - Copy 2-121.jpg','oui'),(76,121,'/piscine_inte_rieur_beton_et_reve - Copy 3-121.jpg','non'),(77,120,'/piscine_a_debordement_en_beton_ - Copy 12-120.jpg','oui'),(78,120,'/piscine_a_debordement_en_beton_ - Copy 2-120.jpg','non'),(79,120,'/piscine_miroir_en_beton_et_revet - Copy 2-120.jpg','non');
 /*!40000 ALTER TABLE `catrealisation_image` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `cattutos`
+--
+
+DROP TABLE IF EXISTS `cattutos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `cattutos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` datetime NOT NULL,
+  `titre` varchar(250) NOT NULL,
+  `accroche` text DEFAULT NULL,
+  `contenu` text DEFAULT NULL,
+  `video` varchar(255) DEFAULT NULL,
+  `fichier_pdf` varchar(255) DEFAULT NULL,
+  `online` varchar(30) NOT NULL DEFAULT 'bleu',
+  `ordre` smallint(6) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cattutos`
+--
+
+LOCK TABLES `cattutos` WRITE;
+/*!40000 ALTER TABLE `cattutos` DISABLE KEYS */;
+INSERT INTO `cattutos` VALUES (6,'2021-02-15 00:00:00','Entretien d\'une piscine','sdfs','Cette vidéo explique tout le processus du nettoyage manuel de la piscine. Les étapes ...','<iframe width=\"1167\" height=\"656\" src=\"https://www.youtube.com/embed/LzaEkq6ujXQ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>','/Eden_Blue_CATALOGUE_SPAS_2021-6.pdf','0',NULL);
+/*!40000 ALTER TABLE `cattutos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `cattutos_image`
+--
+
+DROP TABLE IF EXISTS `cattutos_image`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `cattutos_image` (
+  `num_image` int(11) NOT NULL AUTO_INCREMENT,
+  `num_parent` int(11) NOT NULL,
+  `fichier` varchar(255) NOT NULL,
+  `defaut` enum('oui','non') NOT NULL DEFAULT 'non',
+  PRIMARY KEY (`num_image`)
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cattutos_image`
+--
+
+LOCK TABLES `cattutos_image` WRITE;
+/*!40000 ALTER TABLE `cattutos_image` DISABLE KEYS */;
+INSERT INTO `cattutos_image` VALUES (14,6,'/piscine_miroir_en_beton_et_revet - Copy 2-6.jpg','non'),(23,6,'/piscine_a_debordement_en_beton_ - Copy 12-6.jpg','oui');
+/*!40000 ALTER TABLE `cattutos_image` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -259,7 +316,7 @@ CREATE TABLE `news` (
 
 LOCK TABLES `news` WRITE;
 /*!40000 ALTER TABLE `news` DISABLE KEYS */;
-INSERT INTO `news` VALUES (2,'2015-10-02 00:00:00','Dordogne (24)','http://edenblue.fr/piscine-naturelle-bordeaux-gironde-dordogne-cezac-eden-blue-piscine-a-debordement-2/index.html','Piscine Miroir\r\nL’eau d’une piscine miroir déborde sur les côtés du bassin pour un effet visuel surprenant :\r\nla surface de l’eau et la plage de piscine sont au même niveau.','/21-2.jpg',NULL,'0'),(3,'2015-10-02 00:00:00',' Dordogne (24)','','Voici l\'une de nos dernières réalisations (DORDOGNE)\r\n-Piscine miroir de 11.50 m  x 5.00 m avec un escalier Roman et plage Californienne.','/22-3.jpg',NULL,'0'),(5,'2015-10-15 00:00:00','Saint Marie de Ré','http://edenblue.fr/piscine-naturelle-bordeaux-gironde-dordogne-cezac-eden-blue-piscine-a-debordement-2/index.html','Réalisation d\'un revêtement intérieur en enduit.','/Gautier-.jpg',NULL,'0'),(6,'2021-02-15 00:00:00','Saint Marie de Ré','http://edenblue.localxav.lan/techniques-de-construction.php#procedes','Réalisation d\'un revêtement intérieur en enduit.','','<iframe width=\"1067\" height=\"600\" src=\"https://www.youtube.com/embed/x-K9qA0tVpc\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>','0'),(7,'2015-09-08 00:00:00','Blaye (33)','','Réalisation d\'une Piscine forme libre avec un revêtement intérieur en enduit.','/piscine_naturelle2-.jpg',NULL,'0'),(8,'2015-12-01 00:00:00','Piscine couloir de nage ','http://edenblue.fr/piscine-beton-bordeaux-gironde-dordogne-cezac-eden-blue-couloir-de-nage-5/index.html','Labenne Océan (40)\r\n-Réalisation d\'une  couloir de nage de 20m x 3m.\r\n-Revêtement intérieur de la piscine en enduit. \r\n ','/couloir_de_nage_3-.jpg',NULL,'0'),(9,'2015-12-01 00:00:00','Labenne Océan (40)','','-Réalisation d\'une  couloir de nage de 20m x 3m.\r\n-Revêtement intérieur de la piscine en enduit. ','/couloir_de_nage_4-.jpg',NULL,'0'),(10,'2015-06-02 00:00:00','Medoc ( 33)','http://edenblue.fr/piscine-naturelle-bordeaux-gironde-dordogne-cezac-eden-blue-piscine-a-debordement-2/index.html','-Piscine de forme libre avec revêtement interieur en mosaïque et nettoyage intégré.','/piscine_en_forme_libre0-.jpg',NULL,'0'),(12,'2015-03-02 00:00:00','Blaye (33)','','','/lolo_photos_031-.jpg',NULL,'0'),(14,'2016-05-24 00:00:00','Magasin de produits Piscine et Spa  sur la commune de PEUJARD (33240)','https://www.facebook.com/edenbluepiscine/?ref=aymt_homepage_panel','Notre équipe est à votre disposition pour tous vos projets de construction de piscine \r\nainsi que le conseil et la vente de produits de traitements des eaux et d\'entretien de votre piscine.\r\n\r\n','/adresse_eden_blue2_copie-14.jpg',NULL,'0'),(15,'2016-12-12 00:00:00','Dernière réalisation Piscine à débordement ( Latresne)','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.html','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360\r\nRéalisation d\'un revêtement intérieur en mosaïque.','/20160926_164757-.jpg',NULL,'0'),(16,'2016-12-12 00:00:00','Dernière réalisation Piscine à débordement ( Latresne)','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.htm','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360\r\nRéalisation d\'un revêtement intérieur en mosaïque.','/Constructeur_de_piscine_d_bo-.jpg',NULL,'1'),(17,'2016-12-12 00:00:00','Construction d\'une piscine à débordement ( Latresne ) 33000','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.htm','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360 Réalisation d\'un revêtement intérieur en mosaïque.','/construction_piscine_luxe_rev_t-.jpg',NULL,'0'),(18,'2016-12-12 00:00:00','Construction d\'une piscine à débordement ( Latresne ) 33000','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.htm','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360 Réalisation d\'un revêtement intérieur en mosaïque.','/Construction_piscine_de_luxe_-.jpg',NULL,'0'),(19,'2017-09-04 00:00:00','Dernière réalisation Piscine à débordement ( Latresne)','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.html','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360\r\nRéalisation d\'un revêtement intérieur en mosaïque.','/20170601_154216-.jpg',NULL,'0'),(20,'2017-09-04 00:00:00','Dernière réalisation Piscine en béton armé monobloc ( Bordeaux)','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.html','','/Resized_20170811_141549_1_-.jpg',NULL,'0'),(21,'2017-11-28 00:00:00','Piscine en béton armée monobloc','','','/piscine beton gironde-.jpg',NULL,'0'),(22,'2019-02-01 00:00:00','Piscine interieur','http://edenblue.localxav.lan/nos-realisations-detail.php?id=121','','/piscine interieur -.jpg',NULL,'0'),(23,'2019-05-22 00:00:00','Venez decouvrir notre nouvelle gamme de SPAS ','http://edenblue.localxav.lan/spa.php','SHOWROOM DE 200 m²\r\nNotre équipe est à votre disposition pour tous vos projets de construction de piscine & spa ainsi que le conseil et la vente de produits de traitements des eaux et d\'entretien.\r\n','/carte_vsite_copie - Copy 1-23.jpg','','1');
+INSERT INTO `news` VALUES (2,'2015-10-02 00:00:00','Dordogne (24)','http://edenblue.fr/piscine-naturelle-bordeaux-gironde-dordogne-cezac-eden-blue-piscine-a-debordement-2/index.html','Piscine Miroir\r\nL’eau d’une piscine miroir déborde sur les côtés du bassin pour un effet visuel surprenant :\r\nla surface de l’eau et la plage de piscine sont au même niveau.','/21-2.jpg',NULL,'0'),(3,'2015-10-02 00:00:00',' Dordogne (24)','','Voici l\'une de nos dernières réalisations (DORDOGNE)\r\n-Piscine miroir de 11.50 m  x 5.00 m avec un escalier Roman et plage Californienne.','/22-3.jpg',NULL,'0'),(5,'2015-10-15 00:00:00','Saint Marie de Ré','http://edenblue.fr/piscine-naturelle-bordeaux-gironde-dordogne-cezac-eden-blue-piscine-a-debordement-2/index.html','Réalisation d\'un revêtement intérieur en enduit.','/Gautier-.jpg',NULL,'0'),(6,'2021-02-15 00:00:00','Utilisation du robots','http://edenblue.localxav.lan/techniques-de-construction.php#procedes','Pour bien utiliser le robot il faut le brancher au courant','/Capture_d_e_cran_2021_02_21_a_1.07-6.png','<iframe width=\"1067\" height=\"600\" src=\"https://www.youtube.com/embed/x-K9qA0tVpc\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>','0'),(7,'2015-09-08 00:00:00','Blaye (33)','','Réalisation d\'une Piscine forme libre avec un revêtement intérieur en enduit.','/piscine_naturelle2-.jpg',NULL,'0'),(8,'2015-12-01 00:00:00','Piscine couloir de nage ','http://edenblue.fr/piscine-beton-bordeaux-gironde-dordogne-cezac-eden-blue-couloir-de-nage-5/index.html','Labenne Océan (40)\r\n-Réalisation d\'une  couloir de nage de 20m x 3m.\r\n-Revêtement intérieur de la piscine en enduit. \r\n ','/couloir_de_nage_3-.jpg',NULL,'0'),(9,'2015-12-01 00:00:00','Labenne Océan (40)','','-Réalisation d\'une  couloir de nage de 20m x 3m.\r\n-Revêtement intérieur de la piscine en enduit. ','/couloir_de_nage_4-.jpg',NULL,'0'),(10,'2015-06-02 00:00:00','Medoc ( 33)','http://edenblue.fr/piscine-naturelle-bordeaux-gironde-dordogne-cezac-eden-blue-piscine-a-debordement-2/index.html','-Piscine de forme libre avec revêtement interieur en mosaïque et nettoyage intégré.','/piscine_en_forme_libre0-.jpg',NULL,'0'),(12,'2015-03-02 00:00:00','Blaye (33)','','','/lolo_photos_031-.jpg',NULL,'0'),(14,'2016-05-24 00:00:00','Magasin de produits Piscine et Spa  sur la commune de PEUJARD (33240)','https://www.facebook.com/edenbluepiscine/?ref=aymt_homepage_panel','Notre équipe est à votre disposition pour tous vos projets de construction de piscine \r\nainsi que le conseil et la vente de produits de traitements des eaux et d\'entretien de votre piscine.\r\n\r\n','/adresse_eden_blue2_copie-14.jpg',NULL,'0'),(15,'2016-12-12 00:00:00','Dernière réalisation Piscine à débordement ( Latresne)','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.html','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360\r\nRéalisation d\'un revêtement intérieur en mosaïque.','/20160926_164757-.jpg',NULL,'0'),(16,'2016-12-12 00:00:00','Dernière réalisation Piscine à débordement ( Latresne)','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.htm','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360\r\nRéalisation d\'un revêtement intérieur en mosaïque.','/Constructeur_de_piscine_d_bo-.jpg',NULL,'1'),(17,'2016-12-12 00:00:00','Construction d\'une piscine à débordement ( Latresne ) 33000','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.htm','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360 Réalisation d\'un revêtement intérieur en mosaïque.','/construction_piscine_luxe_rev_t-.jpg',NULL,'0'),(18,'2016-12-12 00:00:00','Construction d\'une piscine à débordement ( Latresne ) 33000','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.htm','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360 Réalisation d\'un revêtement intérieur en mosaïque.','/Construction_piscine_de_luxe_-.jpg',NULL,'0'),(19,'2017-09-04 00:00:00','Dernière réalisation Piscine à débordement ( Latresne)','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.html','Construction d\'une piscine à débordement au Château Gassie sur la commune de LATRESNE 33360\r\nRéalisation d\'un revêtement intérieur en mosaïque.','/20170601_154216-.jpg',NULL,'0'),(20,'2017-09-04 00:00:00','Dernière réalisation Piscine en béton armé monobloc ( Bordeaux)','http://edenblue.fr/piscine-a-debordement-bordeaux-gironde-dordogne-cezac-eden-blue-construction-piscine-3/index.html','','/Resized_20170811_141549_1_-.jpg',NULL,'0'),(21,'2017-11-28 00:00:00','Piscine en béton armée monobloc','','','/piscine beton gironde-.jpg',NULL,'0'),(23,'2019-05-22 00:00:00','Venez decouvrir notre nouvelle gamme de SPAS ','http://edenblue.localxav.lan/spa.php','SHOWROOM DE 200 m²\r\nNotre équipe est à votre disposition pour tous vos projets de construction de piscine & spa ainsi que le conseil et la vente de produits de traitements des eaux et d\'entretien.\r\n','/carte_vsite_copie - Copy 1-23.jpg','','1');
 /*!40000 ALTER TABLE `news` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -551,6 +608,64 @@ LOCK TABLES `test` WRITE;
 /*!40000 ALTER TABLE `test` DISABLE KEYS */;
 /*!40000 ALTER TABLE `test` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Table structure for table `tutos`
+--
+
+DROP TABLE IF EXISTS `tutos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tutos` (
+  `id_news` int(11) NOT NULL AUTO_INCREMENT,
+  `date_news` datetime NOT NULL,
+  `titre` varchar(250) NOT NULL,
+  `accroche` text DEFAULT NULL,
+  `contenu` text DEFAULT NULL,
+  `image1` varchar(250) DEFAULT NULL,
+  `image2` varchar(255) DEFAULT NULL,
+  `image3` varchar(255) DEFAULT NULL,
+  `video` varchar(255) DEFAULT NULL,
+  `pdf` varchar(255) DEFAULT NULL,
+  `online` varchar(30) NOT NULL DEFAULT 'bleu',
+  PRIMARY KEY (`id_news`)
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tutos`
+--
+
+LOCK TABLES `tutos` WRITE;
+/*!40000 ALTER TABLE `tutos` DISABLE KEYS */;
+INSERT INTO `tutos` VALUES (6,'2021-02-15 00:00:00','Entretien d\'une piscine','','Cette vidéo explique tout le processus du nettoyage manuel de la piscine. Les étapes ...','/piscine_miroir_en_beton_et_revet - Copy 10-6.jpg','/piscine_miroir_en_beton_et_revet - Copy 9-6.jpg','/piscine_miroir_en_beton_et_revet - Copy 5-6.jpg','<iframe width=\"1167\" height=\"656\" src=\"https://www.youtube.com/embed/LzaEkq6ujXQ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>',NULL,'0');
+/*!40000 ALTER TABLE `tutos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tutos_image`
+--
+
+DROP TABLE IF EXISTS `tutos_image`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tutos_image` (
+  `num_image` int(11) NOT NULL AUTO_INCREMENT,
+  `num_parent` int(11) NOT NULL,
+  `fichier` varchar(100) NOT NULL,
+  `defaut` enum('oui','non') NOT NULL DEFAULT 'non',
+  PRIMARY KEY (`num_image`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tutos_image`
+--
+
+LOCK TABLES `tutos_image` WRITE;
+/*!40000 ALTER TABLE `tutos_image` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tutos_image` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -561,4 +676,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-04-05 19:33:47
+-- Dump completed on 2021-04-10 18:33:33

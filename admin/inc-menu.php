@@ -40,7 +40,13 @@
 					            	<li><a href="contact-import.php">Import / Export</a></li>
 					          	</ul>
 					        </li>
-					        
+					        <li class="dropdown">
+					          	<a href="news-list.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tutos - SAV <span class="caret"></span></a>
+					          	<ul class="dropdown-menu" role="menu">
+					            	<li><a href="tutos-edit.php">Ajout</a></li>
+					            	<li><a href="tutos-list.php">Modif / Suppr</a></li>
+					          	</ul>
+					        </li>
 					        <li class="dropdown">
 					          	<a href="/admin/produit-list.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Boutique<span class="caret"></span></a>
 					          	<ul class="dropdown-menu" role="menu">

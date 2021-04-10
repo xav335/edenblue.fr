@@ -29,7 +29,7 @@ require_once 'admin/classes/Goldbook.php';
           <?php foreach ($result2 as $value) : 
                 $i++; ?>
               <?php if($value['online']=='1') :?>
-              <div class="large-6 medium-12 small-12 cell" text-center>
+              <div class="large-6 medium-6 small-12 cell" text-center>
                  <p>
                     <strong><?php echo $value['nom'] ?></strong>&nbsp;(<?php echo traitement_datetime_affiche($value['date']) ?>)
                  </p>
