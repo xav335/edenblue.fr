@@ -10,12 +10,109 @@ class Cattutos extends StorageManager {
 		
 	}
 	
-	public function newsStuffByParentId($id){
+	public function stuffAdd($value){
+	    //print_r($value);exit();
+	    $this->dbConnect();
+	    $this->begin();
+	
+	    try {
+	        $sql = "INSERT INTO  `cattutos`
+						(`date`, `titre`, `accroche`, `video`, `contenu`)
+						VALUES (
+						'". $this->inserer_date($value['datepicker']) ."',
+						'". addslashes($value['titre']) ."',
+						'". addslashes($value['accroche']) ."',
+						'". addslashes($value['video']) ."',
+						'". addslashes($value['contenu']) ."'
+					);";
+	        $result = mysqli_query($this->mysqli,$sql);
+	        	
+	        if (!$result) {
+	            throw new Exception($sql);
+	        }
+	        $id_record = mysqli_insert_id($this->mysqli);
+	        $this->commit();
+	
+	    } catch (Exception $e) {
+	        $this->rollback();
+	        throw new Exception("Erreur Mysql ". $e->getMessage());
+	        return "errrrrrrooooOOor";
+	    }
+	    $this->dbDisConnect();
+	    return $id_record;
+	}
+	
+	public function stuffModify($value){
+	    //print_r($value);
+	    //exit();
+	
+	    $this->dbConnect();
+	    $this->begin();
+	    try {
+	        $sql = "UPDATE  .`cattutos` SET
+					`date`='". $this->inserer_date($value['datepicker']) ."',
+					`titre`='". addslashes($value['titre']) ."',
+					`accroche`='". addslashes($value['accroche']) ."',
+					 `video`='". addslashes($value['video']) ."',
+					`contenu`='". addslashes($value['contenu']) ."' 
+					WHERE `id`=". $value['id'] .";";
+	        $result = mysqli_query($this->mysqli,$sql);
+	        	
+	        if (!$result) {
+	            throw new Exception($sql);
+	        }
+	
+	        $this->commit();
+	
+	    } catch (Exception $e) {
+	        $this->rollback();
+	        throw new Exception("Erreur Mysql ". $e->getMessage());
+	        return "errrrrrrooooOOor";
+	    }
+	
+	
+	    $this->dbDisConnect();
+	}
+	
+	public function stuffDelete($value){
+	    //print_r($value);
+	    //exit();
+	
+	    $this->dbConnect();
+	    $this->begin();
+	    try {
+	        //$recherche[ "num_parent" ] = $value;
+	        //$res = $this->getImagesListe($recherche);
+	        
+	        $sql = "DELETE FROM  .`cattutos`
+					WHERE `id`=". $value .";";
+	        $result = mysqli_query($this->mysqli,$sql);
+	
+	        if (!$result) {
+	            throw new Exception($sql);
+	        }
+	
+	        $this->commit();
+	
+	    } catch (Exception $e) {
+	        $this->rollback();
+	        throw new Exception("Erreur Mysql ". $e->getMessage());
+	        return "errrrrrrooooOOor";
+	    }
+	
+	
+	    $this->dbDisConnect();
+	}
+	
+	
+	
+	
+	public function stuffGetByParentId($id){
 	    $this->dbConnect();
 	    if ($id == null){
-	        $requete = "SELECT * FROM `cattutos` ORDER BY ordre" ;
+	        $requete = "SELECT * FROM `cattutos` ORDER BY date DESC" ;
 	    }else {
-	        $requete = "SELECT * FROM `cattutos` WHERE parent=". $id ." ORDER BY ordre" ;
+	        $requete = "SELECT * FROM `cattutos` WHERE parent=". $id ." ORDER BY date  DESC" ;
 	    }
 	    //print_r($requete);
 	    $new_array = null;

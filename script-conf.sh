@@ -1,9 +1,9 @@
 #!/bin/bash
 
-SERVERNAME=/Volumes/640Go/developpement/php/htdocs/edenblue.fr
-chown -R javier:admin $SERVERNAME
 #SERVERNAME=/Volumes/640Go/developpement/php/htdocs/edenblue.fr
-#chown -R javiergonzalez:staff $SERVERNAME
+#chown -R javier:admin $SERVERNAME
+SERVERNAME=/Users/javiergonzalez/Developpement/php/edenblue.fr
+chown -R javiergonzalez:staff $SERVERNAME
 
 chmod -R 755 $SERVERNAME
 chmod -R 777 $SERVERNAME/log/spy.log

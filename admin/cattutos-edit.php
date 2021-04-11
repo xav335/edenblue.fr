@@ -53,11 +53,11 @@ else {
 	$labelTitle = 'Edition Nv tuto ';
 	$id= 			null;
 	$titre=  		null;
-	$date= 	null;
+	$date= 	        null;
 	$accroche= 		null;
 	$contenu= 		null;
 	$video= 		null;
-	$fichier_pdf= 		null;
+	$fichier_pdf= 	null;
 	$online = 		null;
 
     $display_pdf = "none";
@@ -81,7 +81,7 @@ else {
 			<h3><?php echo $labelTitle ?></h3>
 			<div class="col-xs-12 col-sm-12 col-md-12">
 				<form name="formulaire" id="formulaire" class="form-horizontal" method="POST"  action="cattutos-fp.php">
-					<input type="hidden" name="action" id="action" value="modif">
+					<input type="hidden" name="action" id="action" value="<?php echo $action?>">
 					<input type="hidden" name="reference" value="cattutos">
 					<input type="hidden" name="id" id="id" value="<?=$id?>">
 					<input type="hidden" name="num_image" id="num_image" value="">
@@ -164,7 +164,7 @@ else {
 				     
 			</div>
 			<div class="col-md-12" style="margin-bottom:20px;">
-						<a href="catrealisation-list.php" class="btn btn-success col-sm-6" class="btn btn-default annuler"> Retour </a>	
+						<a href="cattutos-list.php" class="btn btn-success col-sm-6" class="btn btn-default annuler"> Retour </a>	
 						<button type="submit" class="btn btn-success col-sm-6" class="btn btn-default"> Valider </button>
 					</div>	
 				  </form>

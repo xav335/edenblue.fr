@@ -43,8 +43,8 @@
 					        <li class="dropdown">
 					          	<a href="news-list.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Tutos - SAV <span class="caret"></span></a>
 					          	<ul class="dropdown-menu" role="menu">
-					            	<li><a href="tutos-edit.php">Ajout</a></li>
-					            	<li><a href="tutos-list.php">Modif / Suppr</a></li>
+					            	<li><a href="cattutos-edit.php">Ajout</a></li>
+					            	<li><a href="cattutos-list.php">Modif / Suppr</a></li>
 					          	</ul>
 					        </li>
 					        <li class="dropdown">

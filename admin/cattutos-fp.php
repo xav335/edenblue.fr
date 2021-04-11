@@ -16,11 +16,42 @@
 	$stuff = new Cattutos();
 	$imageManager = new ImageManager();
 	
-	// ----------------------------------------------------------------------- //
 	
-	// ---- Forms processing ------------------------------------------------- //
+	
+	// ---------AJOUTS ET MODIFICATIONS ------------------- //
 	if ( !empty( $_POST ) ) {
 	    //print_r( $_POST); exit();
+	    // ---- Gestion des champs textes -------------------------------- //
+	    if ( $_POST[ "action" ] == "add" ) {
+	        try {
+	            $result = $stuff->stuffAdd($_POST);
+	        } catch (Exception $e) {
+	            echo 'Erreur contactez votre administrateur <br> :',  $e->getMessage(), "\n";
+	            exit();
+	        }
+	        
+	        //------ Id du Tutos ------//
+	        //--------------------------//
+	        $idStuff = $result;
+	        //--------------------------//
+	        //--------------------------//
+	    } else {
+	        try {
+	            $result = $stuff->stuffModify($_POST);
+	        } catch (Exception $e) {
+	            echo 'Erreur contactez votre administrateur <br> :',  $e->getMessage(), "\n";
+	            exit();
+	        }
+	        
+	        //------ Id du Tutos ------//
+	        //--------------------------//
+	        $idStuff = $_POST['id'];
+	        //--------------------------//
+	        //--------------------------//
+	    }
+	    
+	   
+	    
 	    // ---- Gestion des images du produit -------------------------------- //
 	    if ( !empty( $_POST[ "mes_images" ] ) ) {
 	        //print_r( $_POST); exit();
@@ -29,7 +60,7 @@
 	        foreach( $_POST[ "mes_images" ] as $_image ) {
 	            $source = $_SERVER['DOCUMENT_ROOT'] . $_image;
 	            //echo "<br>--- source : " . $source . "<br>";
-	            $filenameDest = $imageManager->fileDestManagement( $source, $_POST['id'] );
+	            $filenameDest = $imageManager->fileDestManagement( $source, $idStuff );
 	            //exit();
 	            // ---- Creation des differentes images ------------ //
 	    
@@ -43,13 +74,13 @@
 	            // ------------------------------------------------- //
 	            	
 	            // ---- Ce produit a-t-il une image par d�faut? ---- //
-                $image_defaut = $stuff->getImageDefaut( $_POST['id']);
+                $image_defaut = $stuff->getImageDefaut( $idStuff );
                 $has_imageDefaut = ( $image_defaut[ "fichier" ] != '' ) ? true : false;
 	            // ------------------------------------------------- //
 	            	
 	            // ---- Enregistrement de l'image ------------------ //
 	            unset( $val );
-	            $val[ "num_parent" ] = $_POST['id'];
+	            $val[ "num_parent" ] = $idStuff;
 	            $val[ "fichier" ] = $filenameDest;
 	            $val[ "defaut" ] = ( $cpt == 1 && !$has_imageDefaut ) ? 'oui' : 'non';
 	            $stuff->ajouterImage( $val);
@@ -58,7 +89,6 @@
 	            $cpt++;
 	        }
 	        
-	        header( "Location: /admin/cattutos-edit.php?id=". $_POST['id']);
 	        
 	    }
 	    // ------------------------------------------------------------------- //
@@ -68,7 +98,7 @@
 	        //print_r( $_POST); exit();
 	        if ( $_POST[ "url1" ] != '' ) {
 	            $source = $_SERVER['DOCUMENT_ROOT'] . $_POST[ "url1" ];
-	            $filenameDest = $imageManager->fileDestManagement( $source, $_POST['id'] );
+	            $filenameDest = $imageManager->fileDestManagement( $source, $idStuff );
 	            	
 	            $destination = $_SERVER['DOCUMENT_ROOT'] . '/photos/cattutos/pdf' . $filenameDest;
 	            	
@@ -76,8 +106,7 @@
 	            copy( $source, $destination );
 	        }
 	        // ---- MAJ de l'enregistrement ---- //
-	        $stuff->setChamp( "fichier_pdf", $filenameDest, $_POST['id']);
-	        header( "Location: /admin/cattutos-edit.php?id=". $_POST['id']);
+	        $stuff->setChamp( "fichier_pdf", $filenameDest, $idStuff);
 	    }
 	   
 	    // ---------------------------------------------- //
@@ -105,7 +134,7 @@
 			$stuff->supprimerImage( $_POST[ "num_image" ]);
 			
 			
-			header( "Location: /admin/cattutos-edit.php?id=". $_POST['id']);
+			
 		}
 			// ------------------------------------------- //
 		
@@ -116,7 +145,7 @@
 	       // print_r( $_POST); exit();
 	        // ---- Liste des autres images de l'offre ---- //
 	        unset( $recherche );
-	        $recherche[ "num_parent" ] = $_POST[ "id" ];
+	        $recherche[ "num_parent" ] = $idStuff;
 	        $liste_image = $stuff->getImagesListe($recherche);
 	        
 	        // ---- On passe toutes les autres � "non" ---- //
@@ -126,14 +155,19 @@
 	            }
 	        }
 	        $stuff->setChampImage( "defaut", 'oui', $_POST[ "num_image" ]);
-	       header( "Location: /admin/cattutos-edit.php?id=" . $_POST[ "id" ] );
 	    }
 	    // ------------------------------------------------------------------------ //
 	    
-		
-	
+	//---------- RETOUR A LA PAGE EDIT ---------//	
+	header( "Location: /admin/cattutos-edit.php?id=". $idStuff);
 	// ----------------------------------------------------------------------- //
 	
+	} elseif ( !empty( $_GET ) ) {
+        //print_r( $_GET); exit();
+        if ( $_GET[ "action" ] == "delete" ) {
+            $stuff->stuffDelete($_GET[ "id" ]);
+            header( "Location: /admin/cattutos-list.php");
+        }
 	}
 	// ---- ERREUR!!! -------------------------------------------------------- //
 	else {
