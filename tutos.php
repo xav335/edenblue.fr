@@ -57,9 +57,11 @@ if (!empty($result)) {
                             <!-- Add Pagination -->
                             <div class="swiper-pagination "></div>
                         </div>  
+                        
+                        <br><br>     
                      <?php endif;?> 
                      
-                     <br><br>  
+                  
                      
                      <?php if( !empty( $value['video'] )) :?>
                         <div class="flex-video">

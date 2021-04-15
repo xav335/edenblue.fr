@@ -53,6 +53,7 @@ class Tutos extends StorageManager {
 	public function newsAdd($value){
 		//print_r($value);
 		//exit();
+	    //error_log(date("Y-m-d H:i:s") . " : XAV: ". addslashes($value['accroche'])  ."\n", 3, "../log/spy.log");
 		 $this->dbConnect();
 		$this->begin();
 		

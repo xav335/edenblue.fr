@@ -21,6 +21,7 @@ error_log(date("Y-m-d H:i:s") . " : " . $_POST['newsletter'] . "\n", 3, "../log/
 
 if ($_POST[ "action" ] == "sendMail") {
     try {
+        $_POST['name'] = $_POST['prenom'].' '.$_POST['nom'] ;
         $result = $goldbook->goldbookAdd($_POST);
         $goldbook = null;
         // Ajout dans contact pour la newsletter

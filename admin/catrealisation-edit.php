@@ -108,6 +108,7 @@ else {
 								foreach( $liste_image as $_image ) : ?>
 									
 									<div class="col-md-3" style="text-align:center; margin-bottom:20px; border:0px solid red;">
+									 <a data-fancybox="ppp" href="/photos/catrealisation/normale<?php echo $_image["fichier"]?>">
 				            		  <img src="/photos/catrealisation/accueil<?php echo $_image["fichier"]?>" width="230" style="max-width:230px;"></a><br>
 				            		<?php if ( $_image[ "defaut" ] == 'non' ) : ?>
 				            		      <input type='button' id='<?php echo $_image[ "num_image" ]?>' value='Par défaut' class='par_defaut' />
@@ -128,7 +129,7 @@ else {
 				     
 			</div>
 			<div class="col-md-12" style="margin-bottom:20px;">
-						<a href="catrealisation-list.php" class="btn btn-success col-sm-6" class="btn btn-default annuler"> Retour </a>	
+						<a href="catrealisation-list.php" class="btn btn-success col-sm-6" class="btn btn-default annuler"> Retour liste </a>	
 						<button type="submit" class="btn btn-success col-sm-6" class="btn btn-default"> Valider </button>
 					</div>	
 				  </form>

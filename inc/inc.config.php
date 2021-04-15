@@ -20,17 +20,13 @@ if ($_SERVER[ "SERVER_NAME" ] == "edenblue.localxav.lan") {
 
 
 // CONSTANTES CONSTANTES CONSTANTES CONSTANTES CONSTANTES CONSTANTES CONSTANTES CONSTANTES
-$tva = 0.2;
-// Frais de livraison par defaut
-$totalLiv = 10; //frais de livraison TTC
 
-$mailCustomer = "fjavi.gonzalez@gmail.com";
-$mailNameCustomer = "EdenBlue";
-$urlSiteDefault = "http://www.edenblue.fr/";
-$facebookLink = "https://www.facebook.com/edenbluepiscine";
+define( "MAIL_TEST", 			"" );				// Si vide alors les mails partent vers les bons destinataires!!!
+define( "MAIL_CUSTOMER", 		"fjavi.gonzalez@gmail.com" ); //contact@edenblue.fr
+define( "MAIL_NAME_CUSTOMER", 	"EdenBlue" );
+define( "URL_SITE_DEFAULT", 	"http://www.edenblue.fr/" );
+define( "FACEBOOK_LINK", 		"https://www.facebook.com/edenbluepiscine" );
 
-//mail d'envoi
-//$mailContact = "fjavi.gonzalez@gmail.com";
-$mailContact = "fjavi.gonzalez@gmail.com";
-$mailBcc = "fjavi.gonzalez@gmail.com,xav335@hotmail.com,xavier.gonzalez@laposte.net,jav_gonz@yahoo.com";
-//$mailBcc = "edenblue33@gmail.com,fjavi.gonzalez@gmail.com";
+// Mail d'envoi
+define( "MAIL_CONTACT", "contact@lessecretsdelouise.com" );
+define( "MAIL_BCC", 	"xav335@hotmail.com,fjavi.gonzalez@gmail.com,jav_gonz@yahoo.com" );

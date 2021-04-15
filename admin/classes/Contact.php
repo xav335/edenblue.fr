@@ -191,6 +191,7 @@ class Contact extends StorageManager
     public function contactAdd($value)
     {
         //print_r($value);exit();
+        //error_log(date("Y-m-d H:i:s") . " : XAV: ". addslashes($value['name'])  ."\n", 3, "../log/spy.log");
         $this->dbConnect();
         $this->begin();
         try {
@@ -230,6 +231,7 @@ class Contact extends StorageManager
     {
         // print_r($value);
         // exit();
+        //error_log(date("Y-m-d H:i:s") . " : XAV: ". addslashes($value['name'])  ."\n", 3, "../log/spy.log");
         $this->dbConnect();
         $this->begin();
         try {
@@ -265,6 +267,7 @@ class Contact extends StorageManager
     {
         // print_r($value);
         // exit();
+        //error_log(date("Y-m-d H:i:s") . " : XAV: ". addslashes($message)  ."\n", 3, "../log/spy.log");
         $this->dbConnect();
         $this->begin();
         try {
@@ -292,6 +295,7 @@ class Contact extends StorageManager
     {
         // print_r($value);
         // exit();
+        //error_log(date("Y-m-d H:i:s") . " : XAV: ". addslashes($value)  ."\n", 3, "../log/spy.log");
         $this->dbConnect();
         $this->begin();
         try {

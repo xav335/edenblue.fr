@@ -18,3 +18,5 @@
 
 <script type="text/javascript" src="/admin/tinymce/tinymce.min.js"></script>
 <script type="text/javascript" src="/admin/js/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="/admin/js/jquery.fancybox.min.css" />
+<script src="/admin/js/jquery.fancybox.min.js"></script>

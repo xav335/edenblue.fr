@@ -35,9 +35,13 @@ include_once 'admin/classes/utils.php';
         </p>
       </div>
       <div class="large-6 medium-12 small-12 cell" >
-         <a data-fancybox="spa1" href="assets/img/techniques-de-construction/shema.png"><br>
+         <a data-fancybox="spa1" href="assets/img/techniques-de-construction/shema.jpg"><br>
             <img src="assets/img/techniques-de-construction/shema2.png" alt="amenagements-exterieurs Edenblue">
         </a>   
+      </div>
+      
+      <div class="large-12 medium-12 small-12 cell text-center" >
+        &nbsp;
       </div>
       
       <div class="large-6 medium-12 small-12 cell text-center" >
@@ -231,8 +235,8 @@ include_once 'admin/classes/utils.php';
         </p>
       </div>
       <div class="large-6 medium-12 small-12 cell" >
-         <a data-fancybox="abor" href="assets/img/amenagements-exterieurs/pool-house.png">
-            <img src="assets/img/amenagements-exterieurs/pool-house.png" alt="amenagements-exterieurs Edenblue">
+         <a data-fancybox="abor" href="assets/img/techniques-de-construction/pool-house2.jpg">
+            <img src="assets/img/techniques-de-construction/pool-house2.jpg" alt="amenagements-exterieurs Edenblue">
         </a>   
       </div>
 

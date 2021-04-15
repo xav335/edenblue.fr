@@ -51,6 +51,7 @@ class Goldbook extends StorageManager {
 	
 	public function goldbookAdd($value){
 		//print_r($value); exit();
+	    //error_log(date("Y-m-d H:i:s") . " : XAV: ". addslashes($value['name'])  ."\n", 3, "../log/spy.log");
 		$this->dbConnect();
 		$this->begin();
 		try {

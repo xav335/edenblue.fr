@@ -5,7 +5,7 @@ require '../admin/classes/utils.php';
 session_start();
 
 $contact = new Contact();
-
+error_log(date("Y-m-d H:i:s") ." xxxxxxxxxxx". $_SERVER["SCRIPT_FILENAME"] ."xxxxxxxxxxx  \n", 3, "../log/spy.log");
 error_log(date("Y-m-d H:i:s") ." : ". $_POST['action'] ."\n", 3, "../log/spy.log");
 error_log(date("Y-m-d H:i:s") ." : ". $_POST['name'] ."\n", 3, "../log/spy.log");
 error_log(date("Y-m-d H:i:s") ." : ". $_POST['firstname'] ."\n", 3, "../log/spy.log");
