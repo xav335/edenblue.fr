@@ -18,7 +18,7 @@
         </p>
        
       </div>
-      <div class="large-12 cell">
+      <div class="large-12 cell" role="spadetail">
         <div class="grid-x grid-padding-x">
           <div class="large-4 cell"></div>
           <div class="large-4 cell"><a href="spa-serie-club.php"><img src="assets/img/gammeclub/cl84c.png" alt="" class="img-spa-top" /></a></div>

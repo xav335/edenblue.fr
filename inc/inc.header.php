@@ -72,11 +72,8 @@ $resultinc = $catproduct2->catrealisationGetParent();
             </ul>
             </li>
             <li><a href="livre-d-or.php" <?php if (strpos($pagename,'livre-d-or')!==false):?>class="active"<?php endif; ?>>Livre d'or</a></li>
-            <li><a href="actualite.php" <?php if (strpos($pagename,'actualite')!==false || strpos($pagename,'tutos')!==false):?>class="active"<?php endif; ?>>Actualité</a>
-                <ul>
-                <li><a href="tutos.php#">Tutoriels - Assistance</a></li>
-            </ul>
-            </li>
+            <li><a href="actualite.php" <?php if (strpos($pagename,'actualite')!==false || strpos($pagename,'actualite')!==false):?>class="active"<?php endif; ?>>Actus</a></li>
+            <li><a href="tutos.php#" <?php if (strpos($pagename,'tutos')!==false || strpos($pagename,'tutos')!==false):?>class="active"<?php endif; ?>>Tutos</a></li>
             <li><a href="contact.php" <?php if (strpos($pagename,'contact')!==false):?>class="active"<?php endif; ?>>Contact</a></li>
           </ul>
         </nav>
