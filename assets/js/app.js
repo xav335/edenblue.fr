@@ -14,7 +14,6 @@ var mySwiper = new Swiper('.slider', {
         inverse: true,
     },
 });
-//mySwiper.allowTouchMove = false;
 
 var swiper2 = new Swiper('.slider2', {
 	direction: 'horizontal',
