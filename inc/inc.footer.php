@@ -30,7 +30,7 @@
       </div>
     </div>
     <div class="large-12 cell ">
-      <p itemprop="copyright">©2021 - Eden Blue Piscines - <a href="mentionslegales.php">Mentions légales</a> - <a href="">Politique de protection des données</a> - <a href="">Plan du site</a></p>
+      <p itemprop="copyright">©2021 - Eden Blue Piscines - <a href="mentionslegales.php">Mentions légales</a></p>
     </div>
   </footer>
 

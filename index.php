@@ -10,7 +10,9 @@ $result = $news->newsGetOffset(0, 2);
 <html class="no-js" lang="fr">
   <head>
     <?php include 'inc/inc.head.php'; ?>
-    <title>Eden Blue piscines et spas</title>
+    <title>Eden Blue Construction piscine et spas Bordeaux piscine à debordement
+	Gironde  piscine naturelle Dordogne couloir de nage Cezac
+	piscine béton</title>
   </head>
 <body>
 
@@ -139,6 +141,14 @@ $result = $news->newsGetOffset(0, 2);
     </section>
   <?php endif;?>  
 
+  
+  <section class="grid-x grid-padding-x" role="">
+		<div class="large-4 medium-12 small-12 cell" text-center>&nbsp;</div>
+		<div class="large-4 medium-12 small-12 cell" text-center>
+			<img src="assets/img/trophe.jpg" alt="trophe de la piscine or et spa 2020 edenblue.fr">
+		</div>
+		<div class="large-4 medium-12 small-12 cell" text-center>&nbsp;</div>
+	</section>
   </main>
 
   <?php include 'inc/inc.footer.php'; ?>
