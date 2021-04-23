@@ -46,8 +46,19 @@ $result = $news->newsGetOffset(0, 2);
             Notre équipe s’appuie sur 20 années d’expériences pour vous proposer le projet qui correspond à vos attentes. <br>
             Nous utilisons deux types de revêtements qui vous offre la possibilité de créer tous les effets et toutes les 
             ambiances que vous aurez imaginez.<br>
-            Des piscines de caractère, contemporaine, miroir, à débordement, naturelles, traditionnelle…<br><br>
+            Des piscines de caractère, contemporaine, miroir, à débordement, naturelles, traditionnelle ...
+        </p>
             
+             <?php if ( !empty( $resultinc ) ) :?>
+             <ul data-animation="top">
+                <?php foreach ( $resultinc as $value ) :  ?>
+                <li><a href="nos-realisations-detail.php?id=<?php echo $value['id']?>"><b><?php echo $value['label']?></b></a></li>
+                <?php endforeach;?>
+             </ul>   
+             <?php endif;?> 
+            
+        
+        <p data-animation="top">    
             Eden Blue, professionnel de la piscine en béton armé monobloc, en Aquitaine. Nous intervenons dans toute la Gironde 
             (Bassin d'Arcachon, Bordeaux, Libourne,  Blaye, Médoc...) et dans les départements limitrophes (Dordogne, Charente, 
             Landes et Lot et Garonne<br><br>

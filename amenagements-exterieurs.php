@@ -19,15 +19,17 @@ include_once 'admin/classes/utils.php';
         <h1>Aménagements extérieurs</h1>
       </div>
       
-      <div class="large-6 medium-12 small-12 cell " >
+      <div class="large-6 medium-12 small-12 cell text-center" >
          <p data-animation="top">
-         <strong>Eden Blue</strong> vous propose de vous accompagnez dans la réalisation de vos aménagements paysagés et de vos abords afin que vous puissiez bénéficier de ce qui ce fait de mieux :
+            <strong>Eden Blue</strong> vous propose de vous accompagnez dans la réalisation de vos aménagements paysagés et de vos abords afin que vous puissiez bénéficier de ce qui ce fait de mieux :
          </p>
+         
          <ul data-animation="top">
           <li>Terrasse en bois exotique</li>
           <li>Terrasse en carrelage.</li>
           <li>Terrasse en béton ciré...</li>
          </ul> 
+         
         <p data-animation="top">
             Notre volonté étant de participer à la création de votre espace de détente, de confort et de bien-être. </br>
             Nous avons également la possibilité d’intégrer à la piscine un spa avec un déversoir, un espace de jeu ludique pour les enfants ou de balnéothérapie pour les adultes.    </br>

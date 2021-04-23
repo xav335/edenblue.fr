@@ -158,11 +158,11 @@ include_once 'admin/classes/utils.php';
             </p> 
             
              <ul data-animation="top">
-              <li>Les <strong>barrières de sécurité</strong> : elles doivent répondre à la norme NF P 90-306 de décembre 2003.</li>
-              <li>Les  <strong>alarmes d’immersion</strong> ou périmétrique : elles doivent répondre à la norme NF P 90-307 de décembre 2003.</li>
-              <li>Les <strong>couvertures de sécurité</strong> : elles doivent répondre à la norme NF P 90-308 de décembre 2003.</li>
-              <li>Les <strong>Abris</strong> : ils doivent répondre à la norme NF P 90-309 de décembre 2003.</li>
-              <li>Les <strong>fonds mobiles</strong> : ils doivent répondre à la norme NF P 90-308 de décembre 2003.</li>
+              <li>Les <strong>barrières de sécurité</strong> : elles doivent répondre à la norme NF&nbsp;P&nbsp;90-306 de décembre 2003.</li>
+              <li>Les  <strong>alarmes d’immersion</strong> ou périmétrique : elles doivent répondre à la norme NF&nbsp;P&nbsp;90-307 de décembre 2003.</li>
+              <li>Les <strong>couvertures de sécurité</strong> : elles doivent répondre à la norme NF&nbsp;P&nbsp;90-308 de décembre 2003.</li>
+              <li>Les <strong>Abris</strong> : ils doivent répondre à la norme NF&nbsp;P&nbsp;90-309 de décembre 2003.</li>
+              <li>Les <strong>fonds mobiles</strong> : ils doivent répondre à la norme NF&nbsp;P&nbsp;90-308 de décembre 2003.</li>
              </ul>
          
           <p data-animation="top">   

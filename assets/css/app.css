@@ -137,7 +137,7 @@ h2.sous-titre {font-size:2rem;}
 h2.sous-titre::before, h2.sous-titre::after {content:none;}
 
 p, ul {font-size:1.0rem;line-height:1.6;color:var(--blue);text-align:justify;} /* Xav modif */
-main ul {max-width:460px;margin:20px auto 20px 70px;display:inline-table;}
+main ul {max-width:400px;margin:0px auto 20px 50px;display:inline-table;}
 main p a, main ul a {color:var(--blue);text-decoration:underline;}
 main p a:hover, main ul a:hover {color:var(--chocolate);text-decoration:none;}
 
