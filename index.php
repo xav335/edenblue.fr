@@ -145,7 +145,7 @@ $result = $news->newsGetOffset(0, 2);
   <section class="grid-x grid-padding-x" role="">
 		<div class="large-4 medium-12 small-12 cell" text-center>&nbsp;</div>
 		<div class="large-4 medium-12 small-12 cell" text-center>
-			<img src="assets/img/trophe.jpg" alt="trophe de la piscine or et spa 2020 edenblue.fr">
+			<a href="https://www.propiscines.fr/eden-blue-peujard" target="blank"><img src="assets/img/trophe.jpg" alt="trophe de la piscine or et spa 2020 edenblue.fr"></a>
 		</div>
 		<div class="large-4 medium-12 small-12 cell" text-center>&nbsp;</div>
 	</section>

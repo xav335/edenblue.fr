@@ -200,17 +200,18 @@ class Contact extends StorageManager
             (! empty($value['fromcontact']) && $value['fromcontact'] == 'on') ? $fromcontact = 1 : $fromcontact = 0;
             
             $sql = "INSERT INTO  .`contact`
-						(`name`, `email`, `firstname`,`password`,`newsletter`,`fromgoldbook`,`fromcontact`)
+						(`name`, `email`, `firstname`,`password`,`tel`,`newsletter`,`fromgoldbook`,`fromcontact`)
 						VALUES (
-						'" . addslashes($value['nom']) . "',
+						'" . addslashes($value['name']) . "',
 						'" . addslashes($value['email']) . "',
-						'" . addslashes($value['prenom']) . "',
+						'" . addslashes($value['firstname']) . "',
 						'" . randomChar(5) . "',
+						'" . addslashes($value['phone']) . "',
 						" . $newsletter . ",
 						" . $fromgoldbook . ",
 						" . $fromcontact . "
 					);";
-            // error_log(date("Y-m-d H:i:s") ." : ".$sql."\n", 3, "../log/spy.log");
+            error_log(date("Y-m-d H:i:s") ." : ".$sql."\n", 3, "../log/spy.log");
             $result = mysqli_query($this->mysqli, $sql);
             
             if (! $result) {

@@ -54,6 +54,7 @@
              <li>La gestion de votre spa par clavier tactile couleur</li>
          </ul>
       </div>
+      <div id="resultat"></div>
     </section>
 
     <section class="grid-x grid-padding-x" data-role="votre-projet">
@@ -65,18 +66,19 @@
         <img src="assets/img/mousse-last-plan.svg" alt="mousse arriere-plan">
       </div>
       <div class="large-7 medium-7 small-12 cell">
-        <form class="grid-x grid-padding-x" data-animation="top">
+        <form class="grid-x grid-padding-x" data-animation="top" id="formulaire" method="post" action="contact.php">
+         <input type="hidden" name="from" value="espace spa">
           <div class="large-12 medium-12 small-12 cell">
             <h2>Parlons de votre projet</h2>
           </div>
           <div class="large-6 medium-6 small-12 cell">
-            <input type="text" name="nom" placeholder="Nom" /><input type="text" name="prenom" placeholder="Prénom" />
-            <input type="text" name="cp" placeholder="Code postal" /><input type="text" name="ville" placeholder="Ville" />
-            <input type="tel" name="telephone" placeholder="Téléphone" />
-            <input type="email" name="email" placeholder="e-mail" />
+            <input type="text" name="name" id="nom" placeholder="Nom" required /><input type="text" name="firstname" id="prenom" placeholder="Prénom" /> 
+			<input type="text" name="cp" id="cp" placeholder="Code postal" /><input type="text" name="town" id="ville" placeholder="Ville" />
+			<input type="email" name="email" id="email" placeholder="e-mail" required />
+			<input type="tel" name="phone" id="tel" placeholder="telephone" />
           </div>
           <div class="large-6 medium-6 small-12 cell">
-            <textarea name="message" placeholder="Votre projet en quelques mots"></textarea>
+            <textarea name="message" id="message" placeholder="Votre projet en quelques mots"></textarea>
           </div>
           <div class="large-6 medium-6 small-12 cell"></div>
           <div class="large-6 medium-6 small-12 cell">
@@ -94,4 +96,40 @@
   <?php include 'inc/inc.footer.php'; ?>
 
 </body>
+<script type="text/javascript">
+
+	$(document).on('submit','#formulaire',function(e) {
+	  e.preventDefault();
+	  data = $(this).serializeArray();
+
+	  data.push({
+	   		name: 'action',
+	    	value: 'sendMail'
+	  	})
+
+	  console.log(data);
+
+	    /* I put the above code for check data before send to ajax*/
+	    $.ajax({
+		        url: '/ajax/contact.php',
+		        type: 'post',
+		        data: data,
+		        success: function (data) {
+		            $("#resultat").html("<hr><h2 class='sous-titre'>Merci pour votre message</h2><hr>");
+		        	$("#nom").val("");
+		        	$("#prenom").val("");
+		        	$("#ville").val("");
+		        	$("#cp").val("");
+		           	$("#email").val("");
+		         	$("#tel").val("");
+		           	$("#message").val("");
+		        },
+		        error: function() {
+		        	 $("#resultat").html("<h3>Une erreur s'est produite !</h3>");
+		        }
+		   	});
+	return false;
+	})
+
+</script>
 </html>

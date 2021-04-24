@@ -100,7 +100,7 @@ require_once 'admin/classes/Goldbook.php';
 		        type: 'post',
 		        data: data,
 		        success: function (data) {
-		            $("#resultat").html("<h3>Merci pour votre message</h3>");
+		        	 $("#resultat").html("<hr><h2 class='sous-titre'>Merci pour votre message</h2><hr>");
 		        	$("#nom").val("");
 		        	$("#prenom").val("");
 		           	$("#email").val("");

@@ -31,6 +31,12 @@
 					            	<li><a href="/admin/goldbook-list.php">Modif / Suppr</a></li>
 					          	</ul>
 					        </li>
+					        <li class="dropdown">
+					          	<a href="contact-list.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Messagerie <span class="caret"></span></a>
+					          	<ul class="dropdown-menu" role="menu">
+					            	<li><a href="email-list.php">Liste</a></li>
+					          	</ul>
+					        </li>
 					         <li class="dropdown">
 					          	<a href="contact-list.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contacts <span class="caret"></span></a>
 					          	<ul class="dropdown-menu" role="menu">

@@ -28,5 +28,5 @@ define( "URL_SITE_DEFAULT", 	"http://www.edenblue.fr/" );
 define( "FACEBOOK_LINK", 		"https://www.facebook.com/edenbluepiscine" );
 
 // Mail d'envoi
-define( "MAIL_CONTACT", "contact@lessecretsdelouise.com" );
+define( "MAIL_CONTACT", "fjavi.gonzalez@gmail.com" );
 define( "MAIL_BCC", 	"xav335@hotmail.com,fjavi.gonzalez@gmail.com,jav_gonz@yahoo.com" );

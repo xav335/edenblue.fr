@@ -29,22 +29,19 @@ include_once 'admin/classes/utils.php';
 		</div>
 		<div class="large-7 medium-7 small-12 cell">
 			<img src="assets/img/bubbles.svg" alt="bulles">
-			<form class="grid-x grid-padding-x" data-animation="top"
-				id="formulaire" method="post" action="contact.php">
+			<form class="grid-x grid-padding-x" data-animation="top" id="formulaire" method="post" action="contact.php">
+			    <input type="hidden" name="from" value="espace piscine">
 				<div class="large-12 medium-12 small-12 cell">
 					<h2>Parlons de votre projet</h2>
 				</div>
 				<div class="large-6 medium-6 small-12 cell">
-					<input type="text" name="nom" id="nom" placeholder="Nom" required /><input
-						type="text" name="prenom" id="prenom" placeholder="Prénom" /> <input
-						type="text" name="cp" id="cp" placeholder="Code postal" /><input
-						type="text" name="ville" id="ville" placeholder="Ville" /> <input
-						type="email" name="email" id="email" placeholder="e-mail" required />
-					<input type="tel" name="tel" id="tel" placeholder="telephone" />
+					<input type="text" name="name" id="nom" placeholder="Nom" required /><input type="text" name="firstname" id="prenom" placeholder="Prénom" /> 
+					<input type="text" name="cp" id="cp" placeholder="Code postal" /><input type="text" name="town" id="ville" placeholder="Ville" />
+					<input type="email" name="email" id="email" placeholder="e-mail" required />
+					<input type="tel" name="phone" id="tel" placeholder="telephone" />
 				</div>
 				<div class="large-6 medium-6 small-12 cell">
-					<textarea name="message"
-						placeholder="Votre projet en quelques mots"></textarea>
+					<textarea name="message" id="message" placeholder="Votre projet en quelques mots"></textarea>
 				</div>
 				<div class="large-6 medium-6 small-12 cell"></div>
 				<div class="large-6 medium-6 small-12 cell">
@@ -79,7 +76,9 @@ include_once 'admin/classes/utils.php';
 	<section class="grid-x grid-padding-x" role="">
 		<div class="large-4 medium-12 small-12 cell" text-center>&nbsp;</div>
 		<div class="large-4 medium-12 small-12 cell" text-center>
-			<img src="assets/img/trophe.jpg" alt="trophe de la piscine or et spa 2020 edenblue.fr">
+			<a href="https://www.propiscines.fr/eden-blue-peujard" target="blank"><img
+				src="assets/img/trophe.jpg"
+				alt="trophe de la piscine or et spa 2020 edenblue.fr"></a>
 		</div>
 		<div class="large-4 medium-12 small-12 cell" text-center>&nbsp;</div>
 	</section>

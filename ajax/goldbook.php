@@ -28,6 +28,8 @@ if ($_POST[ "action" ] == "sendMail") {
         $result1 = $contact->contactGetByEmail($_POST['email']);
         // si l'email existe en base on y touche pas ...
         // TODO: mettre à jour l'inscription a newsletter
+        $_POST['name'] = $_POST['nom'] ;
+        $_POST['firstname'] = $_POST['prenom'] ;
         if (empty($result1)) {
             $_POST['fromgoldbook'] = 'on';
             $contact->contactAdd($_POST);
