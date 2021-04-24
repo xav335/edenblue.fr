@@ -66,7 +66,7 @@ if ($_POST[ "action" ] == "sendMail") {
         $message .= "La personne suivante a rempli le formulaire de contact :<br>";
         $message .= "Nom : <b>" . $_POST[ "name" ] . " " . $_POST[ "firstname" ] . "</b><br>";
         $message .= "E-mail / Téléphone : <b>" . $_POST[ "email" ] . " / " . $_POST[ "phone" ] . "</b><br>";
-        $message .= "Adresse : <b>" . $_POST[ "cp" ] . " " . $_POST[ "ville" ] . "</b><br>";
+        $message .= "Adresse : <b>" . $_POST[ "cp" ] . " " . $_POST[ "town" ] . "</b><br>";
         $message .= "Message : <br><i>" . nl2br( $_POST[ "message" ] ) . "</i><br><br>";
         $message .= "Cordialement.";
         $message = utf8_decode( $message );
