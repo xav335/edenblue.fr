@@ -69,7 +69,7 @@ $result = $news->newsGetOffset(0, 2);
      </div>
      <div class="large-4 medium-4 small-12 cell text-center">
         <div class="flex-video">
-            <iframe src="https://www.youtube.com/embed/hjErQJODCsE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/6sZ3WyH7DTk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <br/>
         <p>Construction d'une piscine en béton armé monobloc avec le procédé leaderpool</p>

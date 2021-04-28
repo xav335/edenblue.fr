@@ -68,7 +68,6 @@ if ($_POST[ "action" ] == "sendMail") {
         $message .= "E-mail / Téléphone : <b>" . $_POST[ "email" ] . " / " . $_POST[ "phone" ] . "</b><br>";
         $message .= "Adresse : <b>" . $_POST[ "cp" ] . " " . $_POST[ "town" ] . "</b><br>";
         $message .= "Message : <br><i>" . nl2br( $_POST[ "message" ] ) . "</i><br><br>";
-        $message .= "Cordialement.";
         $message = utf8_decode( $message );
      
         error_log(date("Y-m-d H:i:s") ." : ". $message ."\n", 3, "../log/spy.log");
