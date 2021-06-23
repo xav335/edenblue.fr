@@ -14,7 +14,7 @@ class Cattutos extends StorageManager {
 	    //print_r($value);exit();
 	    $this->dbConnect();
 	    $this->begin();
-	
+	    ( $value[ 'online' ] == '1' ) ? $online = "1" : $online = "0";
 	    try {
 	        $sql = "INSERT INTO  `cattutos`
 						(`date`, `titre`, `accroche`, `video`, `online`, `contenu`)
@@ -23,6 +23,7 @@ class Cattutos extends StorageManager {
 						'". addslashes($value['titre']) ."',
 						'". addslashes($value['accroche']) ."',
 						'". addslashes($value['video']) ."',
+						'". $online ."',
 						'". addslashes($value['contenu']) ."'
 					);";
 	        $result = mysqli_query($this->mysqli,$sql);
@@ -48,12 +49,14 @@ class Cattutos extends StorageManager {
 	
 	    $this->dbConnect();
 	    $this->begin();
+	    ( $value[ 'online' ] == '1' ) ? $online = "1" : $online = "0";
 	    try {
 	        $sql = "UPDATE  .`cattutos` SET
 					`date`='". $this->inserer_date($value['datepicker']) ."',
 					`titre`='". addslashes($value['titre']) ."',
 					`accroche`='". addslashes($value['accroche']) ."',
-					 `video`='". addslashes($value['video']) ."',
+					`video`='". addslashes($value['video']) ."',
+					`online`=". $online .", 
 					`contenu`='". addslashes($value['contenu']) ."' 
 					WHERE `id`=". $value['id'] .";";
 	        $result = mysqli_query($this->mysqli,$sql);
@@ -107,12 +110,12 @@ class Cattutos extends StorageManager {
 	
 	
 	
-	public function stuffGetByParentId($id){
+	public function stuffGetByParentId($online){
 	    $this->dbConnect();
-	    if ($id == null){
+	    if ($online == null){
 	        $requete = "SELECT * FROM `cattutos` ORDER BY date DESC" ;
 	    }else {
-	        $requete = "SELECT * FROM `cattutos` WHERE parent=". $id ." ORDER BY date  DESC" ;
+	        $requete = "SELECT * FROM `cattutos` WHERE online=1 ORDER BY date  DESC" ;
 	    }
 	    //print_r($requete);
 	    $new_array = null;

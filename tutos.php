@@ -3,7 +3,7 @@ include_once 'inc/inc.config.php';
 include_once 'admin/classes/utils.php';
 require_once 'admin/classes/Cattutos.php';
 $stuff = new Cattutos();
-$result = $stuff->stuffGetByParentId(null);
+$result = $stuff->stuffGetByParentId($online=1);
 if (!empty($result)) {
     $i=0;
     foreach ($result as $value){

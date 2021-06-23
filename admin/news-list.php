@@ -5,7 +5,7 @@
 require 'classes/News.php';
 
 	$news = new News();
-	$result = $news->newsGet(null);
+	$result = $news->newsGet(null,null);
 	//print_r($result);
 	if (empty($result)) {
 		$message = 'Aucun enregistrements';
@@ -51,6 +51,9 @@ require 'classes/News.php';
 							<th class="col-md-1" style="">
 								A la une
 							</th>
+							<th class="col-md-1" style="">
+								En ligne
+							</th>
 							<th class="col-md-1" colspan="2" style="">
 								Actions
 							</th>
@@ -63,11 +66,6 @@ require 'classes/News.php';
 							$i=0;
 							foreach ($result as $value) { 
 							$i++;
-							if($value['online']=='1') {
-								$online = 'check';
-							} else {
-								$online = 'vide';
-							}
 							?>
 							<tr class="<?php if ($i%2!=0) echo 'info'?>">
 								
@@ -77,7 +75,8 @@ require 'classes/News.php';
 								<td><?php echo $value['contenu']?></td>
 								<td><?php if(!empty($value['image1']) && isset($value['image1'])) :?><img src="img/check.png" width="30" ><?php endif;?></td>
 								<td><?php if(!empty($value['video']) && isset($value['video'])): ?><img src="img/check.png" width="30" ><?php endif;?></td>
-								<td><img src="img/<?php echo $online ?>.png" width="30" ></td>
+								<td><?php if($value['alaune']==1): ?><img src="img/check.png" width="30" ><?php endif;?></td>
+								<td><?php if($value['online']==1): ?><img src="img/check.png" width="30" ><?php endif;?></td>
 								<td><a href="news-edit.php?id=<?php echo $value['id_news'] ?>"><img src="img/modif.png" width="30" alt="Modifier" ></a></td>
 								<td>
 									<div style="display: none;" class="supp<?php echo $value['id_news']?> alert alert-warning alert-dismissible fade in" role="alert">

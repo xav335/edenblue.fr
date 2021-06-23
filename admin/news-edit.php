@@ -7,7 +7,7 @@ require 'classes/News.php';
 if (!empty($_GET)){ //Modif 
 	$action = 'modif';
 	$news = new News();
-	$result = $news->newsGet($_GET['id']);
+	$result = $news->newsGet($_GET['id'],null);
 	//print_r($result);
 	if (empty($result)) {
 		$message = 'Aucun enregistrements';
@@ -23,6 +23,11 @@ if (!empty($_GET)){ //Modif
 			$online = 'checked';
 		} else {
 			$online = '';
+		}
+		if($result[0]['alaune']=='1') {
+		    $alaune = 'checked';
+		} else {
+		    $alaune = '';
 		}
 		for ($i=1;$i<2;$i++) {
 			$image[$i] = 	$result[0]['image'.$i];
@@ -45,6 +50,7 @@ if (!empty($_GET)){ //Modif
 	$contenu= 		null;
 	$video= 		null;
 	$online = 		null;
+	$alaune = 		null;
 	for ($i=1;$i<2;$i++) {
 		$img[$i]  = 'img/favicon.png';
 		$imgval[$i]  = '';
@@ -75,7 +81,11 @@ if (!empty($_GET)){ //Modif
 					</div>
 					 <div class="form-group" >
 						<label for="titre">Actu à la une :</label>
-					    <input type="checkbox" name="online" <?php echo  $online ?>>
+					    <input type="checkbox" name="alaune" value="1" <?php echo  $alaune ?>>
+					</div>
+					 <div class="form-group" >
+						<label for="titre">En ligne :</label>
+					    <input type="checkbox" name="online" value="1" <?php echo  $online ?>>
 					</div>
 					<div class="form-group" >
 						<label class="col-sm-1" for="titre">Titre :</label>

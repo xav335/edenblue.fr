@@ -20,12 +20,12 @@ class News extends StorageManager {
 	}
 	
 	
-	public function newsGet($id){
+	public function newsGet($id,$online){
 		 $this->dbConnect();
 		if (!isset($id)){
 			$requete = "SELECT * FROM `news` ORDER BY date_news DESC" ;
 		} else {
-			$requete = "SELECT * FROM `news` WHERE id_news=". $id ;
+			$requete = "SELECT * FROM `news` WHERE `id_news`=". $id;
 		}
 		//print_r($requete);
 		$new_array = null;
@@ -39,7 +39,7 @@ class News extends StorageManager {
 	
 	public function newsGetOffset($offset,$count){
 	    $this->dbConnect();
-	    $requete = "SELECT * FROM `news` WHERE online=1 ORDER BY date_news DESC LIMIT ". $offset .",". $count .";" ;
+	    $requete = "SELECT * FROM `news` WHERE alaune=1 AND online=1 ORDER BY date_news DESC LIMIT ". $offset .",". $count .";" ;
 	    //print_r($requete);
 	    $new_array = null;
 	    $result = mysqli_query($this->mysqli,$requete);
@@ -53,13 +53,14 @@ class News extends StorageManager {
 	public function newsAdd($value){
 		//print_r($value);
 		//exit();
-		 $this->dbConnect();
+		$this->dbConnect();
 		$this->begin();
-		
+		($value['online']=='1') ? $online = 1 : $online = 0;
+		($value['alaune']=='1') ? $alaune = 1 : $alaune = 0;
 		try {
-			($value['online']=='on') ? $online = 1 : $online = 0;
+			
 			$sql = "INSERT INTO  `news`
-						(`date_news`, `titre`, `accroche`, `image1`, `video`, `contenu`, `online`)
+						(`date_news`, `titre`, `accroche`, `image1`, `video`, `contenu`, `alaune`, `online`)
 						VALUES (
 						'". $this->inserer_date($value['datepicker']) ."', 
 						'". addslashes($value['titre']) ."',
@@ -67,7 +68,8 @@ class News extends StorageManager {
 						'". addslashes($value['url1']) ."',
 						'". addslashes($value['video']) ."',
 						'". addslashes($value['contenu']) ."',
-						". $online ." 	
+						". $alaune .", 	    
+						". $online ."	
 					);";
 			$result = mysqli_query($this->mysqli,$sql);
 			
@@ -89,18 +91,19 @@ class News extends StorageManager {
 	public function newsModify($value){
 		//print_r($value);
 		//exit();
-		
-		 $this->dbConnect();
+		$this->dbConnect();
 		$this->begin();
 		try {
-			($value['online']=='on') ? $online = 1 : $online = 0;
+			($value['online']=='1') ? $online = 1 : $online = 0;
+			($value['alaune']=='1') ? $alaune = 1 : $alaune = 0;
 			$sql = "UPDATE  .`news` SET
 					`date_news`='". $this->inserer_date($value['datepicker']) ."', 
 					`titre`='". addslashes($value['titre']) ."', 
 					`accroche`='". addslashes($value['accroche']) ."', 
 					`image1`='". addslashes($value['url1']) ."',
-					 `video`='". addslashes($value['video']) ."',
+					`video`='". addslashes($value['video']) ."',
 					`contenu`='". addslashes($value['contenu']) ."',
+					`alaune`=". $alaune .",	
 					`online`=". $online ."		 
 					WHERE `id_news`=". $value['id'] .";";
 			$result = mysqli_query($this->mysqli,$sql);

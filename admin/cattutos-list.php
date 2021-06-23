@@ -43,7 +43,7 @@ if (!empty($result)) {
 							<th class="col-md-1" style="">
 								Titre
 							</th>
-							<th class="col-md-3" style="">
+							<th class="col-md-2" style="">
 								Contenu
 							</th>
 							<th class="col-md-1" style="">
@@ -55,6 +55,9 @@ if (!empty($result)) {
 							
 							<th class="col-md-1" style="">
 								PDF
+							</th>
+							<th class="col-md-1" style="">
+								EN LINE
 							</th>
 							<th class="col-md-1" style="">
 								
@@ -88,6 +91,7 @@ if (!empty($result)) {
 								<td><?php if($yaImages): ?><img src="img/check.png" width="30" ><?php endif;?></td>
 								<td><?php if(!empty($value['video']) && isset($value['video'])): ?><img src="img/check.png" width="30" ><?php endif;?></td>
 								<td><?php if(!empty($value['fichier_pdf']) && isset($value['fichier_pdf'])): ?><img src="img/check.png" width="30" ><?php endif;?></td>
+								<td><?php if($value['online']==1): ?><img src="img/check.png" width="30" ><?php endif;?></td>
 								<td><a href="cattutos-edit.php?id=<?php echo $value['id'] ?>"><img src="img/modif.png" width="30" alt="Modifier" ></a></td>
 								
 								<td>

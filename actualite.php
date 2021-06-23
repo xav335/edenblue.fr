@@ -3,7 +3,7 @@ include_once 'inc/inc.config.php';
 include_once 'admin/classes/utils.php';
 require_once 'admin/classes/News.php';
 $news = new News();
-$result = $news->newsGet(null);
+$result = $news->newsGet(null,$online=1);
 //print_r($result);
 ?>
 <!doctype html>
