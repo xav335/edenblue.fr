@@ -87,6 +87,10 @@ else {
 					<input type="hidden" name="num_image" id="num_image" value="">
 					
 					<div class="form-group" >
+							<label class="col-sm-2" for="online">En ligne :</label>
+						    <input type="checkbox" name="online" value="1" <?=$online?>>
+						</div>
+					<div class="form-group" >
 						<label class="col-sm-1">Date :</label>
 					    <input class="col-sm-2" type="text" name="datepicker" required id="datepicker" value="<?php echo $date?>" >
 					</div>

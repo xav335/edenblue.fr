@@ -17,7 +17,7 @@ class Cattutos extends StorageManager {
 	
 	    try {
 	        $sql = "INSERT INTO  `cattutos`
-						(`date`, `titre`, `accroche`, `video`, `contenu`)
+						(`date`, `titre`, `accroche`, `video`, `online`, `contenu`)
 						VALUES (
 						'". $this->inserer_date($value['datepicker']) ."',
 						'". addslashes($value['titre']) ."',

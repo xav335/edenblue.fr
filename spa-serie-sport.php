@@ -37,7 +37,7 @@
         <p>
             <strong>Dimensions </strong> : 366 x 232 x 140 cm</br>
             <strong>Nombre de places </strong> : 4 dont 1 nageur</br>
-            <strong>Nombre de pompes </strong> : 4 (3 x 3 CV / 1 x 3 CV bi-vitesses)</br>
+            <strong>Nombre de pompes </strong> : 4 (3 x 2,5&nbsp;CV / 1 x 2,5&nbsp;CV bi-vitesses)</br>
             <strong>Buses </strong> : 33 </br>
             <strong>Equipements </strong> : UV/ozone, buses translucides avec leds, projecteur leds, leds sous vannes, 6 fontaines éclairées, couverture d’isolation (15 x 10 cm)</br>
         </p>
@@ -51,7 +51,7 @@
          <p>
             <strong>Dimensions </strong> : 407 x 235 x 140 cm</br>
             <strong>Nombre de places </strong> : 4 dont 1 nageur</br>
-            <strong>Nombre de pompes </strong> : 4 (3 x 3 CV / 1 x 3 CV bi-vitesses)</br>
+            <strong>Nombre de pompes </strong> : 4 (3 x 2,5&nbsp;CV / 1 x 2,5&nbsp;CV bi-vitesses)</br>
             <strong>Buses </strong> : 19 </br>
             <strong>Equipements </strong> : UV/ozone, buses translucides avec leds, projecteur leds, leds sous vannes, leds périphériques, 8 fontaines éclairées, couverture d’isolation (15 x 10 cm)</br>
         </p>
@@ -65,7 +65,7 @@
          <p>
             <strong>Dimensions </strong> : 432 x 235 x 140 cm</br>
             <strong>Nombre de places </strong> : 5 dont 1 allongée et 1 nageur</br>
-            <strong>Nombre de pompes </strong> : 4 (3 x 3 CV / 1 x 3 CV bi-vitesses)</br>
+            <strong>Nombre de pompes </strong> : 4 (3 x 2,5&nbsp;CV / 1 x 2,5&nbsp;CV bi-vitesses)</br>
             <strong>Buses </strong> : 39 </br>
             <strong>Equipements </strong> : UV/ozone, buses translucides avec leds, projecteur leds,  leds sous vannes, 6 fontaines éclairées, couverture d’isolation (15 x 10 cm)</br>
         </p>
@@ -79,7 +79,7 @@
          <p>
             <strong>Dimensions </strong> : 486 x 235 x 140 cm</br>
             <strong>Nombre de places </strong> : 5 dont 1 nageur</br>
-            <strong>Nombre de pompes </strong> : : 4 (3 x 3 CV / 1 x 3 CV bi-vitesses)</br>
+            <strong>Nombre de pompes </strong> : : 4 (3 x 2,5&nbsp;CV / 1 x 2,5&nbsp;CV bi-vitesses)</br>
             <strong>Buses </strong> : 43 </br>
             <strong>Equipements </strong> : station musicale INP4, UV/ozone, buses translucides avec leds, projecteur leds, leds sous vannes, 8 fontaines éclairées, couverture d’isolation (15 x 10 cm)</br>
         </p>
@@ -93,7 +93,7 @@
          <p>
             <strong>Dimensions </strong> : 506 x 235 x 140 cm </br>
             <strong>Nombre de places </strong> :5 dont 1 allongée et 1 nageur</br>
-            <strong>Nombre de pompes </strong> : 4 (3 x 3 CV / 1 x 3 CV bi-vitesses)</br>
+            <strong>Nombre de pompes </strong> : 4 (3 x 2,5&nbsp;CV / 1 x 2,5&nbsp;CV bi-vitesses)</br>
             <strong>Buses </strong> : 40 </br>
             <strong>Equipements </strong> : Equipements : station musicale INP4, UV/ozone, buses translucides avec leds, projecteur leds, leds sous vannes, leds périphériques, 9 fontaines éclairées, couverture d’isolation (15 x 10 cm)</br>
         </p>
@@ -107,7 +107,7 @@
          <p>
             <strong>Dimensions </strong> : 570 x 235 x 140 cm</br>
             <strong>Nombre de places </strong> : 7 dont 1 nageur</br>
-            <strong>Nombre de pompes </strong> :5 (3 x 3 CV / 2 x 3 CV bi-vitesses)</br>
+            <strong>Nombre de pompes </strong> :5 (3 x 2,5&nbsp;CV / 2 x 2,5&nbsp;CV bi-vitesses)</br>
             <strong>Buses </strong> : 50 </br>
             <strong>Equipements </strong> : station musicale INP4, UV/ozone, projecteur leds , buses translucides avec leds, leds sous vannes, leds périphériques, 11 fontaines éclairées, couverture d’isolation (15 x 10 cm)</br>
         </p>
@@ -121,7 +121,7 @@
          <p>
             <strong>Dimensions </strong> : 570 x 235 x 140 cm</br>
             <strong>Nombre de places </strong> : 76 dont 1 allongée et 1 nageur</br>
-            <strong>Nombre de pompes </strong> :5 (3 x 3 CV / 2 x 3 CV bi-vitesses)</br>
+            <strong>Nombre de pompes </strong> :5 (3 x 2,5&nbsp;CV / 2 x 2,5&nbsp;CV bi-vitesses)</br>
             <strong>Buses </strong> : 52 </br>
             <strong>Equipements </strong> : station musicale INP4, UV/ozone, buses translucides avec leds, leds périphériques, projecteur leds, leds sous vannes, 11 fontaines éclairées, couverture d’isolation (15 x 10 cm)</br>
         </p>

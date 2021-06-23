@@ -36,7 +36,7 @@
         <p>
             <strong>Dimensions </strong> : 209 x 209 x 92 cm</br>
             <strong>Nombre de places </strong> : 6 dont 1 allongé </br>
-            <strong>Nombre de pompes </strong> : 1 bi-vitesses (3 CV)</br>
+            <strong>Nombre de pompes </strong> : 1 bi-vitesses (2,5&nbsp;CV)</br>
             <strong>Buses </strong> : 36 </br>
             <strong>Equipements </strong> : UV/ozone, projecteur leds, leds sous vannes, fontaines éclairées, couverture d’isolation (15 x 10 cm)</br>
         </p>
@@ -50,7 +50,7 @@
         <p>
             <strong>Dimensions </strong> : 210 x 210 x 92 cm </br>
             <strong>Nombre de places </strong> : 6 dont 1 allongé </br>
-            <strong>Nombre de pompes </strong> : 2 bi-vitesses (3 CV) </br>
+            <strong>Nombre de pompes </strong> : 2 bi-vitesses (2,5&nbsp;CV) </br>
             <strong>Buses </strong> : 57 </br>
             <strong>Equipements </strong> : station musicale INP3, UV/ozone, buses translucides avec leds (en option), projecteur leds, leds sous vannes, fontaines éclairées, couverture d’isolation (15 x 10 cm) </br>
         </p>
@@ -64,7 +64,7 @@
         <p>
             <strong>Dimensions </strong> : 235 x 235 x 92 cm</br>
             <strong>Nombre de places </strong> : 6 dont 1 allongé</br>
-            <strong>Nombre de pompes </strong> : 2 bi-vitesses (3 CV) </br>
+            <strong>Nombre de pompes </strong> : 2 bi-vitesses (2,5&nbsp;CV) </br>
             <strong>Buses </strong> : 53 </br>
             <strong>Equipements </strong> : station musicale INP3, UV/ozone, projecteur leds, leds sous vannes, leds périphériques, couverture d’isolation (15 x 10 cm)</br>
         </p>
@@ -78,7 +78,7 @@
         <p>
             <strong>Dimensions </strong> : 235 x 235 x 97 cm</br>
             <strong>Nombre de places </strong> : 5 dont 2 allongé</br>
-            <strong>Nombre de pompes </strong> : 2 bi-vitesses (3 CV) </br>
+            <strong>Nombre de pompes </strong> : 2 bi-vitesses (2,5&nbsp;CV) </br>
             <strong>Buses </strong> : 57</br>
             <strong>Equipements </strong> : station musicale INP3, UV/ozone, projecteur leds, leds sous vannes, leds périphériques, fontaines éclairées, couverture d’isolation (15 x 10 cm) </br>
         </p>
@@ -92,7 +92,7 @@
         <p>
             <strong>Dimensions </strong> : 209 x 209 x 92 cm</br>
             <strong>Nombre de places </strong> : 6 dont 2 allongé</br>
-            <strong>Nombre de pompes </strong> : 3 dont 2 bi-vitesses (3 CV) </br>
+            <strong>Nombre de pompes </strong> : 3 dont 2 bi-vitesses (2,5&nbsp;CV) </br>
             <strong>Buses </strong> : 51 </br>
             <strong>Equipements </strong> : station musicale INP4, UV/ozone, buses translucides avec leds, projecteur leds, leds sous vannes, fontaines éclairées, couverture d’isolation (15 x 10 cm)</br>
         </p>
@@ -106,7 +106,7 @@
         <p>
             <strong>Dimensions </strong> : 235 x 235 x 92 cm</br>
             <strong>Nombre de places </strong> : 5 dont 2 allongées</br>
-            <strong>Nombre de pompes </strong> : 2 bi-vitesses (3 CV)</br>
+            <strong>Nombre de pompes </strong> : 2 bi-vitesses (2,5&nbsp;CV)</br>
             <strong>Buses </strong> : 50</br>
             <strong>Equipements </strong> : station musicale INP4, UV/ozone, buses translucides avec leds, projecteur leds, leds sous vannes, fontaines éclairées, couverture d’isolation (15 x 10 cm)</br>
         </p>
@@ -120,7 +120,7 @@
         <p>
             <strong>Dimensions </strong> : 235 x 235 x 92 cm</br>
             <strong>Nombre de places </strong> : 6 dont 1 allongé</br>
-            <strong>Nombre de pompes </strong> : 2 bi-vitesses (3 CV) </br>
+            <strong>Nombre de pompes </strong> : 2 bi-vitesses (2,5&nbsp;CV) </br>
             <strong>Buses </strong> : 50</br>
             <strong>Equipements </strong> : station musicale INP4, UV/ozone, buses translucides avec leds, projecteur leds, leds sous vannes, fontaines éclairées, couverture d’isolation (15 x 10 cm)</br>
         </p>
@@ -134,7 +134,7 @@
         <p>
             <strong>Dimensions </strong> : 235 x 235 x 92 cm</br>
             <strong>Nombre de places </strong> : 6 dont 1 allongé</br>
-            <strong>Nombre de pompes </strong> : 2 bi-vitesses (3 CV) </br>
+            <strong>Nombre de pompes </strong> : 2 bi-vitesses (2,5&nbsp;CV) </br>
             <strong>Buses </strong> : 50</br>
             <strong>Equipements </strong> : station musicale INP4, UV/ozone, buses translucides avec leds, projecteur leds, leds sous vannes, fontaines éclairées, couverture d’isolation (15 x 10 cm)</br>
         </p>
@@ -148,7 +148,7 @@
         <p>
             <strong>Dimensions </strong> : 235 x 235 x 92 cm</br>
             <strong>Nombre de places </strong> : 5 dont 2 allongé</br>
-            <strong>Nombre de pompes </strong> : 3 dont 2 bi-vitesses (3 CV) </br>
+            <strong>Nombre de pompes </strong> : 3 dont 2 bi-vitesses (2,5&nbsp;CV) </br>
             <strong>Buses </strong> : 57</br>
             <strong>Equipements </strong> :station musicale INP4, UV/ozone, buses translucides avec leds, projecteur leds, leds sous vannes, fontaines éclairées, couverture d’isolation (15 x 10 cm)</br>
         </p>

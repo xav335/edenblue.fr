@@ -36,7 +36,7 @@
         <p>
             <strong>Dimensions </strong> : 153 x 210 x 76.5 cm </br>
             <strong>Nombre de places </strong> : 3 dont 2 allongées </br>
-            <strong>Nombre de pompes </strong> : 2 bi-vitesses (3 CV) </br>
+            <strong>Nombre de pompes </strong> : 2 bi-vitesses (2,5&nbsp;CV) </br>
             <strong>Buses </strong> : 51 </br>
             <strong>Equipements </strong> : station musicale INP4 (sur modèle ST), HP résonnance aquatique, UV/ozone, buses translucides avec leds, projecteur leds, leds sous vannes, couverture d’isolation (15 x 10 cm)</br>
         </p>
@@ -50,7 +50,7 @@
         <p>
             <strong>Dimensions </strong> : 210 x 210 x 92 cm</br>
             <strong>Nombre de places </strong> : 6 dont 1 allongé</br>
-            <strong>Nombre de pompes </strong> : 2 bi-vitesses (3 CV) </br>
+            <strong>Nombre de pompes </strong> : 2 bi-vitesses (2,5&nbsp;CV) </br>
             <strong>Buses </strong> : 43 </br>
             <strong>Equipements </strong> : station musicale INP4 (sur model ST), HP résonnance aquatique, UV/ozone, buses translucides avec leds, projecteur leds, leds sous vannes, fontaines éclairées, couverture d’isolation (15 x 10 cm)</br>
         </p>
@@ -64,7 +64,7 @@
         <p>
             <strong>Dimensions </strong> : 210 x 210 x 92 cm</br>
             <strong>Nombre de places </strong> : 6 dont 1 allongé</br>
-            <strong>Nombre de pompes </strong> : 3 dont 2 bi-vitesses (3 CV) </br>
+            <strong>Nombre de pompes </strong> : 3 dont 2 bi-vitesses (2,5&nbsp;CV) </br>
             <strong>Buses </strong> : 55</br>
             <strong>Equipements </strong> : station musicale INP4 (sur model ST), HP résonnance aquatique, UV/ozone, buses translucides avec leds, projecteur leds, leds sous vannes, fontaines éclairées, couverture d’isolation (15 x 10 cm) </br>
         </p>
@@ -78,7 +78,7 @@
         <p>
             <strong>Dimensions </strong> : 235 x 235 x 92 cm</br>
             <strong>Nombre de places </strong> : 6 dont 1 allongé</br>
-            <strong>Nombre de pompes </strong> : 3 dont 2 bi-vitesses (3 CV) </br>
+            <strong>Nombre de pompes </strong> : 3 dont 2 bi-vitesses (2,5&nbsp;CV) </br>
             <strong>Buses </strong> : 56 </br>
             <strong>Equipements </strong> : : station musicale INP4 (sur modèle ST), HP résonnance aquatique, UV/ozone, buses translucides avec leds, projecteur leds, leds sous vannes, fontaines éclairées, couverture d’isolation (15 x 10 cm)</br>
         </p>

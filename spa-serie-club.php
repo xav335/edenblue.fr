@@ -36,7 +36,7 @@
         <p>
             <strong>Dimensions </strong> : 183 x183 x 86 cm </br>
             <strong>Nombre de places </strong> : 3 dont 1 allongé </br>
-            <strong>Nombre de pompes </strong> : 1 bi-vitesses (3 CV) </br>
+            <strong>Nombre de pompes </strong> : 1 bi-vitesses (2,5&nbsp;CV) </br>
             <strong>Buses </strong> : 26 </br>
             <strong>Equipements </strong> : UV/ozone, projecteur leds, fontaines éclairées, couverture d’isolation (10 x 5 cm) </br>
         </p>
@@ -49,7 +49,7 @@
         <p>
             <strong>Dimensions </strong> : 210 x 158 x 84 cm</br>
             <strong>Nombre de places </strong> : 3 dont 1 allongé</br>
-            <strong>Nombre de pompes </strong> : 1 bi-vitesses (3 CV) </br>
+            <strong>Nombre de pompes </strong> : 1 bi-vitesses (2,5&nbsp;CV) </br>
             <strong>Buses </strong> : 30 </br>
             <strong>Equipements </strong> : UV/ozone, projecteur leds, leds périphériques, couverture d’isolation (10 x 5 cm) </br>
         </p>
@@ -62,7 +62,7 @@
         <p>
             <strong>Dimensions </strong> : 210 x 190 x 84 cm</br>
             <strong>Nombre de places </strong> : 6 dont 1 allongé</br>
-            <strong>Nombre de pompes </strong> : 2 bi-vitesses (3 CV) </br>
+            <strong>Nombre de pompes </strong> : 2 bi-vitesses (2,5&nbsp;CV) </br>
             <strong>Buses </strong> : 40</br>
             <strong>Equipements </strong> : UV/ozone, projecteur leds, leds périphériques, couverture d’isolation (10 x 5 cm) </br>
         </p>
@@ -75,7 +75,7 @@
         <p>
             <strong>Dimensions </strong> : 210 x 210 x 100 cm</br>
             <strong>Nombre de places </strong> : 6 dont 1 allongé</br>
-            <strong>Nombre de pompes </strong> : 2 bi-vitesses (3 CV) </br>
+            <strong>Nombre de pompes </strong> : 2 bi-vitesses (2,5&nbsp;CV) </br>
             <strong>Buses </strong> : 50</br>
             <strong>Equipements </strong> : UV/ozone, projecteur leds, leds périphériques, couverture d’isolation (10 x 5 cm) </br>
         </p>
@@ -93,7 +93,7 @@
         <p>
             <strong>Dimensions </strong> : 235 x 235 x 100 cm</br>
             <strong>Nombre de places </strong> : 6 dont 1 allongé</br>
-            <strong>Nombre de pompes </strong> : 2 bi-vitesses (3 CV) </br>
+            <strong>Nombre de pompes </strong> : 2 bi-vitesses (2,5&nbsp;CV) </br>
             <strong>Buses </strong> : 70 </br>
             <strong>Equipements </strong> : station musicale INP3, UV/ozone, projecteur leds, leds sous vannes, leds périphériques, couverture d’isolation (10 x 5 cm) </br>
         </p>
@@ -107,7 +107,7 @@
         <p>
             <strong>Dimensions </strong> : 230 x 230 x 92 cm</br>
             <strong>Nombre de places </strong> : 6 dont 1 allongé</br>
-            <strong>Nombre de pompes </strong> : 2 bi-vitesses (3 CV) </br>
+            <strong>Nombre de pompes </strong> : 2 bi-vitesses (2,5&nbsp;CV) </br>
             <strong>Buses </strong> : 92 </br>
             <strong>Equipements </strong> : station musicale INP3, UV/ozone, projecteur leds, leds sous vannes, leds périphériques, fontaines éclairées, couverture d’isolation (10 x 5 cm) </br>
         </p>

@@ -27,7 +27,7 @@ $result = $news->newsGet(null);
              <?php foreach ( $result as $value ) :  
                 $i++;?>
                 <div class="large-6 medium-6 small-12 cell" id="procedes">
-                     <h2 class="sous-titre"> <?php echo nl2br($value['titre'])?></h2>
+                     <h2 class="sous-titre2"> <?php echo nl2br($value['titre'])?></h2>
                     <p data-animation="top">
                             <?php echo nl2br($value['contenu'])?>
                          </p>
