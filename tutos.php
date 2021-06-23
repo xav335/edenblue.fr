@@ -40,7 +40,7 @@ if (!empty($result)) {
              <?php foreach ( $result as $value ) :  
                 $i++;?>
                 <div class="large-12 medium-12 small-12 cell" id="procedes">
-                     <h2 class="sous-titre"> <?php echo nl2br($value['titre'])?></h2>
+                     <h2 class="sous-titre2"> <?php echo nl2br($value['titre'])?></h2>
                 </div>
                 <div class="large-6 medium-6 small-12 cell" id="procedes">
                      
