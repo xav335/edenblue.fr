@@ -30,9 +30,9 @@
       </div>
       <br>
       <div class="large-3 medium-4 small-12 cell">
-        <a data-fancybox="spa" href="assets/img/gammesport/aquex12-edenblue.png">
+        <a data-fancybox="spa" href="assets/img/gammesport/aquex12-edenblue.jpg">
             <figcaption>AQUEX 12 SPA MONO ZONE</figcaption>
-            <img src="assets/img/gammesport/aquex12-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammesport/aquex12-edenblue.jpg" alt="Spa Club Edenblue">
         </a>    
         <p>
             <strong>Dimensions </strong> : 366 x 232 x 140 cm</br>
@@ -44,9 +44,9 @@
       </div>
       
       <div class="large-3 medium-4 small-12 cell">
-         <a data-fancybox="spa" href="assets/img/gammesport/aquex13-edenblue.png">
+         <a data-fancybox="spa" href="assets/img/gammesport/aquex13-edenblue.jpg">
             <figcaption>AQUEX 13 SPA MONO ZONE</figcaption>
-            <img src="assets/img/gammesport/aquex13-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammesport/aquex13-edenblue.jpg" alt="Spa Club Edenblue">
         </a>
          <p>
             <strong>Dimensions </strong> : 407 x 235 x 140 cm</br>
@@ -58,9 +58,9 @@
       </div>
       
       <div class="large-3 medium-4 small-12 cell">
-         <a data-fancybox="spa" href="assets/img/gammesport/aquex14-edenblue.png">
+         <a data-fancybox="spa" href="assets/img/gammesport/aquex14-edenblue.jpg">
             <figcaption>AQUEX 14 SPA MONO ZONE</figcaption>
-            <img src="assets/img/gammesport/aquex14-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammesport/aquex14-edenblue.jpg" alt="Spa Club Edenblue">
         </a>
          <p>
             <strong>Dimensions </strong> : 432 x 235 x 140 cm</br>
@@ -72,9 +72,9 @@
       </div>
       
       <div class="large-3 medium-4 small-12 cell">
-         <a data-fancybox="spa" href="assets/img/gammesport/aquex16-edenblue.png">
+         <a data-fancybox="spa" href="assets/img/gammesport/aquex16-edenblue.jpg">
             <figcaption>AQUEX 16 SPA MONO ZONE</figcaption>
-            <img src="assets/img/gammesport/aquex16-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammesport/aquex16-edenblue.jpg" alt="Spa Club Edenblue">
         </a>
          <p>
             <strong>Dimensions </strong> : 486 x 235 x 140 cm</br>
@@ -86,9 +86,9 @@
       </div>
       
       <div class="large-3 medium-4 small-12 cell">
-         <a data-fancybox="spa" href="assets/img/gammesport/aquex17-edenblue.png">
+         <a data-fancybox="spa" href="assets/img/gammesport/aquex17-edenblue.jpg">
             <figcaption>AQUEX 17 SPA MONO ZONE</figcaption>
-            <img src="assets/img/gammesport/aquex17-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammesport/aquex17-edenblue.jpg" alt="Spa Club Edenblue">
         </a>
          <p>
             <strong>Dimensions </strong> : 506 x 235 x 140 cm </br>
@@ -100,9 +100,9 @@
       </div>
       
       <div class="large-3 medium-4 small-12 cell">
-         <a data-fancybox="spa" href="assets/img/gammesport/aquex19-edenblue.png">
+         <a data-fancybox="spa" href="assets/img/gammesport/aquex19-edenblue.jpg">
             <figcaption>AQUEX 19S SPA BI ZONE</figcaption>
-            <img src="assets/img/gammesport/aquex19-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammesport/aquex19-edenblue.jpg" alt="Spa Club Edenblue">
         </a>
          <p>
             <strong>Dimensions </strong> : 570 x 235 x 140 cm</br>
@@ -114,9 +114,9 @@
       </div>
       
       <div class="large-3 medium-4 small-12 cell">
-         <a data-fancybox="spa" href="assets/img/gammesport/aquex19L-edenblue.png">
+         <a data-fancybox="spa" href="assets/img/gammesport/aquex19L-edenblue.jpg">
             <figcaption>AQUEX 19L SPA BI ZONE</figcaption>
-            <img src="assets/img/gammesport/aquex19L-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammesport/aquex19L-edenblue.jpg" alt="Spa Club Edenblue">
         </a>
          <p>
             <strong>Dimensions </strong> : 570 x 235 x 140 cm</br>

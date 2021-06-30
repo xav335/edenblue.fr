@@ -23,15 +23,15 @@
         </p>
       </div>
        <div class="large-5 medium-6 small-12 cell" data-animation="top">
-        <a data-fancybox="spa1" href="assets/img/gammesensation/edenblue-spa-serie-sensation.png">
-            <img src="assets/img/gammesensation/edenblue-spa-serie-sensation.png" alt="Spa Club Edenblue">
+        <a data-fancybox="spa1" href="assets/img/gammesensation/edenblue-spa-serie-sensation.jpg">
+            <img src="assets/img/gammesensation/edenblue-spa-serie-sensation.jpg" alt="Spa Club Edenblue">
         </a>    
       </div>
       <br>
       <div class="large-3 medium-4 small-12 cell">
-        <a data-fancybox="spa" href="assets/img/gammesensation/wenda-edenblue.png">
+        <a data-fancybox="spa" href="assets/img/gammesensation/wenda-edenblue.jpg">
             <figcaption>SENSATION - WENDA ST</figcaption>
-            <img src="assets/img/gammesensation/wenda-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammesensation/wenda-edenblue.jpg" alt="Spa Club Edenblue">
         </a>    
         <p>
             <strong>Dimensions </strong> : 153 x 210 x 76.5 cm </br>
@@ -43,9 +43,9 @@
       </div>
       
       <div class="large-3 medium-4 small-12 cell">
-         <a data-fancybox="spa" href="assets/img/gammesensation/chandra-edenblue.png">
+         <a data-fancybox="spa" href="assets/img/gammesensation/chandra-edenblue.jpg">
             <figcaption>SENSATION - CHANDRA  ST</figcaption>
-            <img src="assets/img/gammesensation/chandra-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammesensation/chandra-edenblue.jpg" alt="Spa Club Edenblue">
         </a>
         <p>
             <strong>Dimensions </strong> : 210 x 210 x 92 cm</br>
@@ -57,9 +57,9 @@
       </div>
       
       <div class="large-3 medium-3 small-12 cell">
-        <a data-fancybox="spa" href="assets/img/gammesensation/prana-edenblue.png">
+        <a data-fancybox="spa" href="assets/img/gammesensation/prana-edenblue.jpg">
             <figcaption>SENSATION - PRANA ST</figcaption>
-            <img src="assets/img/gammesensation/prana-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammesensation/prana-edenblue.jpg" alt="Spa Club Edenblue">
         </a>
         <p>
             <strong>Dimensions </strong> : 210 x 210 x 92 cm</br>
@@ -71,9 +71,9 @@
       </div>
       
       <div class="large-3 medium-4 small-12 cell">
-         <a data-fancybox="spa" href="assets/img/gammesensation/amara-edenblue.png">
+         <a data-fancybox="spa" href="assets/img/gammesensation/amara-edenblue.jpg">
             <figcaption>SENSATION - AMARA  ST</figcaption>
-            <img src="assets/img/gammesensation/amara-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammesensation/amara-edenblue.jpg" alt="Spa Club Edenblue">
         </a>
         <p>
             <strong>Dimensions </strong> : 235 x 235 x 92 cm</br>

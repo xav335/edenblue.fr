@@ -22,16 +22,16 @@
         </p>
       </div>
        <div class="large-5 medium-6 small-12 cell" data-animation="top">
-        <a data-fancybox="spa1" href="assets/img/gammeprivilege/edenblue-spa-serieprivilege.png">
-            <img src="assets/img/gammeprivilege/edenblue-spa-serieprivilege.png" alt="Spa Club Edenblue">
+        <a data-fancybox="spa1" href="assets/img/gammeprivilege/edenblue-spa-serieprivilege.jpg">
+            <img src="assets/img/gammeprivilege/edenblue-spa-serieprivilege.jpg" alt="Spa Club Edenblue">
         </a>    
       </div>
       <br>
       
       <div class="large-3 medium-4 small-12 cell">
-        <a data-fancybox="spa" href="assets/img/gammeprivilege/naka-st-edenblue.png">
+        <a data-fancybox="spa" href="assets/img/gammeprivilege/naka-st-edenblue.jpg">
             <figcaption>PRIVILEGE - NAKA </figcaption>
-            <img src="assets/img/gammeprivilege/naka-st-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammeprivilege/naka-st-edenblue.jpg" alt="Spa Club Edenblue">
         </a>    
         <p>
             <strong>Dimensions </strong> : 209 x 209 x 92 cm</br>
@@ -43,9 +43,9 @@
       </div>
       
       <div class="large-3 medium-4 small-12 cell">
-        <a data-fancybox="spa" href="assets/img/gammeprivilege/clea-st-edenblue.png">
+        <a data-fancybox="spa" href="assets/img/gammeprivilege/clea-st-edenblue.jpg">
             <figcaption>PRIVILEGE - CLEA ST</figcaption>
-            <img src="assets/img/gammeprivilege/clea-st-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammeprivilege/clea-st-edenblue.jpg" alt="Spa Club Edenblue">
         </a>    
         <p>
             <strong>Dimensions </strong> : 210 x 210 x 92 cm </br>
@@ -57,9 +57,9 @@
       </div>
       
       <div class="large-3 medium-4 small-12 cell">
-         <a data-fancybox="spa" href="assets/img/gammeprivilege/alma-st-edenblue.png">
+         <a data-fancybox="spa" href="assets/img/gammeprivilege/alma-st-edenblue.jpg">
             <figcaption>PRIVILEGE - ALMA ST</figcaption>
-            <img src="assets/img/gammeprivilege/alma-st-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammeprivilege/alma-st-edenblue.jpg" alt="Spa Club Edenblue">
         </a>
         <p>
             <strong>Dimensions </strong> : 235 x 235 x 92 cm</br>
@@ -71,9 +71,9 @@
       </div>
       
       <div class="large-3 medium-3 small-12 cell">
-        <a data-fancybox="spa" href="assets/img/gammeprivilege/veta-st-edenblue.png">
+        <a data-fancybox="spa" href="assets/img/gammeprivilege/veta-st-edenblue.jpg">
             <figcaption>PRIVILEGE - SVETA ST</figcaption>
-            <img src="assets/img/gammeprivilege/veta-st-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammeprivilege/veta-st-edenblue.jpg" alt="Spa Club Edenblue">
         </a>
         <p>
             <strong>Dimensions </strong> : 235 x 235 x 97 cm</br>
@@ -85,9 +85,9 @@
       </div>
       
       <div class="large-3 medium-4 small-12 cell">
-         <a data-fancybox="spa" href="assets/img/gammeprivilege/camelot-st-edenblue.png">
+         <a data-fancybox="spa" href="assets/img/gammeprivilege/camelot-st-edenblue.jpg">
             <figcaption>PRIVILEGE - CAMELOT ST</figcaption>
-            <img src="assets/img/gammeprivilege/camelot-st-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammeprivilege/camelot-st-edenblue.jpg" alt="Spa Club Edenblue">
         </a>
         <p>
             <strong>Dimensions </strong> : 209 x 209 x 92 cm</br>
@@ -99,9 +99,9 @@
       </div>
       
       <div class="large-3 medium-4 small-12 cell">
-        <a data-fancybox="spa" href="assets/img/gammeprivilege/nautilus-50st-edenblue.png">
+        <a data-fancybox="spa" href="assets/img/gammeprivilege/nautilus-50st-edenblue.jpg">
             <figcaption>PRIVILEGE - NAUTILUS 50ST</figcaption>
-            <img src="assets/img/gammeprivilege/nautilus-50st-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammeprivilege/nautilus-50st-edenblue.jpg" alt="Spa Club Edenblue">
         </a>
         <p>
             <strong>Dimensions </strong> : 235 x 235 x 92 cm</br>
@@ -113,9 +113,9 @@
       </div>
       
       <div class="large-3 medium-4 small-12 cell">
-         <a data-fancybox="spa" href="assets/img/gammeprivilege/trevi-58st-edenblue.png">
+         <a data-fancybox="spa" href="assets/img/gammeprivilege/trevi-58st-edenblue.jpg">
             <figcaption>PRIVILEGE - TREVI 50ST</figcaption>
-            <img src="assets/img/gammeprivilege/trevi-58st-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammeprivilege/trevi-58st-edenblue.jpg" alt="Spa Club Edenblue">
         </a>
         <p>
             <strong>Dimensions </strong> : 235 x 235 x 92 cm</br>
@@ -127,9 +127,9 @@
       </div>
       
       <div class="large-3 medium-4 small-12 cell">
-         <a data-fancybox="spa" href="assets/img/gammeprivilege/perle-st-edenblue.png">
+         <a data-fancybox="spa" href="assets/img/gammeprivilege/perle-st-edenblue.jpg">
             <figcaption>PRIVILEGE - PERLE ST </figcaption>
-            <img src="assets/img/gammeprivilege/perle-st-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammeprivilege/perle-st-edenblue.jpg" alt="Spa Club Edenblue">
         </a>
         <p>
             <strong>Dimensions </strong> : 235 x 235 x 92 cm</br>
@@ -141,9 +141,9 @@
       </div>
       
        <div class="large-3 medium-4 small-12 cell">
-         <a data-fancybox="spa" href="assets/img/gammeprivilege/nautilus-57ST-edenblue.png">
+         <a data-fancybox="spa" href="assets/img/gammeprivilege/nautilus-57ST-edenblue.jpg">
             <figcaption>PRIVILEGE - NAUTILUS 57ST</figcaption>
-            <img src="assets/img/gammeprivilege/nautilus-57ST-edenblue.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammeprivilege/nautilus-57ST-edenblue.jpg" alt="Spa Club Edenblue">
         </a>
         <p>
             <strong>Dimensions </strong> : 235 x 235 x 92 cm</br>

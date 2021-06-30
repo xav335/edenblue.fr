@@ -24,7 +24,7 @@ $result = $news->newsGetOffset(0, 2);
        <div class="large-12 medium-12 small-12 cell">
         <h1 data-animation="top">Constructeur de piscine</h1>
         <p data-animation="top">
-          <strong>Eden Blue</strong>, constructeur de piscine en béton armé monobloc, en Aquitaine.<br>
+          <strong>Eden Blue, constructeur de piscine sans liner en béton armé monobloc, en Aquitaine.</strong><br>
           Nous intervenons dans toute la Gironde (Bassin d’Arcachon, Bordeaux, Libourne,  Blaye, Médoc…) et dans les départements limitrophes (Dordogne, Charente, Landes et Lot et Garonne)
         </p>
       </div>

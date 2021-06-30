@@ -31,6 +31,9 @@ $resultinc = $catproduct2->catrealisationGetParent();
     <input type="checkbox" name="menu" id="menu">
      <nav>
           <ul>
+             <li><a href="index.php" <?php if (strpos($pagename,'index')!==false) :?>class="active"<?php endif; ?>>Accueil</a>
+           
+            </li>
             <li>
                 <a href="nos-realisations.php" <?php if (strpos($pagename,'nos-realisations')!==false) :?>class="active"<?php endif; ?>>Nos réalisations</a>
                 <ul>

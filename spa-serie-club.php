@@ -23,15 +23,15 @@
         </p>
       </div>
        <div class="large-5 medium-6 small-12 cell" data-animation="top">
-        <a data-fancybox="spa1" href="assets/img/gammeclub/edenblue-spa-serieclub.png">
-            <img src="assets/img/gammeclub/edenblue-spa-serieclub.png" alt="Spa Club Edenblue">
+        <a data-fancybox="spa1" href="assets/img/gammeclub/edenblue-spa-serieclub.jpg">
+            <img src="assets/img/gammeclub/edenblue-spa-serieclub.jpg" alt="Spa Club Edenblue">
         </a>    
       </div>
       <br>
       <div class="large-3 medium-4 small-12 cell">
-        <a data-fancybox="spa" href="assets/img/gammeclub/cl84.png">
+        <a data-fancybox="spa" href="assets/img/gammeclub/cl84.jpg">
             <figcaption>SERIE CLUB - CLB4</figcaption>
-            <img src="assets/img/gammeclub/cl84.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammeclub/cl84.jpg" alt="Spa Club Edenblue">
         </a>    
         <p>
             <strong>Dimensions </strong> : 183 x183 x 86 cm </br>
@@ -42,9 +42,9 @@
         </p>
       </div>
       <div class="large-3 medium-4 small-12 cell">
-         <a data-fancybox="spa" href="assets/img/gammeclub/cl85.png">
+         <a data-fancybox="spa" href="assets/img/gammeclub/cl85.jpg">
             <figcaption>SERIE CLUB - CLB5</figcaption>
-            <img src="assets/img/gammeclub/cl85.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammeclub/cl85.jpg" alt="Spa Club Edenblue">
         </a>
         <p>
             <strong>Dimensions </strong> : 210 x 158 x 84 cm</br>
@@ -55,9 +55,9 @@
         </p>
       </div>
       <div class="large-3 medium-3 small-12 cell">
-        <a data-fancybox="spa" href="assets/img/gammeclub/cl86.png">
+        <a data-fancybox="spa" href="assets/img/gammeclub/cl86.jpg">
             <figcaption>SERIE CLUB - CLB6</figcaption>
-            <img src="assets/img/gammeclub/cl86.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammeclub/cl86.jpg" alt="Spa Club Edenblue">
         </a>
         <p>
             <strong>Dimensions </strong> : 210 x 190 x 84 cm</br>
@@ -68,9 +68,9 @@
         </p>
       </div>
        <div class="large-3 medium-4 small-12 cell">
-         <a data-fancybox="spa" href="assets/img/gammeclub/cl87.png">
+         <a data-fancybox="spa" href="assets/img/gammeclub/cl87.jpg">
             <figcaption>SERIE CLUB - CLB7</figcaption>
-            <img src="assets/img/gammeclub/cl87.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammeclub/cl87.jpg" alt="Spa Club Edenblue">
         </a>
         <p>
             <strong>Dimensions </strong> : 210 x 210 x 100 cm</br>
@@ -86,9 +86,9 @@
       </div>
       
        <div class="large-3 medium-4 small-12 cell">
-        <a data-fancybox="spa" href="assets/img/gammeclub/cl86.png">
+        <a data-fancybox="spa" href="assets/img/gammeclub/cl86.jpg">
             <figcaption>SERIE CLUB - CLB8</figcaption>
-            <img src="assets/img/gammeclub/cl86.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammeclub/cl86.jpg" alt="Spa Club Edenblue">
         </a>
         <p>
             <strong>Dimensions </strong> : 235 x 235 x 100 cm</br>
@@ -100,9 +100,9 @@
       </div>
       
       <div class="large-3 medium-4 small-12 cell">
-         <a data-fancybox="spa" href="assets/img/gammeclub/clb9sf.png">
+         <a data-fancybox="spa" href="assets/img/gammeclub/clb9sf.jpg">
             <figcaption>SERIE CLUB - CLB9ST</figcaption>
-            <img src="assets/img/gammeclub/clb9sf.png" alt="Spa Club Edenblue">
+            <img src="assets/img/gammeclub/clb9sf.jpg" alt="Spa Club Edenblue">
         </a>
         <p>
             <strong>Dimensions </strong> : 230 x 230 x 92 cm</br>
