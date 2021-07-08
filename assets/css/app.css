@@ -191,7 +191,7 @@ body.spa .legende {font-family:'mrs_saint_delafield';font-size:39px;color:var(--
 [role="spadetail"] figcaption {font-size:1.2rem;font-family:'Titillium';text-align:center;font-weight: bold;}
 [role="spadetail"] .cell {padding:0.9375rem;}
 [role="spadetail"] a img {object-fit:cover;object-position:center;transition:all .25s ease-in-out;}
-[role="spadetail"] a:hover img {transform:scale(1.1);}
+[role="spadetail"] a:hover img {transform:scale(1.02);}
 [role="spadetail"] .legende a:hover  {color:var(--txt-white);border-bottom:3px solid var(--txt-white);}
 
 
@@ -204,7 +204,7 @@ body.not-home .slider.swiper-container {height:360px;}
 [role="gallery"] figcaption {font-size:1.2rem;font-family:'Titillium';text-align:center;}
 [role="gallery"] .cell {padding:0.9375rem;}
 [role="gallery"] a img {height:100%;object-fit:cover;width:100%;object-position:center;transition:all .25s ease-in-out;}
-[role="gallery"] a:hover img {transform:scale(1.2);}
+[role="gallery"] a:hover img {transform:scale(1.03);}
 
 section[data-role="actualites"], footer {overflow:hidden;}
 

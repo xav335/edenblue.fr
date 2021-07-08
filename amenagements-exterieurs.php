@@ -75,7 +75,7 @@ include_once 'admin/classes/utils.php';
         </a>   
       </div>
 	  <div class="large-6 medium-6 small-12 cell" id="paysage">
-        <h2 class="sous-titre">Aménagements paysagés</h2>
+        <h2 >Aménagements paysagés</h2>
         <p data-animation="top">
             Laissez libre court à votre imagination et offrez-vous un havre de paix en aménageant les abords de votre piscine.</br></br>
             <strong>Eden Blue</strong> vous propose les services de son bureau d’étude pour vous accompagner dans la conception de votre environnement paysagé (terrasses, végétaux, aménagements divers…).</br>
@@ -89,7 +89,7 @@ include_once 'admin/classes/utils.php';
       
       
        <div class="large-6 medium-6 small-12 cell" id="poolhouse">
-        <h2 class="sous-titre">Pool House</h2>
+        <h2>Pool House</h2>
         <p data-animation="top">
         <strong>Eden Blue</strong> vous offre la possibilité d’ajouter un point d’orgue à votre projet d’aménagement en imaginant et en construisant  le <strong>Pool House</strong> le mieux adapté à vos besoins.</br></br>
         Le <strong>Pool House</strong> représente la construction idéale pour créer un lieu convivial tout en abritant le local technique de votre piscine et ses équipements.</br>
