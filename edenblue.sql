@@ -37,7 +37,7 @@ CREATE TABLE `admin` (
 
 LOCK TABLES `admin` WRITE;
 /*!40000 ALTER TABLE `admin` DISABLE KEYS */;
-INSERT INTO `admin` VALUES (1,'admin','admin33335',NULL),(2,'edenblue','edenblue33',NULL);
+INSERT INTO `admin` VALUES (1,'admin','admin33335',NULL),(2,'edenblue','edenblue33335',NULL);
 /*!40000 ALTER TABLE `admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -95,7 +95,7 @@ CREATE TABLE `catrealisation` (
 
 LOCK TABLES `catrealisation` WRITE;
 /*!40000 ALTER TABLE `catrealisation` DISABLE KEYS */;
-INSERT INTO `catrealisation` VALUES (120,'Piscines miroir','<b>Eden Blue</b> vous offre la possibilité de concrétiser vos rêves les plus fous en s\'appuyant sur son expérience dans la réalisation de piscines sur mesure haut de gamme.\r\nEn créant  une piscine miroir vous aurez l’occasion d’allier esthétique et bien-être tout en réalisant un projet unique. Ces bassins vous permettront d’obtenir les reflets et les jeux de lumière que vous souhaitez mettre en avant dans votre projet tout en assurant un maximum de confort..',0,'',0,3),(121,'Piscines interieures','La société Eden Blue est spécialisée dans la conception et la réalisation de piscines intérieures avec des prestations haut de gamme et entièrement sur mesure. \r\nCette configuration de piscine vous permet de profiter des joies de l’eau tout au long de l’année et de créer une ambiance zen au sein de votre foyer.',0,'',0,3),(124,'Piscines contemporaines','Eden Blue conçoit des piscines à votre image qui s’intègrent à votre environnement en le valorisant.\r\nLes bassins contemporains permettent d’obtenir des formes actuelles et tendances qui s’adapteront très facilement à une architecture moderne',0,'',0,2),(125,'Piscines à débordement','Eden Blue utilise un procédé constructif qui s’adapte à tout type de terrain, donnant ainsi la possibilité de profiter de votre paysage en panoramique.\r\nLes piscines à débordement permettent d’obtenir un fil d’eau qui se confond avec l’horizon, créant ainsi une impression d’infini. Grâce au mouvement d’eau lié au débordement, vous obtiendrez une animation et une ambiance particulière.',0,'',0,5),(126,'Piscines forme libre','Eden Blue s’appuie sur une technique de construction qui permet de réaliser des Piscines en formes libres, très proche de la réalité.\r\nCe procédé de piscines en béton armé monobloc donne la possibilité d’intégrer à votre bassin des plages immergées,\r\ncaliforniennes afin de faciliter l’accès à l’eau.\r\nVous pouvez également créer l’illusion en utilisant des bords naturels avec des enduits minéraux qui imitent parfaitement\r\nles textures et les couleurs de la nature.',0,'',0,4),(127,'Mini piscine','une catégorie de piscine de petite taille,pour un max de plaisir. Même avec peu d\'espace extérieur, vous pouvez installez une piscine de moins de 10 mètres carrés dans votre propriété sans déclaration de travaux. ',0,'',0,3),(128,'Piscine Couloir de nage','Les piscines couloir de nage, très tendance  vous offre un look épuré est idéale pour le sport ou la détente.',0,'',0,7),(129,'Spa sur mesure','La société Eden Blue est spécialisée dans la conception et la réalisation de Spa  avec des prestations haut de gamme et entièrement sur mesure. \r\nCette configuration de Spa vous permet de profiter des joies de l’eau tout au long de l’année et de créer une ambiance zen au sein de votre foyer.',0,'',0,8);
+INSERT INTO `catrealisation` VALUES (120,'Piscines miroir','<b>Eden Blue</b> vous offre la possibilité de concrétiser vos rêves les plus fous en s\'appuyant sur son expérience dans la réalisation de piscines sur mesure haut de gamme.\r\nEn créant  une piscine miroir vous aurez l’occasion d’allier esthétique et bien-être tout en réalisant un projet unique. Ces bassins vous permettront d’obtenir les reflets et les jeux de lumière que vous souhaitez mettre en avant dans votre projet tout en assurant un maximum de confort..',0,'',0,2),(121,'Piscines interieures','La société Eden Blue est spécialisée dans la conception et la réalisation de piscines intérieures avec des prestations haut de gamme et entièrement sur mesure. \r\nCette configuration de piscine vous permet de profiter des joies de l’eau tout au long de l’année et de créer une ambiance zen au sein de votre foyer.',0,'',0,4),(124,'Piscines contemporaines','Eden Blue conçoit des piscines à votre image qui s’intègrent à votre environnement en le valorisant.\r\nLes bassins contemporains permettent d’obtenir des formes actuelles et tendances qui s’adapteront très facilement à une architecture moderne',0,'',0,1),(125,'Piscines à débordement','Eden Blue utilise un procédé constructif qui s’adapte à tout type de terrain, donnant ainsi la possibilité de profiter de votre paysage en panoramique.\r\nLes piscines à débordement permettent d’obtenir un fil d’eau qui se confond avec l’horizon, créant ainsi une impression d’infini. Grâce au mouvement d’eau lié au débordement, vous obtiendrez une animation et une ambiance particulière.',0,'',0,5),(126,'Piscines forme libre','Eden Blue s’appuie sur une technique de construction qui permet de réaliser des Piscines en formes libres, très proche de la réalité.\r\nCe procédé de piscines en béton armé monobloc donne la possibilité d’intégrer à votre bassin des plages immergées,\r\ncaliforniennes afin de faciliter l’accès à l’eau.\r\nVous pouvez également créer l’illusion en utilisant des bords naturels avec des enduits minéraux qui imitent parfaitement\r\nles textures et les couleurs de la nature.',0,'',0,6),(127,'Mini piscine','une catégorie de piscine de petite taille,pour un max de plaisir. Même avec peu d\'espace extérieur, vous pouvez installez une piscine de moins de 10 mètres carrés dans votre propriété sans déclaration de travaux. ',0,'',0,3),(128,'Piscine Couloir de nage','Les piscines couloir de nage, très tendance  vous offre un look épuré est idéale pour le sport ou la détente.',0,'',0,7),(129,'Spa sur mesure','La société Eden Blue est spécialisée dans la conception et la réalisation de Spa  avec des prestations haut de gamme et entièrement sur mesure. \r\nCette configuration de Spa vous permet de profiter des joies de l’eau tout au long de l’année et de créer une ambiance zen au sein de votre foyer.',0,'',0,8);
 /*!40000 ALTER TABLE `catrealisation` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -112,7 +112,7 @@ CREATE TABLE `catrealisation_image` (
   `fichier` varchar(255) NOT NULL,
   `defaut` enum('oui','non') NOT NULL DEFAULT 'non',
   PRIMARY KEY (`num_image`)
-) ENGINE=InnoDB AUTO_INCREMENT=120 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=121 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -280,7 +280,7 @@ CREATE TABLE `email` (
   `email` varchar(100) DEFAULT NULL,
   `message` text DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=67 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=69 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -289,7 +289,7 @@ CREATE TABLE `email` (
 
 LOCK TABLES `email` WRITE;
 /*!40000 ALTER TABLE `email` DISABLE KEYS */;
-INSERT INTO `email` VALUES (47,'2021-04-24 11:35:34','GONZALEZ','Javier','33700','Merignac','+33681731870','fjavi.gonzalez@gmail.com','frsds. df sd fsdfs dfsds dfs\r\nsd s\r\ndf sdf\r\ns d\r\nf\r\ns\r\ndf sfsdf sdf\r\ndf sdf sfsdf sd d sdfsd sdf'),(55,'2021-04-24 16:30:03','Domingo','jean francois','33360','Latresne','09090909','xavier.gonzalez@free.fr','Bonjour j\'ai un projet de construction de piscine à Latresn emerci de me rappeler\r\nCdlt'),(60,'2021-04-24 14:50:54','GONZALEZ','Javier','33700','Merignac','+33681731870','fjavi.gonzalez@gmail.com','C\'est un test d\'envoi de message'),(62,'2021-04-24 15:24:44','GONZALEZ','Gregorio','33360','Latresne','0681731870','fjavi.gonzalez@gmail.com','Bonjour je souhaite un nouveau projet de piscine avec vous\r\nMerci de m\'appeler au numero indiqué \r\nCdlt\r\nJavier'),(63,'2021-04-24 15:29:55','Sean ','Penn','23000','California','0556201431','sean@peen.com','Need a pool\r\ncheers'),(65,'2021-04-24 16:45:26','GONZALEZ','Javier','33700','Merignac','+33681731870','fjavi.gonzalez@gmail.com',''),(66,'2021-04-25 07:36:58','Gonzalez','','','','','fjavi.gonzalez@gmail.com','');
+INSERT INTO `email` VALUES (60,'2021-04-24 14:50:54','GONZALEZ','Javier','33700','Merignac','+33681731870','fjavi.gonzalez@gmail.com','C\'est un test d\'envoi de message'),(67,'2021-07-10 11:33:40','GONZALEZ','Javier','33700','Merignac','+33681731870','fjavi.gonzalez@gmail.com','test de message'),(68,'2021-07-10 11:39:10','GONZALEZ','XAVIER','33700','Merignac','0681731870','zalez@gmail.com','test de message 2');
 /*!40000 ALTER TABLE `email` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -308,7 +308,7 @@ CREATE TABLE `goldbook` (
   `message` text DEFAULT NULL,
   `online` tinyint(4) NOT NULL DEFAULT 0,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -317,7 +317,7 @@ CREATE TABLE `goldbook` (
 
 LOCK TABLES `goldbook` WRITE;
 /*!40000 ALTER TABLE `goldbook` DISABLE KEYS */;
-INSERT INTO `goldbook` VALUES (20,'2021-03-24 00:00:00','Isabel AlVAREZ','fjavi.gonza@ail.com','Professionnel très sérieux',1),(26,'2021-04-04 00:00:00',' ELISABETH PROVOST','ELISABETH@PROVOST.FR','Une équipe d\'enfer, et toujours disponible.\r\nTravaux réalisé chez mes parents à CAVIGNAC au top, merci pour votre professionnalisme',1);
+INSERT INTO `goldbook` VALUES (20,'2021-03-24 00:00:00','Isabel AlVAREZ','fjavi.gonzalez@gmail.com','Professionnel très sérieux',1),(26,'2021-04-04 00:00:00',' ELISABETH PROVOST','ELISABETH@PROVOST.FR','Une équipe d\'enfer, et toujours disponible.\r\nTravaux réalisé chez mes parents à CAVIGNAC au top, merci pour votre professionnalisme',1);
 /*!40000 ALTER TABLE `goldbook` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -708,4 +708,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-07-08 19:03:24
+-- Dump completed on 2021-07-10 12:24:59
