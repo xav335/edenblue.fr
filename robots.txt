@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /ajax/
+Disallow: /admin/
+Disallow: /log/
+Disallow: /uploads/
+
+Sitemap: http://www.edenblue.fr/sitemap.xml
