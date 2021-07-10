@@ -14,7 +14,7 @@ if ($_SERVER[ "SERVER_NAME" ] == "edenblue.localxav.lan") {
     define("DBHOST", "localhost");
     define("DBNAME", "edenblue");
     define("DBUSER", "edenblue");
-    define("DBPASSWD", "edenblue33");
+    define("DBPASSWD", "edenblue33335");
 }
 
 
