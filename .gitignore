@@ -1,4 +1,5 @@
 .DS_Store
 script-conf.sh
 factures
-nc/inc.config.php
+inc/inc.config.php
+.htaccess
