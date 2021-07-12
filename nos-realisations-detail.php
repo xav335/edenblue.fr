@@ -23,7 +23,7 @@ if (!empty($_GET)){
 <html class="no-js" lang="fr">
   <head>
     <?php include 'inc/inc.head.php'; ?>
-    <title>Eden Blue</title>
+    <title>Eden Blue - <?php echo $titre ?></title>
   </head>
 <body class="not-home">
 
