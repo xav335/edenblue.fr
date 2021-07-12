@@ -23,7 +23,12 @@ class News extends StorageManager {
 	public function newsGet($id,$online){
 		 $this->dbConnect();
 		if (!isset($id)){
-			$requete = "SELECT * FROM `news` ORDER BY date_news DESC" ;
+		    if ($online==1) {
+		        $requete = "SELECT * FROM `news` WHERE online=1 ORDER BY date_news DESC" ;
+		    }else {
+		        $requete = "SELECT * FROM `news` ORDER BY date_news DESC" ;
+		    }
+			
 		} else {
 			$requete = "SELECT * FROM `news` WHERE `id_news`=". $id;
 		}
