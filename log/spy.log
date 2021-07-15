@@ -1517,3 +1517,48 @@ cheers</i><br><br>Cordialement.
 2021-07-10 11:43:12 : 
 2021-07-10 11:43:12 : Message envoy√© ! 
 2021-07-10 11:43:12 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  
+2021-07-10 18:08:56 xxxxxxxxxxx  /var/www/edenblue.fr/ajax/contact.php  xxxxxxxxxxx  
+2021-07-10 18:08:56 : sendMail
+2021-07-10 18:08:56 : espace piscine
+2021-07-10 18:08:56 : Pina-OSSAU 
+2021-07-10 18:08:56 : Maryline 
+2021-07-10 18:08:56 : maryline.ossau@sfr.fr
+2021-07-10 18:08:56 : 33240 
+2021-07-10 18:08:56 : Peujard 
+2021-07-10 18:08:56 : 0634336433
+2021-07-10 18:08:56 : Je souhaiterais r√©aliser d'ici au plus tard 2 ans une piscine de dimension 8x4m sur 1.50m de profondeur sur la commune de peujard .
+Afin de budg√©tiser cet achat je souhaiterai conna√Ætre l'ordre de prix pour ce type de r√©alisation 
+2021-07-10 18:08:56 : INSERT INTO  .`contact`
+						(`name`, `email`, `firstname`,`password`,`tel`,`newsletter`,`fromgoldbook`,`fromcontact`)
+						VALUES (
+						'Pina-OSSAU ',
+						'maryline.ossau@sfr.fr',
+						'Maryline ',
+						'B4NpZ',
+						'0634336433',
+						0,
+						0,
+						1
+					);
+2021-07-10 18:08:56 : Bonjour,<br><br>La personne suivante a rempli le formulaire de contact :<br>Nom : <b>Pina-OSSAU  Maryline </b><br>E-mail / TÈlÈphone : <b>maryline.ossau@sfr.fr / 0634336433</b><br>Adresse : <b>33240  Peujard </b><br>Message : <br><i>Je souhaiterais rÈaliser d'ici au plus tard 2 ans une piscine de dimension 8x4m sur 1.50m de profondeur sur la commune de peujard .<br />
+Afin de budgÈtiser cet achat je souhaiterai connaÓtre l'ordre de prix pour ce type de rÈalisation </i><br><br>
+2021-07-10 18:08:56 : Message envoy√© ! 
+2021-07-10 18:08:56 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  
+2021-07-11 01:20:18 xxxxxxxxxxx  /var/www/edenblue.fr/ajax/contact.php  xxxxxxxxxxx  
+2021-07-11 01:20:18 : 
+2021-07-11 01:20:18 : 
+2021-07-11 01:20:18 : 
+2021-07-11 01:20:18 : 
+2021-07-11 01:20:18 : 
+2021-07-11 01:20:18 : 
+2021-07-11 01:20:18 : 
+2021-07-11 01:20:18 : 
+2021-07-11 01:20:18 : 
+2021-07-11 01:20:18 : Message NON envoy√© ! 
+2021-07-11 01:20:18 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  
+2021-07-12 13:08:48 : /admin/fileman2/php/upload.php
+2021-07-12 13:08:48 : /var/www/edenblue.frthumbs/piscine_comptemporaine_23.jpg
+2021-07-12 13:10:07 : /admin/fileman2/php/upload.php
+2021-07-12 13:10:07 : /var/www/edenblue.frthumbs/piscine_comptemporaine_24.jpg
+2021-07-12 13:10:49 : /admin/fileman2/php/upload.php
+2021-07-12 13:10:49 : /var/www/edenblue.frthumbs/piscine_comptemporaine_23 - Copy 1.jpg
